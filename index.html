@@ -271,6 +271,36 @@
     </section>
     <!--End Resent Property Section-->
 
+    <!--Start Mortgage Calculator Section-->
+    <section class="mortgage-calc">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-md-12 d-none d-lg-block mortgage-container move-from-left">
+                    <h1>Calculate your mortgage</h1>
+                    <p>LOAN AMOUNT € <input type="number" id="amount" min="1" max="2000000" onchange="calcLoan()"></p>
+                    <p>INTEREST RATE <input type="number" id="iterest_rate" min="0" max="100" value="2.7" step=".1" onchange="calcLoan()"> %</p>
+                    <p>LOAN TERM (YEARS) <input type="number" id="years" min="1" max="35" value="35" step="1" onchange="calcLoan()"></p>
+                    <h2 id="payment" class="payment"></h2>
+                    
+                </div>
+                <div class="col-lg-7 mortgage-text-container move-from-right">
+                    <div class="col-lg-10 col-md-12 ml-0 ml-lg-5 pt-5 pb-5 text-center">
+                        <div class="">
+                            <h1>Financial expertise from a specialist provider</h1>
+                        </div>
+                        <div class="border-top border-danger mx-auto mt-5 mb-5"></div>
+                        <div class="">
+                            <p>Our Red Coral Realty Mortgages division can give you expert financial advice at every stage of your property process.
+                                From mortgages and life insurance to investments and pensions, and more, we’re with you every step of the way.</p>
+                        </div>
+                        <a href="mortgage.html" class="btn d-lg-none">Request</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--End Mortgage Calculator Section-->
+
 
     <!--Start Scripts-->
     <!--Bootstarp-->
