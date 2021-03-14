@@ -419,13 +419,134 @@ html {
 /*======================================Start Three Column Section=======================*/
 .what-we-do-header h1 {
     color: rgb(87, 87, 87);
-    
+
 }
 .what-we-do a {
     text-decoration: none;
     color: rgb(87, 87, 87);
 }
 
+.what-we-do img {
+    border-radius: 50px 0 50px 0;
+}
+
 .what-we-do > div:hover {
     transform: scale(1.02);
+}
+
+
+
+
+/*======================================Start Footer Section=======================*/
+.footer-border {
+    background: none;
+    border: 1px solid cadetblue;
+    border-radius: 100px 0 0 0;
+    margin-top: 100px;
+}
+.footer {
+    background: cadetblue;
+    color: #fff;
+    border-radius: 100px 0 0 0;
+    padding-top: 100px;
+    margin-top: 10px; 
+}
+
+.footer .footer-widget h4 {
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.footer .footer-widget p {
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.footer .footer-widget ul li {
+    margin-bottom: 10px;
+    list-style: none;
+}
+
+.footer .footer-widget ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer .footer-widget ul li a:hover {
+    border-bottom: .5px solid crimson;
+}
+
+.footer .footer-widget .footer-address span {
+    color: #fff;
+    display: inline-block;
+}
+
+.footer .footer-widget .form-wrapper input {
+    height: 45px;
+    border: 1px solid cadetblue;
+    font-weight: lighter;
+    padding-left: 20px;
+    border-radius: 25px;
+    margin-right: -25px;
+}
+
+.footer .footer-widget .form-wrapper input:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.footer .footer-widget .btn-click {
+    border-radius: 25px;
+    padding: 5px 21px 4px 14px;
+    border: 0;
+    background: cadetblue;
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 0;
+    z-index: 999;
+}
+
+.footer .footer-widget .btn-click:hover {
+    background: #fff;
+    color: cadetblue i !important;
+    left: 5px;
+}
+
+.footer .footer-widget .footer-logo {
+    margin-top: 25px;
+    display: inline-block;
+}
+
+.footer .footer-bottom {
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.footer .social-media a {
+    margin-top: 20px;
+    margin-left: 3px;
+    padding: 20px 0;
+    width: 50px;
+    height: 50px;
+    font-size: 20px;
+    color: #fff;
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+}
+
+.footer .social-media a:hover {
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+/*=====================Bootstrap Mobile Gutter Fix======*/
+.row,
+.container-fluid {
+    width: 100%;
+    margin-left: 0px !important;
+    margin-right: 0px !important;
 }
