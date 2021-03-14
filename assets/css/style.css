@@ -550,3 +550,58 @@ html {
     margin-left: 0px !important;
     margin-right: 0px !important;
 }
+
+/*=====================Start Media Queries======================*/
+@media screen and (min-width: 1400px){
+    .carousel-caption {
+        bottom: 100px;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .carousel-caption h1 {
+        font-size: 2.8rem;
+        letter-spacing: .1rem;
+    }
+    .carousel-caption p {
+        font-size: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 992px){
+    .carousel-caption h1 {
+        font-size: 2rem;
+    }
+    .carousel-caption p {
+        font-size: 1.2rem;
+    }
+    .text-container h3 {
+        font-size: 2rem;
+    }
+    .text-container h4 {
+        font-size: 1.3rem;
+    }
+    .text-lists ul {
+        padding-left: 0;
+    }
+    .local-property-card-section {
+        margin-top: 0;
+    }
+    .local-property-card-section h1 {
+        padding-left: 0;
+        text-align: center;
+    }
+    .local-property-card-section p {
+        padding-left: 0;
+        text-align: center;
+        padding: 5px;
+    }
+    #resent-property-section {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    
+}
