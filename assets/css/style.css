@@ -414,3 +414,18 @@ html {
 .submit-btn:hover {
     color: #fff;
 }
+
+
+/*======================================Start Three Column Section=======================*/
+.what-we-do-header h1 {
+    color: rgb(87, 87, 87);
+    
+}
+.what-we-do a {
+    text-decoration: none;
+    color: rgb(87, 87, 87);
+}
+
+.what-we-do > div:hover {
+    transform: scale(1.02);
+}
