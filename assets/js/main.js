@@ -1,4 +1,4 @@
-/*--Scroll on move---*/
+//=============Start ScrollReveal --Scroll on move-- ======//
 window.sr = ScrollReveal();
 sr.reveal(".navbar" , {
   duration: 2000,
@@ -22,9 +22,9 @@ sr.reveal(".box" , {
   distance: "300px",
   viewFactor: 0.2
 });
+//=============End ScrollReveal --Scroll on move-- ======//
 
-
-//=====================Back to Top button============================//
+//=====================Start Back to Top button============================//
 const backToTopButton = document.querySelector("#back-to-top-btn");
 
 window.addEventListener("scroll", scrollFunction);
@@ -71,7 +71,35 @@ function calcLoan() {
     //   payment.classList.remove("payment_box");
     // }
   }
-  
-  
-  
-  //======================End Mortgaga Calculator==============================//
+
+//======================End Mortgaga Calculator==============================//
+
+
+//===========Start To initialize Swiper in JS================//
+
+const swiper = new Swiper('.swiper-container', {
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // Optional parameters
+    loop: true,
+    'slidesPerView': 1,
+    'spaceBetween' : 20,
+    'centeredSlides': true,
+    breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        1024: {
+          slidesPerView: 4,
+          spaceBetween: 20,
+        },
+      }
+  });
+//===========End To initialize Swiper in JS================//

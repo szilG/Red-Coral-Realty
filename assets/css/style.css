@@ -258,9 +258,12 @@ html {
     color: #fff;
 }
 
-.mortgage-container >p > input {
+.mortgage-container input[type="number"] {
    border: none;
    appearance: none;
+   width: 150px;
+   margin-left: 20px;
+   padding-left: 5px;
 }
 
 .mortgage-text-container {
@@ -279,3 +282,67 @@ html {
     padding: 1rem;
     margin-top: 30px;
 }
+
+
+/*============================Start Resent Abroad Property Section======================*/
+#resent-property-section {
+    width: 100%;
+    padding: 50px 0;
+    /* background-color: #eeeeee; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: cadetblue;
+    margin-top: 100px;
+}
+
+#resent-property-section .text-right a {
+    color: cadetblue;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 1s ease;
+}
+
+#resent-property-section .text-right a:hover {
+    color: crimson;
+}
+
+#resent-property-section #resent-propery-slider {
+    width: 100%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+#resent-propery-slider .swiper-slide {
+    width: 100%;
+    height: 100%;
+   text-decoration: none;
+   color: cadetblue;
+}
+
+#resent-propery-slider .swiper-container .swiper-slide .property-list {
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 30px 0 30px 0;
+}
+
+#resent-propery-slider .swiper-container .swiper-slide .property-list p {
+    font-weight: 500;
+}
+
+#resent-propery-slider .swiper-container .swiper-slide .property-list .image {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 30px 0 30px 0;
+    margin-bottom: 10px;
+}
+
+#resent-propery-slider .swiper-container .swiper-slide .property-list .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper-slide i,span {
+    color: crimson;
+}
+
+/* .swiper-slide .text-right p  */
