@@ -119,3 +119,9 @@
     transition: 1s;
     transform-style: preserve-3d;
 }
+
+
+/*====================================Start Three Column Section=======================*/
+.three-coloumn-sec {
+    background: #eee;
+}
