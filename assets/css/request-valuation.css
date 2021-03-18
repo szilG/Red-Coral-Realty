@@ -125,3 +125,28 @@
 .three-coloumn-sec {
     background: #eee;
 }
+
+
+
+
+
+
+
+/*=====================Start Media Queries======================*/
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .card-front h2{
+        font-size: 26px;
+    }
+    .card-front h3{
+        font-size: 20px;
+    }
+    .card-front h4 {
+        font-size: 17px;
+    }
+    .card-front .border-danger {
+        width: 200px !important;
+    }
+    .team {
+        padding-bottom: 100px;
+    }
+}
