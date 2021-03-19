@@ -345,6 +345,11 @@ html {
     color: crimson;
 }
 
+.swiper-button-prev,
+.swiper-button-next {
+    color: black;
+}
+
 
 
 /*=============================Start Features Section============================*/
