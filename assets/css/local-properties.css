@@ -1,10 +1,15 @@
 /*===============================Start Resent Property Section======================*/
+.local-property-card-section {
+    margin-top: 50px;
+    overflow-x: hidden;
+    
+}
 .local-property-card-section .content .box1 {
     flex: 1;
     min-width: 300px;
     min-height: 500px;
     overflow: hidden;
-    margin: 15px;
+    margin-bottom: 15px;
     padding: 15px;
     box-shadow: 4px 5px 10px #ddd;
     transition: .5s ease-in-out;
@@ -46,4 +51,17 @@
 .local-property-card-section .property-details span {
     font-size: 16px;
     color: crimson; 
+}
+
+
+
+
+
+/*=====================Start Media Queries======================*/
+
+@media only screen and (max-width: 767px) {
+    .local-property-card-section h1 {
+        font-size: 25px;
+        margin-top: 30px;
+    }
 }
