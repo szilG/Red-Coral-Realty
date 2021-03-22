@@ -36,6 +36,21 @@ html {
     transition: .5s ease;
 }
 
+.btn-custom {
+    color: #236778;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.btn-custom:hover {
+   color: cadetblue;
+}
+
+.hero-btn-text {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
 .btn {
     border: 1px solid cadetblue;
     box-shadow: none;
@@ -45,12 +60,13 @@ html {
     font-size: 20px;
     cursor: pointer;
     margin: 10px;
-    color: cadetblue;
+    color: #236778;
     transition: .8s;
     position: relative;
     overflow: hidden;
     z-index: 1;
 }
+
 
 .btn:hover,
 .btn:focus {
@@ -63,7 +79,7 @@ html {
     left: 0;
     width: 100%;
     height: 0%;
-    background: cadetblue;
+    background: #236778;
     z-index: -1;
     transition: .8s;
     top: 0;
@@ -139,9 +155,13 @@ html {
     
 .text-container h3 {
     font-family: 'Anton', sans-serif;
-    color: cadetblue;
+    color: #236778;
     letter-spacing: .2rem;
     font-size: 3rem;
+}
+
+.text-container h4 {
+    color: #20242A;
 }
 
 .text-lists ul {
@@ -150,11 +170,20 @@ html {
 }
 
 .text-lists ul li {
+    font-size: 18px;
+    color: #20242A;
     padding-left: 2rem;
-    background-image: url("/assets/img/check-crimson.svg");
-    background-repeat: no-repeat;
     line-height: 1.5rem;
     margin-bottom: 1rem;
+}
+
+.text-lists i {
+    color: crimson;
+    font-size: 20px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 
@@ -165,7 +194,7 @@ html {
 }
 
 .local-property-card-section h1 {
-    color: cadetblue;
+    color: #236778;
     margin-bottom: 20px;
     padding-left: 50px;
 }
@@ -185,7 +214,7 @@ html {
 
 .local-property-card-section .content .box {
     flex: 1;
-    min-width: 300px;
+    min-width: 250px;
     min-height: 500px;
     overflow: hidden;
     margin: 15px;
@@ -194,6 +223,10 @@ html {
     transition: .5s ease-in-out;
     cursor: pointer;
     border-radius: 30px 0 30px 0;
+}
+
+.local-property-card-section .content .box .text a {
+    margin-left: 0;
 }
 
 .local-property-card-section .content .box:hover {
@@ -224,7 +257,7 @@ html {
 }
 
 .local-property-card-section .text-right a {
-    color: cadetblue;
+    color: #236778;
     font-size: 16px;
     font-weight: 500;
     transition: 1s ease;
@@ -247,7 +280,7 @@ html {
 
 .mortgage-container {
     padding-top: 50px;
-    background: cadetblue;
+    background: #236778;
     border-radius: 0px 30px 0px 30px;  
 }
 
@@ -258,11 +291,15 @@ html {
     color: #fff;
 }
 
+.mortgage-container p {
+    color: #fff;
+}
+
 .mortgage-container input[type="number"] {
    border: none;
    appearance: none;
    width: 150px;
-   margin-left: 20px;
+   /* margin-left: 20px; */
    padding-left: 5px;
 }
 
@@ -290,12 +327,12 @@ html {
     padding: 50px 0;
     /* background-color: #eeeeee; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: cadetblue;
+    color: #236778;
     margin-top: 100px;
 }
 
 #resent-property-section .text-right a {
-    color: cadetblue;
+    color: #236778;;
     font-size: 16px;
     font-weight: 500;
     transition: 1s ease;
@@ -447,12 +484,13 @@ html {
 /*======================================Start Footer Section=======================*/
 .footer-border {
     background: none;
-    border: 1px solid cadetblue;
+    border: 1px solid #236778;
     border-radius: 100px 0 0 0;
     margin-top: 100px;
 }
 .footer {
-    background: cadetblue;
+    /* background: cadetblue; */
+    background: #236778;
     color: #fff;
     border-radius: 100px 0 0 0;
     padding-top: 100px;
