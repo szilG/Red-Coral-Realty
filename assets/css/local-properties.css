@@ -28,29 +28,29 @@
 .local-property-card-section h3 {
     font-size: 1rem;
     margin-top: 10px;
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
 }
 
 .local-property-card-section span {
-    color: crimson;
+    color: var(--second-color);
     font-size: 30px;
 }
 
 .local-property-card-section .text-center a {
-    color: cadetblue;
-    font-size: 26px;
+    color: var(--main-color);
+    font-size: 20px;
     font-weight: 500;
     transition: 1s ease;
     text-decoration: none;
 }
 
 .local-property-card-section .text-center a:hover {
-    font-size: 20px;
+    font-size: 26px;
 }
 
 .local-property-card-section .property-details span {
     font-size: 16px;
-    color: crimson; 
+    color: var(--second-color); 
 }
 
 

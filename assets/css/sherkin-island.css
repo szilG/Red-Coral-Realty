@@ -1,6 +1,6 @@
 /*===================Start Property Action Bar Section====================*/
 .property-action-bar-container {
-    background:  #eee;
+    background:  var(--bg-color);
     width: 100%;
     height: 100px;
 }
@@ -12,7 +12,7 @@
     font-size: 20px;
     margin-left: 40px;
     text-decoration: none;
-    color: cadetblue;
+    color: var(--main-color);
 }
 
 .property-action-bar a:hover {
@@ -32,12 +32,12 @@
 }
 
 .section-header h4 {
-    color: rgb(87, 87, 87);
+    color: var(text-color);
     font-size: 25px;
 }
 
 .section-header h2 {
-    color: cadetblue;
+    color: var(--main-color);
 }
 
 .section-details {
@@ -46,7 +46,7 @@
 }
 .section-details i {
     font-size: 30px;
-    color: cadetblue;
+    color: var(--main-color);
 }
 
 .section-details span {
@@ -55,19 +55,19 @@
 }
 
 .property-text-section {
-    background: #eee;
+    background: var(bg-color);
 }
 
 .property-text-section h1 {
     padding-top: 30px;
     font-size: 25px;
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
 }
 
 .property-text-section h2 {
     padding-top: 30px;
     font-size: 20px;
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
 }
 
 .slide-image {
@@ -79,7 +79,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+}    
 
 
 
