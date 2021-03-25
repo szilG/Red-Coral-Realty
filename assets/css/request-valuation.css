@@ -15,7 +15,7 @@
 
 /*==============================Start Info Section=================*/
 .info {
-    background: #eee;
+    background: var(--bg-color);
     padding-top: 80px;
     padding-bottom: 80px;
     margin: -3% auto 20px auto;
@@ -32,30 +32,30 @@
 
 .info h1 {
     font-size: 30px;
-    color: cadetblue;
+    color: var(--main-color);
 }
 
 .info p, li{
     padding-top: 10px;
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
     font-size: 18px;
 }
 
 /*=====================================Start Team Section========================*/
 .team h1 {
     text-transform: uppercase;
-    color: cadetblue;
+    color: var(--main-color);
     font-size: 36px;
 }
 
 .card {
-    background: #eee;
+    background: var(--bg-color);
     border: none;
 }
 
 .card img {
     margin-top: -5%;
-    border: 3px solid cadetblue;
+    border: 3px solid var(--main-color);
 }
 
 .card-front p {
@@ -65,12 +65,12 @@
 .card-front i {
     font-size: 100px;
     padding: 25px 0;
-    color: cadetblue;
+    color: var(--main-color);
 }
 
 .card-back i {
     font-size: 26px;
-    color: cadetblue;
+    color: var(--main-color);
 }
 
 .card-back h3 {
@@ -101,16 +101,16 @@
     transform: rotateY(0deg);
     z-index: 2;
     margin-bottom: 30px;
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
 }
 
 .card-back {
     position: absolute;
     top: 0;
     left: 0;
-    background: #eee;
+    background: var(--bg-color);
     transform: rotateY(-180deg);
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
 }
 
 .card-front,
@@ -123,7 +123,7 @@
 
 /*====================================Start Three Column Section=======================*/
 .three-coloumn-sec {
-    background: #eee;
+    background: var(--bg-color);
 }
 
 
