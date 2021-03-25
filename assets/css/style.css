@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400&display=swap');
+
+* {
+    --main-color: #4995A7;
+    --text-color: #2b323b;
+    --second-color: crimson;
+    --bg-color: #eee;
+    --dark-color: #236778;
+
+}
 
 body {
     padding: 0;
@@ -17,11 +25,11 @@ html {
 .navbar .navbar-brand {
     font-size: 25px;
     font-family: 'Anton', sans-serif;
-    color: cadetblue; 
+    color: var(--main-color); 
 }
 
 .navbar .navbar-brand span {
-    color: crimson;
+    color: var(--second-color);
 }
 
 .navbar .nav-item {
@@ -29,21 +37,20 @@ html {
 }
 
 .navbar .nav-item .nav-link {
-    font-family: 'Raleway', sans-serif;
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
     font-weight: 500;
     padding: 10px 20px;
     transition: .5s ease;
 }
 
 .btn-custom {
-    color: #236778;
+    color: var(--main-color);
     font-size: 25px;
     font-weight: 600;
 }
 
 .btn-custom:hover {
-   color: cadetblue;
+   color: var(--second-color);
 }
 
 .hero-btn-text {
@@ -52,7 +59,7 @@ html {
 }
 
 .btn {
-    border: 1px solid cadetblue;
+    border: 1px solid var(--main-color);
     box-shadow: none;
     border-radius: 30px 0 30px 0;
     background: none;
@@ -60,7 +67,7 @@ html {
     font-size: 20px;
     cursor: pointer;
     margin: 10px;
-    color: #236778;
+    color: var(--main-color);
     transition: .8s;
     position: relative;
     overflow: hidden;
@@ -79,7 +86,7 @@ html {
     left: 0;
     width: 100%;
     height: 0%;
-    background: #236778;
+    background: var(--main-color);
     z-index: -1;
     transition: .8s;
     top: 0;
@@ -91,11 +98,11 @@ html {
 }
 
 .navbar .nav-item .nav-link.active {
-    color: crimson;
+    color: var(--second-color);
 }
 
 .navbar .nav-item .nav-link:hover {
-    color: crimson;
+    color: var(--second-color);
 }
 
 
@@ -118,7 +125,7 @@ html {
     height: 50px;
     cursor: pointer;
     outline: none;
-    border: 3px solid cadetblue;
+    border: 3px solid var(--main-color);
     border-radius: 50%;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
@@ -155,13 +162,13 @@ html {
     
 .text-container h3 {
     font-family: 'Anton', sans-serif;
-    color: #236778;
+    color: var(--main-color);
     letter-spacing: .2rem;
     font-size: 3rem;
 }
 
 .text-container h4 {
-    color: #20242A;
+    color: var(--text-color);
 }
 
 .text-lists ul {
@@ -171,14 +178,14 @@ html {
 
 .text-lists ul li {
     font-size: 18px;
-    color: #20242A;
+    color: var(--text-color);
     padding-left: 2rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .text-lists i {
-    color: crimson;
+    color: var(--second-color);
     font-size: 20px;
     float: left;
     display: flex;
@@ -194,7 +201,7 @@ html {
 }
 
 .local-property-card-section h1 {
-    color: #236778;
+    color: var(--main-color);
     margin-bottom: 20px;
     padding-left: 50px;
 }
@@ -247,7 +254,7 @@ html {
 }
 
 .local-property-card-section span {
-    color: crimson;
+    color: var(--second-color);
     padding-right: 10px;
 }
 
@@ -257,14 +264,14 @@ html {
 }
 
 .local-property-card-section .text-right a {
-    color: #236778;
+    color: var(--main-color);
     font-size: 16px;
     font-weight: 500;
     transition: 1s ease;
 }
 
 .local-property-card-section .text-right a:hover {
-    color: crimson;
+    color: var(--second-color);
 }
 
 
@@ -273,14 +280,14 @@ html {
     width: 100%;
     height: auto;
     padding-bottom: 50px;
-    background: #eeeeee;
+    background: var(--bg-color);
     margin-top: 50px;
     padding-top: 50px;
 }
 
 .mortgage-container {
     padding-top: 50px;
-    background: #236778;
+    background: var(--main-color);
     border-radius: 0px 30px 0px 30px;  
 }
 
@@ -327,19 +334,19 @@ html {
     padding: 50px 0;
     /* background-color: #eeeeee; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: #236778;
+    color: var(--main-color);
     margin-top: 100px;
 }
 
 #resent-property-section .text-right a {
-    color: #236778;;
+    color: var(--main-color);
     font-size: 16px;
     font-weight: 500;
     transition: 1s ease;
 }
 
 #resent-property-section .text-right a:hover {
-    color: crimson;
+    color: var(--second-color);
 }
 
 #resent-property-section #resent-propery-slider {
@@ -351,8 +358,8 @@ html {
 #resent-propery-slider .swiper-slide {
     width: 100%;
     height: 100%;
-   text-decoration: none;
-   color: cadetblue;
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 #resent-propery-slider .swiper-container .swiper-slide .property-list {
@@ -379,7 +386,7 @@ html {
 }
 
 .swiper-slide i,span {
-    color: crimson;
+    color: var(--second-color);
 }
 
 .swiper-button-prev,
@@ -405,7 +412,7 @@ html {
 }
 
 .features .features-box i {
-    color: crimson;
+    color: var(--second-color);
     padding-left: 120px;
     padding-top: 40px;   
 }
@@ -422,7 +429,7 @@ html {
 .request-container {
     width: 80%;
     height: auto;
-    background-color: #eee;
+    background-color: var(--bg-color);
     border-radius: 0px 0 50px 50px;
     box-shadow: 2px 2px 12px rgba(0,0,0,.2);
     margin: -3% auto 20px auto;
@@ -452,7 +459,7 @@ html {
 .submit-btn {
     border: none;
     background: none;
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
 }
 
 .submit-btn:hover {
@@ -462,12 +469,12 @@ html {
 
 /*======================================Start Three Column Section=======================*/
 .what-we-do-header h1 {
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
 
 }
 .what-we-do a {
     text-decoration: none;
-    color: rgb(87, 87, 87);
+    color: var(--text-color);
 }
 
 .what-we-do img {
@@ -484,13 +491,13 @@ html {
 /*======================================Start Footer Section=======================*/
 .footer-border {
     background: none;
-    border: 1px solid #236778;
+    border: 1px solid var(--main-color);
     border-radius: 100px 0 0 0;
     margin-top: 100px;
 }
 .footer {
     /* background: cadetblue; */
-    background: #236778;
+    background: var(--main-color);
     color: #fff;
     border-radius: 100px 0 0 0;
     padding-top: 100px;
@@ -518,7 +525,7 @@ html {
 }
 
 .footer .footer-widget ul li a:hover {
-    border-bottom: .5px solid crimson;
+    border-bottom: .5px solid var(--second-color);
 }
 
 .footer .footer-widget .footer-address span {
@@ -528,7 +535,7 @@ html {
 
 .footer .footer-widget .form-wrapper input {
     height: 45px;
-    border: 1px solid cadetblue;
+    border: 1px solid var(--main-color);
     font-weight: lighter;
     padding-left: 20px;
     border-radius: 25px;
@@ -544,7 +551,7 @@ html {
     border-radius: 25px;
     padding: 5px 21px 4px 14px;
     border: 0;
-    background: cadetblue;
+    background: var(--dark-color);
     color: #fff;
     margin: 0;
     position: relative;
@@ -554,7 +561,7 @@ html {
 
 .footer .footer-widget .btn-click:hover {
     background: #fff;
-    color: cadetblue i !important;
+    color: cadetblue !important;
     left: 5px;
 }
 
@@ -603,6 +610,13 @@ html {
     }
 }
 
+@media screen and (min-width: 1200px) and (max-width: 1300px) {
+    .btn {
+        padding: 5px 40px;
+        font-size: 15px;
+        border-radius: 25px 0 25px 0; 
+    }
+}
 
 @media screen and (max-width: 1200px) {
     .carousel-caption h1 {
@@ -662,5 +676,11 @@ html {
     .footer .footer-widget ul li {
         display: inline;
         padding: 0 10px;
+    }
+    .local-property-card-section .content .box {
+        margin: 0;
+    }
+    .local-property-card-section .text-right a {
+        padding-bottom: 20px;
     }
 }
