@@ -1,0 +1,40 @@
+.img-container img {
+    width: 100%;
+    object-fit: cover;
+    position: relative;
+}
+
+.image-caption {
+    position: absolute;
+    color: #fff;
+}
+
+.image-caption h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
+
+.contact-header {
+    background: var(--bg-color);
+    margin-top: 50px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    
+}    
+
+.gray-bg {
+    background: var(--text-color);
+    padding-bottom: 100px;
+    padding-top: 50px;
+    width: 100%;
+    height: 200px;  
+}
+
+.gray-bg h1, p {
+    color: #fff;
+}
+
+.contact-container button[type="button"] {
+    padding-top: 50px;
+    margin-left: 100px;
+}
