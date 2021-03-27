@@ -184,7 +184,7 @@
                                 <span>1 bedrooms</span>
                                 <span>1 bathrooms</span> 
                             </div>
-                            <a href="local-prop/doolin-house-dublin/doolin-house-dublin.html" class="btn">Read More</a>
+                            <a href="property-details.html?property_id=1" class="btn" onclick="showPropertyDetails()">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -201,7 +201,7 @@
                                 <span>3 bedrooms</span>
                                 <span>1 bathrooms</span> 
                             </div>
-                            <a href="local-prop/glasnevin-dublin/glasnevin-dublin-html" class="btn">Read More</a>
+                            <a href="property-details.html?property_id=2" class="btn" onclick="showPropertyDetails()">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -219,7 +219,7 @@
                                 <span>3 bedrooms</span>
                                 <span>2 bathrooms</span> 
                             </div>
-                            <a href="local-prop/templeogue-dublin/templeogue-dublin.html" class="btn">Read More</a>
+                            <a href="property-details.html?property_id=3" class="btn" onclick="showPropertyDetails()">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -237,7 +237,7 @@
                                 <span>3 bedrooms</span>
                                 <span>2 bathrooms</span> 
                             </div>
-                            <a href="local-prop/charlotte-quay/charlotte-quay.html" class="btn">Read More</a>
+                            <a href="property-details.html?property_id=4" class="btn" onclick="showPropertyDetails()">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -255,7 +255,7 @@
                                 <span>5 bedrooms</span>
                                 <span>2 bathrooms</span> 
                             </div>
-                            <a href="local-prop/killinick-wexford/killinick-wexford.html" class="btn">Read More</a>
+                            <a href="property-details.html?property_id=5" class="btn" onclick="showPropertyDetails()">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -273,7 +273,7 @@
                                 <span>4 bedrooms</span>
                                 <span>3 bathrooms</span> 
                             </div>
-                            <a href="local-prop/glenfahan-dingle/glenfahan-dingle.html" class="btn">Read More</a>
+                            <a href="property-details.html?property_id=6" class="btn" onclick="showPropertyDetails()">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -289,7 +289,7 @@
                 <div class="col-lg-5 col-md-12 d-none d-lg-block mortgage-container move-from-left">
                     <h1>Calculate your mortgage</h1>
                     <p>LOAN AMOUNT € <input type="number" id="amount" min="1" max="2000000" onchange="calcLoan()"></p>
-                    <p>INTEREST RATE <input type="number" id="iterest_rate" min="0" max="100" value="2.7" step=".1" onchange="calcLoan()"> %</p>
+                    <p>INTEREST RATE %<input type="number" id="iterest_rate" min="0" max="100" value="2.7" step=".1" onchange="calcLoan()"></p>
                     <p>LOAN TERM (YEARS) <input type="number" id="years" min="1" max="35" value="35" step="1" onchange="calcLoan()"></p>
                     <h2 id="payment" class="payment"></h2>
                     
@@ -300,7 +300,7 @@
                             <h1>Financial expertise from a specialist provider</h1>
                         </div>
                         <div class="border-top border-danger mx-auto mt-5 mb-5"></div>
-                        <div class="">
+                        <div>
                             <p>Our Red Coral Realty Mortgages division can give you expert financial advice at every stage of your property process.
                                 From mortgages and life insurance to investments and pensions, and more, we’re with you every step of the way.</p>
                         </div>
@@ -703,5 +703,7 @@
     <script src="assets/js/index-swiperjs.js"></script>
     <script src="assets/js/request-loc-form.js"></script>
     <script src="assets/js/scroll-on-move.js"></script>
+    <script src="assets/js/proprties.js"></script>
+
 </body>
 </html>
