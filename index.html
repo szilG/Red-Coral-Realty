@@ -15,6 +15,13 @@
     <!--Style-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Red Coral Realty</title>
+    <!--EmailJs-->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
+    })();
+    </script>
 </head>
 <body>
     <!--Start Header Section-->
@@ -503,53 +510,8 @@
     </section>
     <div class="request-container">
         <div class="row">
-            <div class="col-lg-6 text-center order-2 order-lg-1">
-                <div class="col-md-12 justify-content-center">
-                    <form class="signup-form" method="POST" action="https://info@yesweddingagency.com">
-                        <div class="requet-content">
-                            <h2>Request a valuation</h2>
-                            <div class="radio-btns">
-                                <input type="radio" id="sell" name="radio" value="sell">
-                                <label for="sell">Sell</label>
-                                <input type="radio" id="let" name="radio" value="let">
-                                <label for="let">Let</label>
-                            </div>
-                    
-                            <div class="form-row ">
-                                <div class="col-md-12 form-group text-left">
-                                    <label for="location">Location *</label>
-                                    <select name="location" id="location" class="form-control" required>
-                                        <option value="">Select Location</option>   
-                                    </select>
-                                    <label for="area">Area *</label>
-                                    <select name="area" id="area" class="form-control" required>
-                                        <option value="">Select Area</option>   
-                                    </select>
-                                    <label for="name">Full Name *</label>
-                                    <input type="text" class="form-control" id="name" required>
-                                    <label for="email">Email *</label>
-                                    <input type="email" class="form-control" id="email" required>
-                                    <label for="phone">Phone Number *</label>
-                                    <input type="text" class="form-control" id="phone" required>
-                                    <label for="inputDay">Select Preferred Callback Time *</label>
-                                    <select id="inputDay" class="form-control"required>
-                                        <option>Select</option>
-                                        <option>9am - 1pm</option>
-                                        <option>1pm - 4pm</option>
-                                        <option>4pm - 9pm</option>
-                                        <option>Any time</option>
-                                    </select>
-                                      
-                                </div>
-                                <div class="btn">
-                                    <button type="submit" name="submit" class="submit-btn">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-            <div class="col-lg-6 order-1 order-lg-2 align-self-center justify-content-center">
+            
+            <div class="col-lg-6 align-self-center justify-content-center">
                 <div class="col-md-12 col-lg-9 text-center">
                     <div class="form-header-h1 ">
                         <h1>Thinking of selling or letting your property?</h1>
@@ -647,9 +609,9 @@
                         <hr>
                         <p>Sing Up to Our Newsletter</p>
                         <div class="form-wrapper">
-                            <form action="" method="POST">
+                            <form id="myForm" onsubmit="return sendMail(this);">
                                 <div class="input-group">
-                                    <input type="email" class="form-control" name="email" placeholder="Enter Your Email">
+                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
                                     <div class="input-group-append">
                                         <button class="btn btn-click" type="submit"><i class="fab fa-telegram-plane"></i></button>
                                     </div>

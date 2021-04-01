@@ -16,6 +16,13 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/request-valuation.css">
     <title>Red Coral Realty</title>
+    <!--EmailJs-->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
+    })();
+    </script>
 </head>
 <body>
     <!--Start Header Section-->
@@ -97,34 +104,34 @@
             <div class="row">
                 <div class="col-lg-6 text-center order-2 order-lg-1">
                     <div class="col-md-12 justify-content-center">
-                        <form class="signup-form" method="POST" action="https://info@yesweddingagency.com">
+                        <form id="myForm" onsubmit="return sendMail(this);" class="signup-form" >
                             <div class="requet-content">
                                 <h2>Request a valuation</h2>
                                 <div class="radio-btns">
-                                    <input type="radio" id="sell" name="radio" value="sell">
+                                    <input type="radio" id="sell" name="message4" value="sell">
                                     <label for="sell">Sell</label>
-                                    <input type="radio" id="let" name="radio" value="let">
+                                    <input type="radio" id="let" name="message4" value="let">
                                     <label for="let">Let</label>
                                 </div>
                         
-                                <div class="form-row ">
+                                <div class="form-row">
                                     <div class="col-md-12 form-group text-left">
                                         <label for="location">Location *</label>
-                                        <select name="location" id="location" class="form-control" required>
+                                        <select name="message2" id="location" class="form-control" required>
                                             <option value="">Select Location*</option>   
                                         </select>
                                         <label for="area">Area *</label>
-                                        <select name="area" id="area" class="form-control" required>
+                                        <select name="message3" id="area" class="form-control" required>
                                             <option value="">Select Area*</option>   
                                         </select>
                                         <label for="name">Full Name *</label>
-                                        <input type="text" class="form-control" id="name" required>
+                                        <input type="text" class="form-control" id="name" name="name" required>
                                         <label for="email">Email *</label>
-                                        <input type="email" class="form-control" id="email" required>
+                                        <input type="email" class="form-control" id="email" name="email" required>
                                         <label for="phone">Phone Number *</label>
-                                        <input type="text" class="form-control" id="phone" required>
+                                        <input type="text" class="form-control" id="phone" name="phone" required>
                                         <label for="inputDay">Select Preferred Callback Time *</label>
-                                        <select id="inputDay" class="form-control" required>
+                                        <select id="inputDay" class="form-control" name="time"required>
                                             <option>Select</option>
                                             <option>9am - 1pm</option>
                                             <option>1pm - 4pm</option>
@@ -218,7 +225,7 @@
             <div class="row mb-5 mt-5">
                 <div class="col">
                     <h1>Meet our valuations team</h1>
-                    <p class="mt-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum repudiandae nemo dolores aut? Enim, illo.</p>
+                    <p class="mt-3">For banking, legal and revenue valuations</p>
                 </div>
             </div>
             <div class="row">

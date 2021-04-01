@@ -16,6 +16,12 @@
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/css/mortgage.css">
     <title>Red Coral Realty</title>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
+    })();
+    </script>
 </head>
 <body>
     <!--Start Header Section-->
@@ -111,24 +117,27 @@
                     </button>
                 </div>
                 <div class="modal-body">
-                    <form>
+                    <form id="myForm" onsubmit="return sendMail(this);">
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="text" class="form-control" id="inputFullName" placeholder="Full Name">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="name" class="form-control" id="inputFullName" placeholder="Full Name" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                            <input type="email" class="form-control" id="inputEmail" placeholder="Email">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <div class="col-sm-12">
-                                <input type="number" class="form-control" id="inputPhone" placeholder="Phone">
+                                <i class="fas fa-mobile-alt"></i>
+                                <input type="number" name="phone" class="form-control" id="inputPhone" placeholder="Phone" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <select id="inputState" class="form-control">
+                            <select id="inputOption" name="time" class="form-control" required>
                                 <option selected>Select Product</option>
                                 <option>Mortgages</option>
                                 <option>Mortgage Protection/Life Cover</option>
@@ -154,18 +163,110 @@
             <div class="row">
                 <div class="col-md-7">
                     <h1>Red Coral Realty Mortgages</h1>
-                    <hr>
+                    <div class="border-top border-costum mt-5 mb-3"></div>
                     <p class="lead">Need advice - Contact one of our Mortgage Advisors</p>
                 </div>
-                <div class="col-md-5">
+                <div class="col-md-5 text-center">
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn" data-toggle="modal" data-target="#contactModal">Contact Us</button>
-                    
+                    <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Contact Us</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="container white-bg">
+           <p class="lead">Whatever your situation, our team of qualified mortgage advisors have the experience and market knowledge to find the right
+            mortgage options for you. From first-time buyers and home movers to investors and more, our qualified experienced team will work with you
+            guiding you through the mortgage process with care and attention.</p> 
+        </div>
+    </section>
+    <!--End Modal Section-->
+
+    <!--Start Advise Section-->
+    <section>
+        <div class="advice-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mt-xl-5 advice-text">
+                        <h1>Giving second-time buyers great choices</h1>
+                        <div class="border-top border-danger text-center mt-4 mb-4"></div>
+                        <p>Whether you are trading up or downsizing, you’ll know that the mortgage market has changed and developed in recent years. Now more than ever,
+                            you need an experienced adviser in your corner detailing the options available and giving you the advice and support you need.</p>
+                        <!-- Button trigger modal -->
+                        <div class="text-center">
+                            <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Contact Us</button> 
+                        </div> 
+                    </div>
+                    <div class="col-md-5 mt-5 pt-md-3 pt-lg-0">
+                        <img src="assets/img/mortgage/mortgage02.jpg" class="img-fluid" alt="women talking">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="advice-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 mt-5 pt-md-3 pt-lg-0 order-2 order-md-1">
+                        <img src="assets/img/mortgage/mortgage03.jpeg" class="img-fluid" alt="packing out from boxes">
+                    </div>
+                    <div class="col-md-7 mt-xl-5 advice-text order-1 order-md-2">
+                        <h1>First-Time Buyers – securing your first mortgage</h1>
+                        <div class="border-top border-danger text-center mt-4 mb-4"></div>
+                        <p>Applying for your mortgage can feel complicated. With over 20 years of experience under our belts and having organised
+                            thousands of mortgages for first-time buyers all over Ireland, you can depend on us for clear advice and a guiding hand
+                            right throughout the mortgage process</p>
+                        <!-- Button trigger modal -->
+                        <div class="text-center">
+                            <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Contact Us</button> 
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="advice-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 mt-xl-5 advice-text">
+                        <h1>Explaining the Help-to-Buy scheme</h1>
+                        <div class="border-top border-danger text-center mt-4 mb-4"></div>
+                        <p>As a first-time buyer, the Irish government’s Help-to-Buy scheme is a tax refund initiative which could be worth up to €30,000 towards buying
+                            your first home. You’ll find all the advice you need on our Help-to-buy guide here, and you can also see whether you qualify for the scheme,
+                            and calculate how much you are entitled to.</p>
+                        <!-- Button trigger modal -->
+                        <div class="text-center">
+                            <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Contact Us</button> 
+                        </div> 
+                    </div>
+                    <div class="col-md-5 mt-5 pt-md-3 pt-lg-0">
+                        <img src="assets/img/mortgage/mortgage04.jpg" class="img-fluid" alt="packing out from boxes">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="advice-header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5 mt-5 pt-md-3 pt-lg-0 order-2 order-md-1">
+                        <img src="assets/img/mortgage/mortgage05.jpeg" class="img-fluid" alt="women and a man talking">
+                    </div>
+                    <div class="col-md-7 mt-xl-5 advice-text order-1 order-md-2">
+                        <h1>Providing investors with sound solutions</h1>
+                        <div class="border-top border-danger text-center mt-4 mb-4"></div>
+                        <p>Whether you are an experienced property investor or a first-time landlord, you need a buy-to-let mortgage deal that helps you make the most of
+                            your asset. With so many new providers in the market, we’ll give you the specific advice you need and work with you every step of the way to get
+                            the best buy-to-let mortgage that meets your needs.</p>
+                        <!-- Button trigger modal -->
+                        <div class="text-center">
+                            <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Contact Us</button> 
+                        </div> 
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    <!--End Modal Section-->
+    <!--End Advise Section-->
     
     
     
