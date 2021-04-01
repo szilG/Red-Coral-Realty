@@ -1,0 +1,228 @@
+/*===================Start Property Action Bar Section====================*/
+.property-action-bar-container {
+    background:  var(--bg-color);
+}
+
+.property-action-bar-inner {
+    padding-top: 30px;
+}
+.property-action-bar a{
+    font-size: 20px;
+    margin-left: 40px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.property-action-bar a:hover {
+    font-size: 25px;
+}
+
+.property-action-bar i {
+    padding-right: 5px;
+}
+.property-action-bar-right a{
+    padding: 0 10px;
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.property-action-bar-right p {
+    color: var(--text-color);
+    font-size: 1.5rem;
+}
+
+.info-text {
+    color: var(--text-color);
+    margin-bottom: 20px;
+}
+
+.contact-btn {
+    border: 1px solid var(--main-color);
+    box-shadow: none;
+    border-radius: 30px 0 30px 0;
+    background: none;
+    padding: 10px 40px;
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    color: var(--main-color);
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+    color: #fff;
+}
+
+.contact-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.contact-btn:hover:before {
+    height: 180%;
+}
+
+.modal-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-header h5, p {
+    color: var(--text-color);
+}
+
+.modal-header .close {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.form-group .form-control {
+    padding: .375rem 2rem !important;
+}
+
+.form-group i {
+    position: absolute;
+    padding-top: 10px;
+    padding-left: 10px;
+    color: var(--text-color);
+}
+
+
+
+/*==========================Start Property Container Section==================*/
+.property-section .property-slider {
+    width: 100%;
+}
+
+.property-section .swiper-container {
+    width: 100%;
+    height: 100%;
+
+}
+
+.section-header h4 {
+    color: var(text-color);
+    font-size: 25px;
+}
+
+.section-header h2 {
+    color: var(--main-color);
+}
+
+.section-details {
+    padding-top: 30px;
+    justify-content: space-around
+}
+
+.section-details i {
+    font-size: 30px;
+    color: var(--main-color);
+}
+
+.section-details span {
+    font-size: 30px;
+    padding-left: 10px;
+}
+
+.property-text-section {
+    background: var(--bg-color);
+    padding: 20px 0;
+}
+
+.property-text-section h1 {
+    padding-top: 30px;
+    font-size: 25px;
+    color: var(--text-color);
+}
+
+.property-text-section h2 {
+    padding-top: 30px;
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+.property-text-section ul li {
+    list-style-type: circle; 
+    font-size: 18px;  
+}
+
+.property-text-section p {
+    font-size: 18px;
+    color: var(--text-color);
+
+}
+.property-text-section .lead {
+    padding: 8px 0;
+}
+
+.slide-image {
+    width: 100%;
+    overflow: hidden;
+}
+
+.slide-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}    
+
+
+
+/*=====================Start Media Queries======================*/
+@media screen and (max-width: 767px){
+    .section-details i {
+        font-size: 20px;
+    }
+    .section-details span {
+        font-size: 20px;
+    }
+    .property-action-bar a{
+        margin-left: 0px;
+    }
+    .property-action-bar-right p {
+        font-size: 1rem;
+    }
+    .contact-btn {
+        margin-left: 100px;
+        margin-top: 0;
+        margin-bottom: 30px;
+        font-size: 16px;
+        border-radius: 22px 0 22px 0; 
+    }
+    .property-action-bar-inner {
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .section-details i {
+        font-size: 25px;
+    }
+    .section-details span {
+        font-size: 25px;
+    }
+    .property-action-bar-right p {
+        font-size: 1.3rem;
+        text-align: start;
+    }
+    .contact-btn {
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding: 10px 20px;
+    }
+}
