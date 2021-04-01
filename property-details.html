@@ -13,9 +13,15 @@
     <!--SwiperJs-->
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
     <!--Style-->
-    <link rel="stylesheet" href="../../assets/css/style.css">
-    <link rel="stylesheet" href="../../assets/css/sherkin-island.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/property-details.css">
     <title>Red Coral Realty</title>
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
+    })();
+    </script>
 </head>
 <body>
     <!--Start Header Section-->
@@ -77,183 +83,92 @@
     <!--End Back to top button-->
 
     <!--Start Property Action Bar Section-->
-    <section class="property-action-bar-container border-bottom border-secondery">
+    <!-- Modal -->
+    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content row">
+                
+                <div class="modal-header row ml-auto">
+                    <div class="col-sm-10 text-center">
+                        <h5 class="modal-title" id="contactModalLabel">Financial Services Enquiry</h5>
+                    </div>
+                    <div class="col-sm-10 text-center">
+                        <p>Our team of financial experts are online, available by call or virtual meeting to guide you through your options. Get in touch today</p>
+                    </div>
+                    
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="myForm" onsubmit="return sendMail(this);">
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <i class="fas fa-user"></i>
+                                <input type="text" name="name" class="form-control" id="inputFullName" placeholder="Full Name" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <i class="fas fa-envelope"></i>
+                                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <i class="fas fa-mobile-alt"></i>
+                                <input type="number" name="phone" class="form-control" id="inputPhone" placeholder="Phone" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <select id="inputTime" name="time" class="form-control">
+                                <option selected>Select Preferred Callback Time</option>
+                                    <option>9am - 1pm</option>
+                                    <option>1pm - 4pm</option>
+                                    <option>4pm - 9pm</option>
+                                    <option>Any time</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-sm-12">
+                                <button type="submit" class="btn">Send Request</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="property-action-bar-container">
         <div class="container-fluid">
             <div class="row align-items-center property-action-bar-inner">
-                <div class="col-md-6">
+                <div class="col-xs-6 col-md-4">
                     <div class="property-action-bar">
-                        <a href="local-properties.html"><i class="fas fa-long-arrow-alt-left mr-2"></i> Back</a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="property-action-bar-right">
-                        <a href="" class="btn-custom">Contact Agent</a>
+                        <a href="local-properties.html"><i class="fas fa-long-arrow-alt-left"></i>Back</a>
                     </div>
                 </div>
             </div>
+            <div class="row align-items-center m-0">
+                <div class="col-xs-6 col-md-9 pr-0 pl-0 text-center">
+                    <div class="property-action-bar-right">
+                        <p class="d-none d-md-block">Interested in this property?<a href="tel:+3530123456765">Call us at (353) 01 23 456 765*</a>or</p>
+                        <span class="d-none d-md-block info-text">* Calls to this number will be recorded for quality, compliance and training purposes.</span>
+                    </div>
+                </div>
+                <div class="col-md-3 pr-0 pl-0">
+                    <!-- Button trigger modal -->
+                    <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Contact Agents</button>
+                </div>
+                
+            </div>
+            
+           
         </div>
     </section>
     <!--End Property Action Bar Section-->
 
     <!--Start Property Container Section-->
-    <!-- <section class="property-section">
-        <div class="container-fluid p-0">
-            <div class="property-sherkin-island-slider">
-                
-                <div class="swiper-container">
-                    
-                    <div class="swiper-wrapper">
-                        
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/index/doolin-house-dublin01.jpeg" alt="Doolin House, Dublin picture 1">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/02.jpeg" alt="Doolin House, Dublin picture 2">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/03.jpeg" alt="Doolin House, Dublin picture 3">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/04.jpeg" alt="Doolin House, Dublin picture 4">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/05.jpeg" alt="Doolin House, Dublin picture 5">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/06.jpeg" alt="Doolin House, Dublin picture 6">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/07.jpeg" alt="Doolin House, Dublin picture 7">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/08.jpeg" alt="Doolin House, Dublin picture 8">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/09.jpeg" alt="Doolin House, Dublin picture 9">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/10.jpeg" alt="Doolin House, Dublin picture 10">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/11.jpeg" alt="Doolin House, Dublin picture 11">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/12.jpeg" alt="Doolin House, Dublin picture 12">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/13.jpeg" alt="Doolin House, Dublin picture 13">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src="../../assets/img/local-properties/doolin-house-dublin/14.jpeg" alt="Doolin House, Dublin picture 14">
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="swiper-button-prev"></div>
-                    <div class="swiper-button-next"></div>
-                
-                    
-                </div>
-            </div>
-        </div>
-
-        <div class="container">
-            <div class="row mt-4">
-                <div class="col-sm-6 section-header">
-                    <h4>Asking Price</h4>
-                    <h2></h2>
-                </div>
-                <div class="col-sm-6">
-                    <div class="section-details d-flex align-self-center">
-                        <div>
-                            <i class="fas fa-bed align-self-center"></i>
-                            <span></span>
-                        </div>
-                        <div>
-                            <i class="fas fa-bath align-self-center"></i>
-                            <span></span>
-                        </div>
-                        <div>
-                            <i class="fas fa-ruler-combined align-self-center"></i>
-                            <span></span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <section class="property-text-section mt-3">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8">
-                        <h1>Doolin House<br> <br> Dublin<br>D23 E271</h1>
-                        <hr>
-                        <h2>Description</h2>
-                        <p class="lead">Features:</p>
-                        <ul>
-                            <li>Bright apartment with large windows and views of the water from all rooms</li>
-                            <li>Electric storage heating</li>
-                            <li>One underground parking space</li>
-                            <li>Spacious west facing patio terrace</li>
-                            <li>Three double bedrooms</li>
-                            <li>Service charges C. €2900 per annum</li>
-                            <li>Lift and highly secure apartment complex</li>
-                            <li>One kilometre from Grafton Street</li>
-                            <li>Excellent location on Dublin’s Silicon Docks</li>
-                        </ul>
-                        <p>Agents Comments:</p>
-                        <p>Three bedroom apartment with stunning water views. We are excited to present this waterfront three bedroom apartment with
-                            parking boasting spectacular water views of Grand Canal Dock The property is located on the fifth floor with a west facing
-                            aspect superbly located in the Charlotte Quay Dock development, adjacent to Boland Quay, Google HQ and Grand Canal Square.
-                            The accommodation comprises an entrance hall, open-plan living/dining room, kitchen, three double bedrooms, master en-suite
-                            and a main bathroom. Viewing comes highly recommended.
-                        </p>
-                        <p>Location:<br>
-                            Unrivalled setting overlooking Grand Canal Dock in Dublin’s hippest city quarter, home to a variety of neighbourhood bars,
-                            bistros, cafes and restaurants which cluster around the historic city dock. St Stephen’s Green, Ballsbridge, the ifsc and Sandymount
-                            are all within 15 minutes’ walking distance while the dart at Grand Canal Dock and the luas, within 10 minutes’ walk, provide easy
-                            access to the city centre and beyond. The locality benefits from a broad range of multinational employers and indigenous enterprises
-                            including Google, Airbnb, Facebook, hsbc, Dogpatch Labs, Stripe and many more.
-                        </p>
-                        
-                    </div>
-                    <div class="col-md-4"></div>
-                </div>
-            </div>
-        </section>
-    </section> -->
-    
-    
     <div class="prop-details-container"></div>
-
-    
     <!--End Property Container Section-->
 
 
@@ -343,8 +258,8 @@
      <!--SwiperJs-->
      <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!--JS-->
-    <script src="assets/js/main.js"></script>
     <script src="assets/js/properties.js"></script>
+    <script src="assets/js/main.js"></script>
     <script src="assets/js/property-swiper.js"></script>
 
 </body>
