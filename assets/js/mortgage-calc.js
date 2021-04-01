@@ -1,4 +1,4 @@
-//======================Start Mortgaga Calculator==============================//
+//======================Start Mortgage Calculator==============================//
 function calcLoan() {
     //Make variables
     let amount = document.getElementById("amount").value;
@@ -19,4 +19,4 @@ function calcLoan() {
     // }
   }
 
-//======================End Mortgaga Calculator==============================//
+//======================End Mortgage Calculator==============================//

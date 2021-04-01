@@ -37,3 +37,26 @@ $(document).ready(function() {
     
   });
   //===============End Request Location Form=========================//
+
+// EmailJs
+function sendMail(contactForm) {
+    emailjs.send("service_jjtjd9i", "template_fqa1rfl", {
+        name: contactForm.name.value,
+        email: contactForm.email.value,
+        phone: contactForm.phone.value,
+        message : contactForm.time.value,
+        location : contactForm.message2.value,
+        area : contactForm.message3.value,
+        radio : contactForm.message4.value
+    })
+    .then(function(res) {
+        alert('Your mail is sent!');
+        console.log("success", res.status);
+    },
+    function(error) {
+        alert('Oops... ' + JSON.stringify(error));
+        console.log("Failed", error);
+    });
+    document.getElementById("myForm").reset();
+    return false;
+  }
