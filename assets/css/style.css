@@ -125,11 +125,18 @@ html {
     height: 50px;
     cursor: pointer;
     outline: none;
-    border: 3px solid var(--main-color);
+    background:  var(--main-color);
+    color: #fff;
     border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,.25);
+    border: none;
     transition-duration: 0.2s;
     transition-timing-function: ease-in-out;
     z-index: 10001;
+}
+
+#back-to-top-btn:hover{
+    transform: scale(1.2);
 }
 
 
@@ -536,38 +543,6 @@ html {
     display: inline-block;
 }
 
-.footer .footer-widget .form-wrapper input {
-    height: 45px;
-    border: 1px solid var(--main-color);
-    font-weight: lighter;
-    padding-left: 20px;
-    border-radius: 25px;
-    margin-right: -25px;
-}
-
-.footer .footer-widget .form-wrapper input:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-.footer .footer-widget .btn-click {
-    border-radius: 25px;
-    padding: 5px 21px 4px 14px;
-    border: 0;
-    background: var(--dark-color);
-    color: #fff;
-    margin: 0;
-    position: relative;
-    left: 0;
-    z-index: 999;
-}
-
-.footer .footer-widget .btn-click:hover {
-    background: #fff;
-    color: cadetblue !important;
-    left: 5px;
-}
-
 .footer .footer-widget .footer-logo {
     margin-top: 25px;
     display: inline-block;
@@ -607,17 +582,15 @@ html {
 }
 
 /*=====================Start Media Queries======================*/
-@media screen and (min-width: 1400px){
-    .carousel-caption {
-        bottom: 100px;
+@media screen and (min-width: 1800px){
+    .request-container img {
+        padding-top: 30px;
     }
 }
 
-@media screen and (min-width: 1200px) and (max-width: 1300px) {
-    .btn {
-        padding: 5px 40px;
-        font-size: 15px;
-        border-radius: 25px 0 25px 0; 
+@media screen and (min-width: 1400px){
+    .carousel-caption {
+        bottom: 100px;
     }
 }
 
