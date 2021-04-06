@@ -15,13 +15,6 @@
     <!--Style-->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Red Coral Realty</title>
-    <!--EmailJs-->
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function() {
-    emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
-    })();
-    </script>
 </head>
 <body>
     <!--Start Header Section-->
@@ -42,11 +35,8 @@
                             Buy</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="local-properties.html">Local Properties</a>
-                                <a class="dropdown-item" href="#">Abroad Properties</a>
+                                <a class="dropdown-item" href="abroad-properies.html">Abroad Properties</a>
                             </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Sell</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="mortgage.html">Mortgage</a>
@@ -55,9 +45,8 @@
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             News</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="#">About Us</a>
-                                <a class="dropdown-item" href="#">Blog</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="research.html">Research</a>
+                                <a class="dropdown-item" href="buyAdvice.html">Advice for Buyers</a>
                             </div>
                         </li>
                         <li class="nav-item dropdown">
@@ -65,11 +54,9 @@
                             Contact</a>
                             <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                                 <a class="dropdown-item" href="request-valuation.html">Request a Valuation</a>
-                                <a class="dropdown-item" href="#">Customer Service</a>
-                                <a class="dropdown-item" href="#">Something else here</a>
+                                <a class="dropdown-item" href="contact.html">Customer Service</a>
                             </div>
-                        </li>
-                        
+                        </li> 
                     </ul>
                 </div>
             </div>
@@ -78,7 +65,7 @@
     <!--End Header Section-->
 
     <!--Start Back to top button-->
-    <button id="back-to-top-btn" class="" aria-label="Back to top">  
+    <button id="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i> 
     </button>
     <!--End Back to top button-->
 
@@ -191,7 +178,7 @@
                                 <span>1 bedrooms</span>
                                 <span>1 bathrooms</span> 
                             </div>
-                            <a href="property-details.html?property_id=1" class="btn" onclick="showPropertyDetails()">Read More</a>
+                            <a href="property-details.html?property_id=1" class="btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -208,7 +195,7 @@
                                 <span>3 bedrooms</span>
                                 <span>1 bathrooms</span> 
                             </div>
-                            <a href="property-details.html?property_id=2" class="btn" onclick="showPropertyDetails()">Read More</a>
+                            <a href="property-details.html?property_id=2" class="btn">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -226,7 +213,7 @@
                                 <span>3 bedrooms</span>
                                 <span>2 bathrooms</span> 
                             </div>
-                            <a href="property-details.html?property_id=3" class="btn" onclick="showPropertyDetails()">Read More</a>
+                            <a href="property-details.html?property_id=3" class="btn">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -244,7 +231,7 @@
                                 <span>3 bedrooms</span>
                                 <span>2 bathrooms</span> 
                             </div>
-                            <a href="property-details.html?property_id=4" class="btn" onclick="showPropertyDetails()">Read More</a>
+                            <a href="property-details.html?property_id=4" class="btn">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -262,7 +249,7 @@
                                 <span>5 bedrooms</span>
                                 <span>2 bathrooms</span> 
                             </div>
-                            <a href="property-details.html?property_id=5" class="btn" onclick="showPropertyDetails()">Read More</a>
+                            <a href="property-details.html?property_id=5" class="btn">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -280,7 +267,7 @@
                                 <span>4 bedrooms</span>
                                 <span>3 bathrooms</span> 
                             </div>
-                            <a href="property-details.html?property_id=6" class="btn" onclick="showPropertyDetails()">Read More</a>
+                            <a href="property-details.html?property_id=6" class="btn">Read More</a>
                         </div>   
                     </div>
                 </div>
@@ -325,7 +312,7 @@
             <h6 class="ml-4 move-from-left">Or you thinking about abroad...</h6>
             <h1 class="ml-4 mb-4 move-from-left">Recently Added Properties Abroad</h1>
             <div class="text-right move-from-left">
-                <a href="#">Abroad Properties <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
+                <a href="abroad-properies.html">Abroad Properties <i class="fas fa-long-arrow-alt-right ml-2"></i></a>
             </div>
             <!--Resent Property Slider-->
             <!--Get from https://swiperjs.com/get-started-->
@@ -334,7 +321,7 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper mt-2">
                         <!-- Slides -->
-                        <a href="#" class="swiper-slide">
+                        <a href="property-details.html?property_id=9" class="swiper-slide">
                             <div class="property-list shadow">
                                 <div class="image">
                                     <img src="assets/img/index/abroad-classic01.jpg" class="img-fluid" alt="Spanish House">
@@ -351,13 +338,13 @@
                                         <i class="fas fa-bed mr-2 align-self-center"></i>
                                         <span class="mr-3">5</span>
                                         <i class="fas fa-bath mr-2 align-self-center"></i>
-                                        <span>3</span>
+                                        <span>5</span>
                                     </div>
                                 </div>
                             </div>
                         </a>
 
-                        <a href="#" class="swiper-slide">
+                        <a href="property-details.html?property_id=10" class="swiper-slide">
                             <div class="property-list shadow">
                                 <div class="image">
                                     <img src="assets/img/index/abroad-unique02.jpg" class="img-fluid" alt="Stone house">
@@ -379,30 +366,31 @@
                                 </div>
                             </div>
                         </a>
-                        <a href="#" class="swiper-slide">
+                        <a href="property-details.html?property_id=11" class="swiper-slide">
                             <div class="property-list shadow">
                                 <div class="image">
                                     <img src="assets/img/index/abroad-france01.jpg" class="img-fluid" alt="French Conty House">
                                 </div>
                                 <div class="text-right">
-                                    <p>Asking price <h4>€1,550,000</h4></p>
+                                    <p>Asking price <h4>€65,550,000</h4></p>
                                 </div>
                                 <div class="d-flex justify-content-between mb-4">
                                     <div class="item">
-                                        <h4 class="m-0">Château de Chenonceau</h4>
-                                        <p class="m-0">Loire Valley, France</p>
+                                        <h4 class="m-0">Saint-Jean-Cap-Ferrat</h4>
+                                        <p class="m-0">Provence-Alpes-Côte D'azur, France
+                                        </p>
                                     </div>
                                     <div class="item d-flex align-self-center">
                                         <i class="fas fa-bed mr-2 align-self-center"></i>
-                                        <span class="mr-3">5</span>
+                                        <span class="mr-3">7</span>
                                         <i class="fas fa-bath mr-2 align-self-center"></i>
-                                        <span>3</span>
+                                        <span>7</span>
                                     </div>
                                 </div>
                             </div>
                         </a>
 
-                        <a href="#" class="swiper-slide">
+                        <a href="property-details.html?property_id=12" class="swiper-slide">
                             <div class="property-list shadow">
                                 <div class="image">
                                     <img src="assets/img/index/abroad-maldives01.jpg" class="img-fluid" alt="maldives beach house">
@@ -425,7 +413,7 @@
                             </div>
                         </a>
 
-                        <a href="#" class="swiper-slide">
+                        <a href="property-details.html?property_id=13" class="swiper-slide">
                             <div class="property-list shadow">
                                 <div class="image">
                                     <img src="assets/img/index/abroad-edinburgh01.jpg" class="img-fluid" alt="edinburgh uk house">
@@ -435,7 +423,7 @@
                                 </div>
                                 <div class="d-flex justify-content-between mb-4">
                                     <div class="item">
-                                        <h4 class="m-0">Boraston house</h4>
+                                        <h4 class="m-0">Boraston House</h4>
                                         <p class="m-0">Edinburgh, UK</p>
                                     </div>
                                     <div class="item d-flex align-self-center">
@@ -509,14 +497,13 @@
         </div>
     </section>
     <div class="request-container">
-        <div class="row">
-            
-            <div class="col-lg-6 align-self-center justify-content-center">
-                <div class="col-md-12 col-lg-9 text-center">
+        <div class="row justify-content-center">  
+            <div class="col-md-9 col-lg-6 align-self-center justify-content-center">
+                <div class="col-md-12 col-lg-12 text-center">
                     <div class="form-header-h1 ">
                         <h1>Thinking of selling or letting your property?</h1>
                     </div>
-                    <div class="border-top border-danger mx-auto mt-md-5 mb-md-5"></div>
+                    <div class="border-top border-danger mx-auto mt-md-5 mb-md-3"></div>
                     <div class="form-header-p">
                         <p>This is a free service and there is no obligation to engage our services, so if you need a valuation for
                             either selling or renting your property we’re ready to help. You can book a valuation with any of our offices.
@@ -524,6 +511,12 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-12 col-lg-6 pr-0 align-self-center justify-content-center">
+                <img src="assets/img/index/property-in-hand.png" class="img-fluid" alt="property in hand">
+            </div>
+            <div>
+                <a href="request-valuation.html" class="btn text-center">Book a valuation</a>
+            </div> 
         </div>
     </div>
     <!--End Features Section-->
@@ -535,7 +528,7 @@
         </div>            
         <div class="row what-we-do text-center">
             <div class="col-md-12 col-lg-4">
-                <a href="#">
+                <a href="buyAdvice.html">
                     <img src="assets/img/index/advice01.jpg" alt="women in business" class="img-fluid pt-3">
                     <h3 class="my-4 text-center">ADVICE FOR BUYERS</h3>
                     <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
@@ -548,7 +541,7 @@
             
             <div class="col-md-12 col-lg-4">
                 <a href="mortgage.html">
-                    <img src="assets/img/index//mortgages01.jpg" alt="mortgages picture" class="img-fluid pt-3">
+                    <img src="assets/img/index/mortgages01.jpg" alt="mortgages picture" class="img-fluid pt-3">
                     <h3 class="my-4 text-center">MORTGAGES</h3>
                     <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
                     <p>From getting mortgage-ready to preparing and submitting your full application, our Mortgages division
@@ -558,7 +551,7 @@
             </div>
             
             <div class="col-md-12 col-lg-4">
-                <a href="#">
+                <a href="research.html">
                     <img src="assets/img/index/research01.jpg" alt="monitor screen picture" class="img-fluid pt-3">
                     <h3 class="my-4 text-center">RESEARCH</h3>
                     <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
@@ -576,7 +569,7 @@
         <div class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 mb-lg-4 mb-xl-0 footer-widget d-none d-lg-block">
+                    <div class="col-lg-4 mb-lg-4 mb-xl-0 footer-widget d-none d-lg-block">
                         <h4>About Us</h4>
                         <hr>
                         <p>We are market research experts who work with clients to create high quality, data driven
@@ -585,7 +578,7 @@
                             <h3><span>Red Coral</span> Realty</h3>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
+                    <div class="col-lg-4 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
                         <h4>Contact Info</h4>
                         <hr>
                         <div class="footer-address">
@@ -594,30 +587,15 @@
                             <span>Email: info@redcoralrealty.com</span>
                         </div>
                     </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
+                    <div class="col-lg-4 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
                         <h4 class="d-none d-md-block">Quick Links</h4>
                         <hr>
                         <ul>
                             <li><a href="local-properties.html">Local Properies</a></li>
                             <li><a href="mortgage.html">Mortgages</a></li>
                             <li><a href="request-valuation.html">Reqiuest Valuation</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="contact.html">Contact</a></li>
                         </ul>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 mb-lg-4 mb-xl-0 footer-widget">
-                        <h4 class="d-none d-lg-block">Newsletter</h4>
-                        <hr>
-                        <p>Sing Up to Our Newsletter</p>
-                        <div class="form-wrapper">
-                            <form id="myForm" onsubmit="return sendMail(this);">
-                                <div class="input-group">
-                                    <input type="email" class="form-control" id="email" name="email" placeholder="Enter Your Email">
-                                    <div class="input-group-append">
-                                        <button class="btn btn-click" type="submit"><i class="fab fa-telegram-plane"></i></button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
                     </div>
                 </div>
                 <div class="border-top border-white w-100 mx-auto mt-5"></div>
