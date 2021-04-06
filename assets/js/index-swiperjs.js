@@ -6,6 +6,7 @@ const swiper = new Swiper('.swiper-container', {
       prevEl: '.swiper-button-prev',
     },
     // Optional parameters
+    items: 3,
     loop: true,
     'spaceBetween' : 20,
     'centeredSlides': true,
