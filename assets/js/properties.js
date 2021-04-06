@@ -187,6 +187,122 @@ var LOCAL_PROPERTIES = [
         'assets/img/local-properties/sherkin-island/16.jpg', 'assets/img/local-properties/sherkin-island/17.jpg', 'assets/img/local-properties/sherkin-island/18.jpg',
         'assets/img/local-properties/sherkin-island/19.jpg', 'assets/img/local-properties/sherkin-island/20.jpg', 'assets/img/local-properties/sherkin-island/21.jpg',
         'assets/img/local-properties/sherkin-island/22.jpg', 'assets/img/local-properties/sherkin-island/23.jpg']
+    },
+    {
+        id: 9,
+        name: "Charles III. Palace",
+        address: 'Málaga, Spain',
+        price: '€1,750,000',
+        bedroom: '5',
+        bathroom: '5',
+        areas: '628 sqm',
+
+        features: ['Sea','Golf', 'Unfurnished'],
+
+        description: ['Custom built masterpiece in the highly desirable pocket of La Reserva in Sotogrande with panoramic mountain and sea views.' ,
+        'The property boasts a modern organic design perfect for indoor/outdoor living surrounded by elegant finishes, including expansive glass walls and an abundance of natural light.',
+        'It is distributed over 3 levels and blend modern luxury and technology and comprises of 5 bedrooms, 5 bathrooms and basement with double garage and storeroom.', 
+        'A terrace tops this volume, leading to a higher set of terraces and a swimming pool perched on the top of the outcrop next to a shaded penthouse area.', 
+        'Outside is the lush garden with terrace and infinity pool area. Other features include underfloor heating, double glazing and air conditioning.'],
+        
+        imagePaths: ['assets/img/abroad-properties/spain/01.jpeg', 'assets/img/abroad-properties/spain/02.jpeg', 'assets/img/abroad-properties/spain/03.jpeg',
+        'assets/img/abroad-properties/spain/04.jpeg', 'assets/img/abroad-properties/spain/05.jpeg', 'assets/img/abroad-properties/spain/06.jpeg',
+        'assets/img/abroad-properties/spain/07.jpeg', 'assets/img/abroad-properties/spain/08.jpeg', 'assets/img/abroad-properties/spain/09.jpeg',
+        'assets/img/abroad-properties/spain/10.jpeg', 'assets/img/abroad-properties/spain/11.jpeg']
+    },
+    {
+        id: 11,
+        name: "Saint-Jean-Cap-Ferrat",
+        address: "Provence-Alpes-Côte D'azur, France",
+        price: '€65,550,000',
+        bedroom: '7',
+        bathroom: '7',
+        areas: '700 sqm',
+
+        features: ['Gymnasium', 'Eco-friendly',
+        'Outdoor pool',
+        'Private garden',
+        'Waterfront ',
+        'Investment',
+        'Air conditioning',
+        ],
+
+        description: [' Exceptional and unique property of about 700 sqm, located first line on the West side of Saint Jean with spectacular panorama on the Riviera and the Bay of Villefranche. ' ,
+        "It offers very luxurious services and equipment : 2 heated swimming pools (one with sea water), funiculars, beach access. The property has a very refined decor and spacious reception areas. ",
+        "The accommodation comprises a vast atrium reception area, a double living room, a fully equipped kitchen with cold storage, a dining room for 12 guests, a master bedroom, 5 suites, all overlooking the sea, an office, garage for 5 cars, caretaker's house and staff apartment.", 
+        'It also benefits from a large Mediterranean landscaped garden, 2 swimming pools with their pool houses, several shaded terraces and relaxation areas.', 
+        'The villa also offers a small private beach and private pontoon.', 
+        "For more information, please contact us. For confidentially reasons, some properties are not advertised. We would be delighted to keep you informed."],
+        
+        imagePaths: ['assets/img/abroad-properties/france/01.jpeg', 'assets/img/abroad-properties/france/02.jpeg', 'assets/img/abroad-properties/france/03.jpeg',
+        'assets/img/abroad-properties/france/04.jpeg', 'assets/img/abroad-properties/france/05.jpeg', 'assets/img/abroad-properties/france/06.jpeg',
+        'assets/img/abroad-properties/france/07.jpeg', 'assets/img/abroad-properties/france/08.jpeg', 'assets/img/abroad-properties/france/09.jpeg',
+        'assets/img/abroad-properties/france/10.jpeg', 'assets/img/abroad-properties/france/11.jpeg']
+    },
+    {
+        id: 12,
+        name: 'Kunfunadhoo Island',
+        address: 'Baa Atoll, Republic Of Maldives',
+        price: '€10,775,865',
+        bedroom: '9',
+        bathroom: '9',
+        areas: '2600 sqm',
+
+        features: ['24hr security', 'Gymnasium', 'Eco-friendly', 'Branded residences',
+        'Waterfront',
+        'Butler service',
+        'Concierge',
+        'Outdoor pool',
+        'Spa & wellness facilities',
+        'Watersports',
+        'Waterview',
+        'Private garden',
+        'Staff quarters',
+        'Direct access to beach',
+        'Guest house',
+        'Investment',
+        'Air conditioning',
+        'Sea views',
+        'Frontline to beach',
+        'Access to hotel facilities'],
+
+        description: ['The ultimate luxury island mansion on an oceanic scale; the largest private residence at the 5* Soneva Resort in the Maldives complete with nine spacious bedrooms, an expansive swimming pool with sunken dining area and its own private waterslide.' ,
+        'Located on the sunrise side of the island, close to Dolphin Beach, the property offers views over the Indian Ocean and direct access onto the pristine white sand beach.',
+         'With a built area of approximately 2,600 sqm (28,000 sq ft) and a plot size of around 5,540 sqm (circa 1.37 acres), it’s the perfect holiday home for large families or for those wanting to share the experience with friends.', 
+         'Spa, exercise, sauna and steam without having to leave the confines of this forested mansion. The sunken dining area is ideal for hosting dinners and during the day the generous terraces around the curved lagoon-style pool provides plenty of options for lazing around and relaxing.', 
+         'A large and detached master bedroom with en suite open-air garden bathroom close to the beach provides exceptional privacy and a sense of escape. It even has its own separate swimming pool. The 5* Private Reserve also includes five guest bedrooms, specialty accommodation for children plus a nanny’s room and a Mr Mrs Friday’s (butler’s) bedroom. There is also plenty of entertainment for adults and children including a large TV lounge, living room and study, guest lounge, a gym and of course a private pool with a waterslide (providing as much fun for adults as for children) and access to a secluded section of the beach.', 
+         'All accommodation on Soneva Fushi comes with its own bicycles and his and her butlers for guests to use as needed. Outside the Private Reserve there is still plenty to do, with the resort also including a star observatory, a Glass Studio (glass blowing), an outdoor cinema at night and numerous dining venues.', 
+         'During the day, the resort offers guided scuba diving with a marine biologist, snorkelling with manta rays and a dinner and many more activities from sunset dolphin cruises to picnics on a private island. For those looking for something more laidback and on land there is also a day spa which offers yoga detox programs and personalised beauty treatments.', 
+         'One of the best features at Soneva Fushi is The Den – a kid’s paradise. Designed for children 4 years and above but suitable for all ages, The Den offers a wealth of activities from its Lego Room to the family friendly pool area with its own waterslide. The Den is complimentary for all in-house guests. Soneva offers a weekly programme of activities for all younger guests, and most of these activities are also complimentary.', 
+         'Soneva Fushi Resort is the original desert island hideaway in the Maldives. Vast, multi-bedroom luxury villas and private residences are hidden among dense foliage within touching distance of a pristine, Biosphere unesco protected coral reef.', 
+         'Located in the Baa Atoll, just 30 minutes by seaplane from Malé International airport, Soneva Fushi offers a limited number of private residences – the first resort homes available to foreigners in the Maldives.',
+         'Soneva Private Residences reflect the signature experience and style for which Soneva has become world renowned; understated design and luxuriously spacious accommodation, uncompromising quality and service, and environmental sensitivity.'],
+        
+        imagePaths: ['assets/img/abroad-properties/maldives/01.jpeg', 'assets/img/abroad-properties/maldives/02.jpeg', 'assets/img/abroad-properties/maldives/03.jpeg',
+        'assets/img/abroad-properties/maldives/04.jpeg', 'assets/img/abroad-properties/maldives/05.jpeg', 'assets/img/abroad-properties/maldives/06.jpeg',
+        'assets/img/abroad-properties/maldives/07.jpeg', 'assets/img/abroad-properties/maldives/08.jpeg', 'assets/img/abroad-properties/maldives/09.jpeg',
+        'assets/img/abroad-properties/maldives/10.jpeg', 'assets/img/abroad-properties/maldives/11.jpeg', 'assets/img/abroad-properties/maldives/12.jpeg',
+        'assets/img/abroad-properties/maldives/13.jpeg', 'assets/img/abroad-properties/maldives/14.jpeg', 'assets/img/abroad-properties/maldives/15.jpeg',
+        'assets/img/abroad-properties/maldives/16.jpeg', 'assets/img/abroad-properties/maldives/17.jpeg', 'assets/img/abroad-properties/maldives/18.jpeg',
+        'assets/img/abroad-properties/maldives/19.jpeg']
+    },
+    {
+        id: 13,
+        name: 'Boraston House',
+        address: 'Edinburgh, UK',
+        price: '€3.750,000',
+        bedroom: '8',
+        bathroom: '8',
+        areas: '3500 sqm',
+
+        features: [' Central Heating', 'En-Suite', 'Mains water', 'Septic tank sewerage disposal', 'Oil-fired central heating', 'Bulk gas for kitchen', '3-phase electricity', 'Broadband'],
+
+        description: ["The priciest home for sale in Edinburgh, a three-story Edwardian manor house, has stood on the affluent outskirts of the city for more than 100 years—and yet, hardly anyone knows it’s there. That’s exactly the appeal: Boraston House, as it’s known, is completely secluded while less than a 10-minute drive to the center of the city. A private drive at the end of a quiet lane in Ravelston, a suburb of Edinburgh, leads to the grand, three-story stone mansion and two-acre gardens. Ravelston Golf Club surrounds Boraston on two sides, while the trees of Hillwood Park create a wild forest wall around the rest of the property line, images of the home show. The front facade is marked by two prominent bays and a steep gable roof with dormer windows. A vestibule with original flagstone flooring leads into an entrance hall off of which are all of the home’s reception rooms, including an 800-square-foot drawing room. There’s also a glass-enclosed conservatory, sitting room, study and dining room. An open kitchen with Shaker-style units steps down into a sunken informal dining space with painted exposed stone walls. Eight bedrooms are spread across the top two floors of the house, in addition to a family room on the second level. The master suite includes a dressing room and en-suite bathroom. The house retains much of its period character, including numerous fireplaces, ornate plasterwork and leaded windows. There’s also a standalone summerhouse, a gazebo of sorts, that sits at the edge of the propertyline overlooking the golf course, according to the listing. The tranquil refuge is surrounded by colorful flower beds of peonies, honeysuckle, lavender, azaleas and roses."],
+        
+        imagePaths: ['assets/img/abroad-properties/edinburgh-house/01.jpg', 'assets/img/abroad-properties/edinburgh-house/02.jpeg', 'assets/img/abroad-properties/edinburgh-house/03.jpeg',
+        'assets/img/abroad-properties/edinburgh-house/04.jpeg', 'assets/img/abroad-properties/edinburgh-house/05.jpeg', 'assets/img/abroad-properties/edinburgh-house/06.jpeg',
+        'assets/img/abroad-properties/edinburgh-house/07.jpeg', 'assets/img/abroad-properties/edinburgh-house/08.jpeg', 'assets/img/abroad-properties/edinburgh-house/09.jpeg',
+        'assets/img/abroad-properties/edinburgh-house/10.jpeg']
     }
 ];
 
@@ -318,7 +434,7 @@ function generatePropertyHTMLFromDetails(propertyDetails) {
                         <p class="lead">Features:</p>
                         <ul>${propertyDetails.features.map(element => `<li>${element}</li>`).join("")}</ul>
                         <p class="lead">Location:</p>
-                        <p> ${propertyDetails.description}
+                        <p class="lead"> ${propertyDetails.description}
                         </p>   
                     </div>
                     <div class="col-md-4"></div>
@@ -360,9 +476,3 @@ function showPropertyDetails() {
 };
 
 showPropertyDetails();     
-
-
-
-// for (i=0; i<imagePaths.length; i++) {
-            
-        // }
