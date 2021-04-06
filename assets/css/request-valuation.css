@@ -12,6 +12,10 @@
     position: absolute;
     color: #fff;
 }
+.image-caption h1 {
+    font-size: 60px;
+    letter-spacing: 2px;
+}
 
 /*==============================Start Info Section=================*/
 .info {
@@ -148,5 +152,11 @@
     }
     .team {
         padding-bottom: 100px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .image-caption h1 {
+        font-size: 30px;
     }
 }

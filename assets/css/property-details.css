@@ -82,7 +82,7 @@
 }
 
 .modal-header h5, p {
-    color: var(--text-color);
+    /* color: var(--text-color); */
 }
 
 .modal-header .close {
