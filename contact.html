@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Bootsrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+     <!--Font Awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <!--SwiperJs-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <!--Style-->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/contact.css">
+    <title>Contact | Red Coral Realty</title>
+    <!--EmailJs-->
+    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+    (function() {
+    emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
+    })();
+    </script>
+</head>
+<body>
+    <!--Start Header Section-->
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><span>Red Coral</span> Realty</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Buy</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="local-properties.html">Local Properties</a>
+                                <a class="dropdown-item" href="abroad-properies.html">Abroad Properties</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mortgage.html">Mortgage</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            News</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="research.html">Research</a>
+                                <a class="dropdown-item" href="buyAdvice.html">Advice for buyers</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Contact</a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="request-valuation.html">Request a Valuation</a>
+                                <a class="dropdown-item active" href="contact.html">Customer Service<span class="sr-only">(current)</span></a>
+                            </div>
+                        </li> 
+                    </ul>
+                </div>
+            </div>
+        </nav> 
+    </header>
+    <!--End Header Section-->
+
+    <!--Start Back to top button-->
+    <button id="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i>  
+    </button>
+    <!--End Back to top button-->
+
+    <!--Satrt Hero Section--> 
+    <section class="hero-img"> 
+        <div id="container">
+            <div class="row align-items-center">
+                <div class="img-container">
+                    <img src="assets/img/contact/contact01.jpeg" class="img-fluid" alt="man useing phone">
+                </div>
+                <div class="col-12 text-left ml-5 image-caption">
+                    <h1>Contact</h1>
+                </div>
+            </div>
+        </div>   
+    </section>     
+    <!--Satrt Hero Section-->
+    
+
+    <!--Start Advice tips Section -->
+    <section class="advice-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-white-bg">
+                    <div class="text-center">
+                        <h1>Customer Service</h1>
+                        <div class="border-top border-danger mx-auto mt-md-5 mb-md-3"></div>
+                        <p>No matter what your query, our team are ready and waiting to hear from you.<br>
+                            For legal valuations or a free market appraisal on your home please visit<a href="request-valuation.html"> this page.</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!---->
+    <section class="contact-form">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 d-flex">
+                    <p class="lead">LEAVE FEEDBACK</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <form id="myForm" onsubmit="return sendMail(this);" class="signup-form" >
+                        <div class="requet-content">
+                            <div class="form-row">
+                                <div class="col-md-12 form-group text-left">
+                                    <label for="name">Full Name *</label>
+                                    <input type="text" class="form-control" id="name" name="name" required>
+                                    <label for="email">Email *</label>
+                                    <input type="email" class="form-control" id="email" name="email" required>
+                                    <label for="location">Your Location</label>
+                                    <select name="message" id="location" class="form-control">
+                                        <option value="">Select</option>   
+                                    </select>
+                                    <label for="message2">Comment*</label>
+                                    <textarea name="message2" id="message2" rows="5" class="form-control" required></textarea>     
+                                </div>
+                                <div class="btn">
+                                    <button type="submit" name="submit" class="submit-btn">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="col-lg-6 mt-5 d-none d-lg-block">
+                    <img src="assets/img/contact/contact02.jpeg" class="img-fluid" alt="">
+                </div>
+            </div> 
+        </div>
+    </section>
+    <!--End Advice tips Section-->
+
+    <!-- Start Three Column Section -->
+    <div class="container p-0 pt-lg-5">       
+        <div class="row what-we-do text-center">
+            <div class="col-md-12 col-lg-4">
+                <a href="buyAdvice.html">
+                    <img src="assets/img/index/advice01.jpg" alt="women in business" class="img-fluid pt-3">
+                    <h3 class="my-4 text-center">ADVICE FOR BUYERS</h3>
+                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                    <p>Buying property is a complicated process. With over 30 years’ experience working with buyers all
+                        over Ireland, we’ve researched and developed a selection of useful guides and resources to provide
+                        you with the insight you need.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="col-md-12 col-lg-4">
+                <a href="mortgage.html">
+                    <img src="assets/img/index/mortgages01.jpg" alt="mortgages picture" class="img-fluid pt-3">
+                    <h3 class="my-4 text-center">MORTGAGES</h3>
+                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                    <p>From getting mortgage-ready to preparing and submitting your full application, our Mortgages division
+                        have the insight and expertise you need to help secure you the best possible outcome.
+                    </p>
+                </a>
+            </div>
+            
+            <div class="col-md-12 col-lg-4">
+                <a href="research.html">
+                    <img src="assets/img/index/research01.jpg" alt="monitor screen picture" class="img-fluid pt-3">
+                    <h3 class="my-4 text-center">RESEARCH</h3>
+                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                    <p>Applying in-depth research methodologies, we regularly publish market updates, trends, forecasts
+                        and more helping you make informed property decisions backed up by hard facts and information.
+                    </p>
+                </a>
+            </div>  
+        </div>
+    </div>
+    <!-- End Three Column Section -->
+    
+    
+
+
+    
+
+    <!--Start Footer Section-->
+    <footer class="footer-border">
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 mb-lg-4 mb-xl-0 footer-widget d-none d-lg-block">
+                        <h4>About Us</h4>
+                        <hr>
+                        <p>We are market research experts who work with clients to create high quality, data driven
+                            and unrivaled property market research.</p>
+                        <div class="footer-logo">
+                            <h3><span>Red Coral</span> Realty</h3>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
+                        <h4>Contact Info</h4>
+                        <hr>
+                        <div class="footer-address">
+                            <p>176 Pembroke Road, Ballsbridge, Dublin 4, D04 EN80</p>
+                            <span>Phone: +353 01 23 456 765</span>
+                            <span>Email: info@redcoralrealty.com</span>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
+                        <h4 class="d-none d-md-block">Quick Links</h4>
+                        <hr>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="local-properties.html">Local Properties</a></li>
+                            <li><a href="mortgage.html">Mortgages</a></li>                           
+                            <li><a href="request-valuation.html">Request a Valuation</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="border-top border-white w-100 mx-auto mt-5"></div>
+                <div class="row">
+                    <div class="col-lg-8 col-md-12 footer-bottom align-items-center">
+                        <p class="footer-text m-0">
+                            Copyright&copy;<script>document.write(new Date().getFullYear());</script>
+                            All rights Reserved Red Coral Realty
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-12 text-center text-lg-right social-media">
+                        <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">Facebook</span>
+                        </a>
+                        <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">Instagram</span>
+                        </a>
+                        <a href="http://www.youtube.com" target="_blank" rel="noopener"><i class="fab fa-youtube" aria-hidden="true"></i>
+                            <span class="sr-only">YouTube</span>
+                        </a>
+                        <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">Twitter</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!--Start Footer Section-->
+
+
+    <!--Start Scripts-->
+    <!--Bootstarp-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    <!--JS-->
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/request-loc-form.js"></script>
+    <script src="assets/js/contact.js"></script>
+    
+</body>
+</html>
