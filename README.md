@@ -55,10 +55,12 @@ Deploy this project
     <img src="assets/img/TESTING.md-img/01.png" width="500" alt="GitHub Start Project">
 4. Give name to the Repository.
     <img src="assets/img/TESTING.md-img/02.png" width="500" alt="GitHub Create Repo">
-5. Your repo is created. There are three ways to upload Html code. Follow the one you would like to push your code into GitHub.
+5. Your repo is created. 
+   There are three ways to upload Html code. Follow the one you would like to push your code into GitHub.
     <img src="assets/img/TESTING.md-img/03.png" width="500" alt="GitHub three ways to create a repo">
-6. Make sure you have git install in your system. How to install Git you can [find more here](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup)
-   Follow the instructions and push your code into into origin main branch.
+6. Make sure you have git install in your system. How to install Git you can [find more here](https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup).
+
+   Follow the instructions and push your code into origin main branch.
 7. Ones you have transferred all the files on your GitHub repository from the menu select Settings
 ![Settings button](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubsettings.png)
 8. Scroll down to the GitHub Pages section.
@@ -69,7 +71,7 @@ Deploy this project
 
 
 
-#### How to run this project locally
+## How to run this project locally
 To clone this project into Gitpod you will need:
 * A Github account. [Create here](https://github.com/)
 * Chrome or Firefox browser.

@@ -13,7 +13,7 @@ var LOCAL_PROPERTIES = [
         'Management Fee - Approx. €890 per annum', 'Underground Car Park', 'Secure Gated Development', ' Ideal first time buyer or investor home ready to move in or rent',
         'Ample Storage throughout', 'Top floor dream apartment', 'Spacious one bedroom apartment presented in show house condition',
         'Large open living/dining area with door to balcony'],
-        description: ['We are proud to introduce No. 36 Doolin House to the Dublin property Market.', 
+        description: ['We are proud to introduce No. 36 Doolin House to the Dublin property Market.<br />', 
         'This fantastic one bedroom apartment is presented in immaculate condition throughout and would suit first time buyers or investors alike.', 
         'Located on the Malahide Road, this modern apartment is situated in this modern development on the outskirts of the city centre.',
         'Doolin House benefits from a most convenient location with a host of amenities on its doorstep. This wonderful apartment provides bright and spacious accommodation which is further enhanced by a large balcony.', 
