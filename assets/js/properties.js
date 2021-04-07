@@ -13,7 +13,12 @@ var LOCAL_PROPERTIES = [
         'Management Fee - Approx. €890 per annum', 'Underground Car Park', 'Secure Gated Development', ' Ideal first time buyer or investor home ready to move in or rent',
         'Ample Storage throughout', 'Top floor dream apartment', 'Spacious one bedroom apartment presented in show house condition',
         'Large open living/dining area with door to balcony'],
-        description: ['We are proud to introduce No. 36 Doolin House to the Dublin property Market. This fantastic one bedroom apartment is presented in immaculate condition throughout and would suit first time buyers or investors alike. Located on the Malahide Road, this modern apartment is situated in this modern development on the outskirts of the city centre. Doolin House benefits from a most convenient location with a host of amenities on its doorstep. This wonderful apartment provides bright and spacious accommodation which is further enhanced by a large balcony. This is a stunning development with gated private manicured grounds adjacent to Clarehall Shopping Centre, Northern Cross and all surrounding amenities. Easy access to the city centre with excellent bus service. Within minutes drive to Dublin Airport, M50 and M1 motorways.'],
+        description: ['We are proud to introduce No. 36 Doolin House to the Dublin property Market.', 
+        'This fantastic one bedroom apartment is presented in immaculate condition throughout and would suit first time buyers or investors alike.', 
+        'Located on the Malahide Road, this modern apartment is situated in this modern development on the outskirts of the city centre.',
+        'Doolin House benefits from a most convenient location with a host of amenities on its doorstep. This wonderful apartment provides bright and spacious accommodation which is further enhanced by a large balcony.', 
+        'This is a stunning development with gated private manicured grounds adjacent to Clarehall Shopping Centre, Northern Cross and all surrounding amenities. Easy access to the city centre with excellent bus service.',
+        'Within minutes drive to Dublin Airport, M50 and M1 motorways.'],
         imagePaths: ['assets/img/index/doolin-house-dublin01.jpeg', 'assets/img/local-properties/doolin-house-dublin/02.jpeg', 'assets/img/local-properties/doolin-house-dublin/03.jpeg',
         'assets/img/local-properties/doolin-house-dublin/04.jpeg', 'assets/img/local-properties/doolin-house-dublin/05.jpeg', 'assets/img/local-properties/doolin-house-dublin/06.jpeg',
         'assets/img/local-properties/doolin-house-dublin/07.jpeg', 'assets/img/local-properties/doolin-house-dublin/08.jpeg', 'assets/img/local-properties/doolin-house-dublin/09.jpeg',
@@ -297,7 +302,17 @@ var LOCAL_PROPERTIES = [
 
         features: [' Central Heating', 'En-Suite', 'Mains water', 'Septic tank sewerage disposal', 'Oil-fired central heating', 'Bulk gas for kitchen', '3-phase electricity', 'Broadband'],
 
-        description: ["The priciest home for sale in Edinburgh, a three-story Edwardian manor house, has stood on the affluent outskirts of the city for more than 100 years—and yet, hardly anyone knows it’s there. That’s exactly the appeal: Boraston House, as it’s known, is completely secluded while less than a 10-minute drive to the center of the city. A private drive at the end of a quiet lane in Ravelston, a suburb of Edinburgh, leads to the grand, three-story stone mansion and two-acre gardens. Ravelston Golf Club surrounds Boraston on two sides, while the trees of Hillwood Park create a wild forest wall around the rest of the property line, images of the home show. The front facade is marked by two prominent bays and a steep gable roof with dormer windows. A vestibule with original flagstone flooring leads into an entrance hall off of which are all of the home’s reception rooms, including an 800-square-foot drawing room. There’s also a glass-enclosed conservatory, sitting room, study and dining room. An open kitchen with Shaker-style units steps down into a sunken informal dining space with painted exposed stone walls. Eight bedrooms are spread across the top two floors of the house, in addition to a family room on the second level. The master suite includes a dressing room and en-suite bathroom. The house retains much of its period character, including numerous fireplaces, ornate plasterwork and leaded windows. There’s also a standalone summerhouse, a gazebo of sorts, that sits at the edge of the propertyline overlooking the golf course, according to the listing. The tranquil refuge is surrounded by colorful flower beds of peonies, honeysuckle, lavender, azaleas and roses."],
+        description: ["The priciest home for sale in Edinburgh, a three-story Edwardian manor house, has stood on the affluent outskirts of the city for more than 100 years—and yet, hardly anyone knows it’s there.",
+        "That’s exactly the appeal: Boraston House, as it’s known, is completely secluded while less than a 10-minute drive to the center of the city.",
+        "A private drive at the end of a quiet lane in Ravelston, a suburb of Edinburgh, leads to the grand, three-story stone mansion and two-acre gardens.",
+        "Ravelston Golf Club surrounds Boraston on two sides, while the trees of Hillwood Park create a wild forest wall around the rest of the property line,",
+        "images of the home show. The front facade is marked by two prominent bays and a steep gable roof with dormer windows. A vestibule with original flagstone", 
+        "flooring leads into an entrance hall off of which are all of the home’s reception rooms, including an 800-square-foot drawing room.",
+        "There’s also a glass-enclosed conservatory, sitting room, study and dining room. An open kitchen with Shaker-style units steps down into a sunken informal dining space with painted exposed stone walls.",
+        "Eight bedrooms are spread across the top two floors of the house, in addition to a family room on the second level. The master suite includes a dressing room and en-suite bathroom.",
+        "The house retains much of its period character, including numerous fireplaces, ornate plasterwork and leaded windows.",
+        "There’s also a standalone summerhouse, a gazebo of sorts, that sits at the edge of the propertyline overlooking the golf course, according to the listing.", 
+        "The tranquil refuge is surrounded by colorful flower beds of peonies, honeysuckle, lavender, azaleas and roses."],
         
         imagePaths: ['assets/img/abroad-properties/edinburgh-house/01.jpg', 'assets/img/abroad-properties/edinburgh-house/02.jpeg', 'assets/img/abroad-properties/edinburgh-house/03.jpeg',
         'assets/img/abroad-properties/edinburgh-house/04.jpeg', 'assets/img/abroad-properties/edinburgh-house/05.jpeg', 'assets/img/abroad-properties/edinburgh-house/06.jpeg',
@@ -308,98 +323,29 @@ var LOCAL_PROPERTIES = [
 
 
 function generatePropertyHTMLFromDetails(propertyDetails) {
-   
-    const headerHTML = 
-
-    `
-    <section class="property-section">
+    let imagesHTML = '';
+    propertyDetails.imagePaths.forEach(eachImagePath => {
+        imagesHTML+=  ` <div class="swiper-slide">
+                            <div class="slide-image">
+                                <img  src= ${eachImagePath} alt="Doolin House, Dublin picture 1">
+                            </div>
+                        </div>`;
+    });
+    const headerHTML = `<section class="property-section">
         <div class="container-fluid p-0">
             <div class="property-slider">
                 <!-- Slider main container -->
                 <div class="swiper-container">
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img  src= ${propertyDetails.imagePaths[0]} alt="Doolin House, Dublin picture 1">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[1]} alt="Doolin House, Dublin picture 2">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[2]} alt="Doolin House, Dublin picture 3">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[3]} alt="Doolin House, Dublin picture 4">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[4]} alt="Doolin House, Dublin picture 5">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[5]} alt="Doolin House, Dublin picture 6">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[6]} alt="Doolin House, Dublin picture 7">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[7]} alt="Doolin House, Dublin picture 8">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[8]} alt="Doolin House, Dublin picture 9">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[9]} alt="Doolin House, Dublin picture 10">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[10]} alt="Doolin House, Dublin picture 11">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[11]} alt="Doolin House, Dublin picture 12">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[12]} alt="Doolin House, Dublin picture 13">
-                            </div>
-                        </div>
-                        <div class="swiper-slide">
-                            <div class="slide-image">
-                                <img src= ${propertyDetails.imagePaths[13]} alt="Doolin House, Dublin picture 14">
-                            </div>
-                        </div>
+                        ${imagesHTML}
                     </div>
                     <!--Navigation buttons -->
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
-                
-                    
                 </div>
             </div>
         </div>
-    
         <div class="container">
         <div class="row mt-5">
             <div class="col-sm-6 section-header">
@@ -447,19 +393,7 @@ function generatePropertyHTMLFromDetails(propertyDetails) {
 //use map function to return a use-able list value
 };
 
-// function showImages(imagePaths) {
-//     for (let i = 0, len = imagePaths.length; i < len; i++) {
-//         let elem = document.createElement("img");
-//         elem.src = 'getImg/' + imagePaths[i][0] + '/' + imagePaths[i][1];
-//         elem.id = imagePaths[i][2];
-//         console.log(elem.id);
-//         elem.alt = 'Property Images';
-//         let image = document.getElementsByClassName("slide-image");
-//         image.appendChild(elem);
 
-//     }
-//     console.log(elem.id);
-// }
 
 
 function showPropertyDetails() {
