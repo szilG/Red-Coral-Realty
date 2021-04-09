@@ -6,20 +6,20 @@
 .property-action-bar-inner {
     padding-top: 30px;
 }
-.property-action-bar a{
-    font-size: 20px;
-    margin-left: 40px;
-    text-decoration: none;
+
+.back-btn {
+    margin-left: 30px;
+    padding: 10px 20px;
+    border: none;
     color: var(--main-color);
+    font-size: 18px;
 }
+
 
 .property-action-bar a:hover {
     font-size: 25px;
 }
 
-.property-action-bar i {
-    padding-right: 5px;
-}
 .property-action-bar-right a{
     padding: 0 10px;
     text-decoration: none;
@@ -81,10 +81,6 @@
     justify-content: center;
 }
 
-.modal-header h5, p {
-    /* color: var(--text-color); */
-}
-
 .modal-header .close {
     position: absolute;
     right: 20px;
@@ -101,8 +97,6 @@
     padding-left: 10px;
     color: var(--text-color);
 }
-
-
 
 /*==========================Start Property Container Section==================*/
 .property-section .property-slider {
@@ -191,21 +185,22 @@
     .section-details span {
         font-size: 20px;
     }
-    .property-action-bar a{
-        margin-left: 0px;
-    }
     .property-action-bar-right p {
         font-size: 1rem;
     }
     .contact-btn {
-        margin-left: 100px;
-        margin-top: 0;
+        margin-left: 0px;
+        margin-top: 30px;
         margin-bottom: 30px;
         font-size: 16px;
-        border-radius: 22px 0 22px 0; 
+        border-radius: 22px 0 22px 0;
+        align-self: center;
     }
     .property-action-bar-inner {
         padding-top: 20px;
+    }
+    .back-btn {
+        margin-left: 0;
     }
 }
 
@@ -224,5 +219,9 @@
         margin-top: 0;
         margin-bottom: 30px;
         padding: 10px 20px;
+    }
+    .back-btn {
+        margin-left: 0;
+        margin-bottom: 20px;
     }
 }
