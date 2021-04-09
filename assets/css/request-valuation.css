@@ -1,5 +1,3 @@
-
-
 /*=============================Satrt Hero Section=================*/ 
 .img-container img {
     width: 100%;
@@ -130,8 +128,9 @@
     background: var(--bg-color);
 }
 
-
-
+.footer ul li {
+    padding-top: 0;
+}
 
 
 

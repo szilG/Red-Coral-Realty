@@ -328,13 +328,10 @@ html {
     border-radius: 30px 0 30px 0;
 }
 
-.payment_box {
+.payment {
     background-color: #fff;
-    border-radius: 0 30px 0 30px;
-    text-align: center;
-    font-size: 1.8rem;
-    padding: 1rem;
-    margin-top: 30px;
+    margin-bottom: 20px;
+    border-radius: 30px 0 30px 0;
 }
 
 
@@ -411,6 +408,7 @@ html {
     width: 100%;
     height: auto;
     margin-top: 100px;
+    /* background: #343239; */
     background: url("../img/index//blue-bg.jpg");
     box-shadow: 2px 2px 12px rgba(0,0,0,.8);
     position: relative;
@@ -478,10 +476,6 @@ html {
 
 
 /*======================================Start Three Column Section=======================*/
-.what-we-do-header h1 {
-    color: var(--text-color);
-
-}
 .what-we-do a {
     text-decoration: none;
     color: var(--text-color);
@@ -492,74 +486,32 @@ html {
 }
 
 .what-we-do > div:hover {
-    transform: scale(1.02);
+    -webkit-transform: scale(1.02);
+        -ms-transform: scale(1.02);
+            transform: scale(1.02);
 }
 
+/*======================================Start FooterWidget Section=======================*/
+.footer-widget {
+    background: #343239;
+    margin-top: 10px;
+}
 
-
-
-/*======================================Start Footer Section=======================*/
-.footer-border {
+.footer-widget-border {
     background: none;
-    border: 1px solid var(--main-color);
-    border-radius: 100px 0 0 0;
+    border-top: 1px solid var(--main-color);
     margin-top: 100px;
 }
-.footer {
-    /* background: cadetblue; */
-    background: var(--main-color);
+
+.footer-widget-text{
     color: #fff;
-    border-radius: 100px 0 0 0;
-    padding-top: 100px;
-    margin-top: 10px; 
 }
 
-.footer .footer-widget h4 {
-    margin-bottom: 5px;
-    font-size: 20px;
-}
-
-.footer .footer-widget p {
-    margin-top: 10px;
-    margin-bottom: 25px;
-}
-
-.footer .footer-widget ul li {
-    margin-bottom: 10px;
-    list-style: none;
-}
-
-.footer .footer-widget ul li a {
-    color: #fff;
-    text-decoration: none;
-}
-
-.footer .footer-widget ul li a:hover {
-    border-bottom: .5px solid var(--second-color);
-}
-
-.footer .footer-widget .footer-address span {
-    color: #fff;
-    display: inline-block;
-}
-
-.footer .footer-widget .footer-logo {
-    margin-top: 25px;
-    display: inline-block;
-}
-
-.footer .footer-bottom {
-    margin-top: 20px;
-    padding: 20px 0;
-}
-
-.footer .social-media a {
-    margin-top: 20px;
-    margin-left: 3px;
-    padding: 20px 0;
+.footer-widget .social-media a{
+    padding: 0 30px;
     width: 50px;
     height: 50px;
-    font-size: 20px;
+    font-size: 30px;
     color: #fff;
     display: inline-block;
     text-align: center;
@@ -567,7 +519,130 @@ html {
     text-decoration: none;
 }
 
+.footer-widget .social-media a:hover {
+    color: var(--main-color);
+    -webkit-transform: scale(1.2);
+        -ms-transform: scale(1.2);
+            transform: scale(1.2);
+}
+
+.footer-widget-btn {
+    border: 1px solid var(--main-color);
+    box-shadow: none;
+    border-radius: 30px 0 30px 0;
+    background: none;
+    padding: 10px 60px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 10px;
+    color: var(--main-color);
+    transition: .8s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.footer-widget-btn:hover,
+.footer-widget-btn:focus {
+    color: #fff;
+}
+
+.footer-widget-btn::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 0%;
+    background: var(--main-color);
+    z-index: -1;
+    transition: .8s;
+    top: 0;
+    border-radius: 0 0 50% 50%;
+}
+
+.footer-widget-btn:hover:before {
+    height: 180%;
+}
+
+.footer-widget-green-border {
+    background: none;
+    border-top: 1px solid #fff
+}
+
+.footer-widget-green-bg {
+    background: var(--main-color);
+    color: #fff;
+    padding: 40px 0;
+}
+
+/*================================Start Testimonials Section====================*/
+.testimonials-header {
+    color: var(--text-color);
+}
+
+.testimonials-card-body span {
+    color: var(--text-color);
+}
+
+.testimonials-card-body .icons {
+    margin-top: 40px;
+    color: gold;
+}
+/*======================================Start Footer Section=======================*/
+.footer {
+    color: var(--text-color);
+    padding-top: 50px;
+}
+
+.footer h4 {
+    margin-bottom: 5px;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .footer-address p{
+    color: var(--main-color);
+    margin-bottom: 0;
+}
+
+.footer .footer-address span {
+    color: var(--main-color);
+    display: flex;
+    justify-content: center;
+}
+
+.footer ul li {
+    list-style: none;
+}
+
+.footer ul li a {
+    color: var(--main-color);
+    text-decoration: none;
+}
+
+.footer ul li a:hover {
+    color: var(--second-color);
+}
+
+.footer .footer-bottom {
+    margin-top: 10px;
+    padding: 10px 0;
+}
+
+.footer .social-media a {
+    padding: 0 30px;
+    width: 50px;
+    height: 50px;
+    font-size: 30px;
+    color: var(--main-color);
+    display: inline-block;
+    text-align: center;
+    align-content: center;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
+
 .footer .social-media a:hover {
+    color: var(--second-color);
     -webkit-transform: scale(1.2);
         -ms-transform: scale(1.2);
             transform: scale(1.2);
@@ -602,9 +677,21 @@ html {
     .carousel-caption p {
         font-size: 1.5rem;
     }
+   
 }
 
-@media screen and (max-width: 992px){
+@media screen and (min-width: 991px)and (max-width:1260px){
+    .footer-widget .social-media a {
+        font-size: 20px;
+        padding: 0 20px;
+    }
+    .footer-widget-btn {
+        padding: 10px 30px;
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 991px){
     .carousel-caption h1 {
         font-size: 2rem;
     }
@@ -635,24 +722,13 @@ html {
     #resent-property-section {
         margin-top: 0;
     }
-    .footer .footer-bottom {
-        margin-top: 10px;
+    .footer ul li {
         padding: 10px 0;
     }
-    .footer .social-media a {
-        margin-top: 10px;
-        padding: 10px 0;
-    }
-    .footer {
-        padding-top: 40px;
-    }
+    
 }
 
 @media only screen and (max-width: 767px){
-    .footer .footer-widget ul li {
-        display: inline;
-        padding: 0 10px;
-    }
     .local-property-card-section .content .box {
         margin: 0;
     }
