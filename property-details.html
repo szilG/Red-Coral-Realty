@@ -1,215 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootsrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!--SwiperJs-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <!--Style-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/property-details.css">
-    <title>Property Deatails | Red Coral Realty</title>
-    <!--EmailJs-->
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function() {
-    emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
-    })();
-    </script>
-</head>
-<body>
-    <!--Start Header Section-->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><span>Red Coral</span> Realty</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Buy</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="local-properties.html">Local Properties</a>
-                                <a class="dropdown-item" href="abroad-properies.html">Abroad Properties</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mortgage.html">Mortgage</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            News</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="research.html">Research</a>
-                                <a class="dropdown-item" href="buyAdvice.html">Advice for Buyers</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Contact</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="request-valuation.html">Request a Valuation</a>
-                                <a class="dropdown-item" href="contact.html">Customer Service</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> 
-    </header>
-    <!--End Header Section-->
-
-    <!--Start Back to top button-->
-    <button id="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i>  
-    </button>
-    <!--End Back to top button-->
-
-    <!--Start Property Action Bar Section-->
-    <!-- Modal -->
-    <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content row">
-                
-                <div class="modal-header row ml-auto">
-                    <div class="col-sm-10 text-center">
-                        <h5 class="modal-title" id="contactModalLabel">Financial Services Enquiry</h5>
-                    </div>
-                    <div class="col-sm-10 text-center">
-                        <p>Our team of financial experts are online, available by call or virtual meeting to guide you through your options. Get in touch today</p>
-                    </div>
-                    
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Property Deatails | Red Coral Realty</title>
+        <!--Bootsrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--SwiperJs-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <!--Style-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/property-details.css">
+    </head>
+    <body>
+        <!--Start Header Section-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><span>Red Coral</span> Realty</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Buy</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="local-properties.html">Local Properties</a>
+                                    <a class="dropdown-item" href="abroad-properies.html">Properties Abroad</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mortgage.html">Mortgage</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                News</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="research.html">Research</a>
+                                    <a class="dropdown-item" href="buyAdvice.html">Advice for Buyers</a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contact</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="request-valuation.html">Request a Valuation</a>
+                                    <a class="dropdown-item" href="contact.html">Customer Service</a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="modal-body">
-                    <form id="myForm" onsubmit="return sendMail(this);">
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <i class="fas fa-user"></i>
-                                <input type="text" name="name" class="form-control" id="inputFullName" placeholder="Full Name" required>
+            </nav> 
+        </header>
+        <!--End Header Section-->
+
+        <!--Start Back to top button-->
+        <button id="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i>  
+        </button>
+        <!--End Back to top button-->
+
+        <!--Start Property Action Bar Section-->
+        <!-- Modal -->
+        <div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content row">
+                    
+                    <div class="modal-header row ml-auto">
+                        <div class="col-sm-10 text-center">
+                            <h5 class="modal-title" id="contactModalLabel">Financial Services Enquiry</h5>
+                        </div>
+                        <div class="col-sm-10 text-center">
+                            <p>Our team of financial experts are online, available by call or virtual meeting to guide you through your options. Get in touch today</p>
+                        </div>
+                        
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="myForm" onsubmit="return sendMail(this);">
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <i class="fas fa-user"></i>
+                                    <input type="text" name="name" class="form-control" id="inputFullName" placeholder="Full Name" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <i class="fas fa-envelope"></i>
-                                <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <i class="fas fa-envelope"></i>
+                                    <input type="email" name="email" class="form-control" id="inputEmail" placeholder="Email" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <i class="fas fa-mobile-alt"></i>
-                                <input type="number" name="phone" class="form-control" id="inputPhone" placeholder="Phone" required>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <i class="fas fa-mobile-alt"></i>
+                                    <input type="number" name="phone" class="form-control" id="inputPhone" placeholder="Phone" required>
+                                </div>
                             </div>
-                        </div>
-                        <div class="form-group">
-                            <select id="inputTime" name="time" class="form-control">
-                                <option selected>Select Preferred Callback Time</option>
-                                    <option>9am - 1pm</option>
-                                    <option>1pm - 4pm</option>
-                                    <option>4pm - 9pm</option>
-                                    <option>Any time</option>
-                            </select>
-                        </div>
-                        <div class="form-group">
-                            <div class="col-sm-12">
-                                <button type="submit" class="btn">Send Request</button>
+                            <div class="form-group">
+                                <select id="inputTime" name="time" class="form-control">
+                                    <option selected>Select Preferred Callback Time</option>
+                                        <option>9am - 1pm</option>
+                                        <option>1pm - 4pm</option>
+                                        <option>4pm - 9pm</option>
+                                        <option>Any time</option>
+                                </select>
                             </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="property-action-bar-container">
-        <div class="container-fluid">
-            <div class="row align-items-center property-action-bar-inner">
-                <div class="col-xs-6 col-md-4">
-                    <div class="property-action-bar">
-                        <a href="local-properties.html"><i class="fas fa-long-arrow-alt-left"></i>Back</a>
+                            <div class="form-group">
+                                <div class="col-sm-12">
+                                    <button type="submit" class="btn">Send Request</button>
+                                </div>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="row align-items-center m-0">
-                <div class="col-xs-6 col-md-9 pr-0 pl-0 text-center">
-                    <div class="property-action-bar-right">
-                        <p class="d-none d-md-block">Interested in this property?<a href="tel:+3530123456765">Call us at (353) 01 23 456 765*</a>or</p>
-                        <span class="d-none d-md-block info-text">* Calls to this number will be recorded for quality, compliance and training purposes.</span>
+        </div>
+        <section class="property-action-bar-container">
+            <div class="container-fluid">
+                <div class="row align-items-center property-action-bar-inner">
+                    <div class="col-xs-6 col-md-4">
+                        <div class="property-action-bar">
+                            <button class="back-btn"><i class="fas fa-long-arrow-alt-left" onclick="goBack()">Go Back</i></button>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-3 pr-0 pl-0">
-                    <!-- Button trigger modal -->
-                    <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Contact Agents</button>
-                </div>
+                <div class="row align-items-center m-0">
+                    <div class="col-xs-6 col-md-9 pr-0 pl-0 text-center">
+                        <div class="property-action-bar-right">
+                            <p class="d-none d-md-block">Interested in this property?<a href="tel:+3530123456765">Call us at (353) 01 23 456 765*</a>or</p>
+                            <span class="d-none d-md-block info-text">* Calls to this number will be recorded for quality, compliance and training purposes.</span>
+                        </div>
+                    </div>
+                    <div class="col-md-3 pr-0 pl-0">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="contact-btn" data-toggle="modal" data-target="#contactModal">Contact Agents</button>
+                    </div>
+                </div> 
             </div>
-            
-           
+        </section>
+        <!--End Property Action Bar Section-->
+
+        <!--Start Property Container Section-->
+        <div class="prop-details-container">
+
+                <!--Start Mortgage Calculator Section-->
+                <section class="mortgage-calc">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-5 col-md-12 d-none d-lg-block mortgage-container move-from-left">
+                                <h1>Calculate your mortgage</h1>
+                                <p>LOAN AMOUNT € <input type="number" id="amount" min="1" max="2000000" onchange="calcLoan()"></p>
+                                <p>INTEREST RATE %<input type="number" id="iterest_rate" min="0" max="100" value="2.7" step=".1" onchange="calcLoan()"></p>
+                                <p class="mb-5 pb-4">LOAN TERM (YEARS) <input type="number" id="years" min="1" max="35" value="35" step="1" onchange="calcLoan()"></p>
+                                <h2 id="payment" class="payment text-center mt-5"></h2>   
+                            </div>
+                            <div class="col-lg-7 mortgage-text-container move-from-right">
+                                <div class="col-lg-10 col-md-12 ml-0 ml-lg-5 pt-5 pb-5 text-center">
+                                    <div class="">
+                                        <h1>Financial expertise from a specialist provider</h1>
+                                    </div>
+                                    <div class="border-top border-danger mx-auto mt-5 mb-5"></div>
+                                    <div>
+                                        <p>Our Red Coral Realty Mortgages division can give you expert financial advice at every stage of your property process.
+                                            From mortgages and life insurance to investments and pensions, and more, we’re with you every step of the way.</p>
+                                    </div>
+                                    <a href="mortgage.html" class="btn">Request</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--End Mortgage Calculator Section-->
+            </div>
         </div>
-    </section>
-    <!--End Property Action Bar Section-->
+        <!--End Property Container Section-->
 
-    <!--Start Property Container Section-->
-    <div class="prop-details-container"></div>
-    <!--End Property Container Section-->
-
-
-
-    <!--Start Footer Section-->
-    <footer class="footer-border">
-        <div class="footer">
+        <!--Start Footer Section-->
+        <div class="footer-widget-green-border mt-5">
+        <div class="footer-widget-green-bg">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 mb-lg-4 mb-xl-0 footer-widget d-none d-lg-block">
-                        <h4>About Us</h4>
-                        <hr>
+                    <div class="col-lg-12 mb-lg-4 mb-xl-0  text-center">
                         <p>We are market research experts who work with clients to create high quality, data driven
                             and unrivaled property market research.</p>
-                        <div class="footer-logo">
-                            <h3><span>Red Coral</span> Realty</h3>
-                        </div>
                     </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
+                </div>
+            </div>
+        </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 text-center">
                         <h4>Contact Info</h4>
-                        <hr>
                         <div class="footer-address">
                             <p>176 Pembroke Road, Ballsbridge, Dublin 4, D04 EN80</p>
                             <span>Phone: +353 01 23 456 765</span>
                             <span>Email: info@redcoralrealty.com</span>
-                        </div>
+                        </div>   
                     </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
-                        <h4 class="d-none d-md-block">Quick Links</h4>
-                        <hr>
-                        <ul>
-                            <li><a href="index.html">Home</a></li>
+                
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                        <h4>Quick Links</h4>
+                        <ul class="pl-0">
+                            <li><a href="local-properties.html">Local Properies</a></li>
                             <li><a href="mortgage.html">Mortgages</a></li>
                             <li><a href="request-valuation.html">Reqiuest Valuation</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="border-top border-white w-100 mx-auto mt-5"></div>
-                <div class="row">
-                    <div class="col-lg-8 col-md-12 footer-bottom align-items-center">
-                        <p class="footer-text m-0">
-                            Copyright&copy;<script>document.write(new Date().getFullYear());</script>
-                            All rights Reserved Red Coral Realty
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-md-12 text-center text-lg-right social-media">
+
+                    <div class="col-md-12 mt-3 text-center social-media">
                         <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
@@ -224,22 +237,38 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
-    <!--Start Footer Section-->
 
-    <!--Start Scripts-->
-    <!--Bootstarp-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-     <!--SwiperJs-->
-     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!--JS-->
-    <script src="assets/js/properties.js"></script>
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/property-swiper.js"></script>
+                <div class="border-top border-dark w-100 mx-auto"></div>
+                <div class="row">
+                    <div class="col-lg-12 footer-bottom text-center">
+                        <p class="footer-text m-0">
+                            Copyright&copy;<script>document.write(new Date().getFullYear());</script>
+                            All rights Reserved Red Coral Realty
+                        </p>
+                    </div>   
+                </div>
+            </div> 
+        </footer>
+        <!--Start Footer Section-->
 
-</body>
+        <!--Start Scripts-->
+        <!--Bootstarp-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <!--SwiperJs-->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <!--EmailJs-->
+        <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
+        })();
+        </script>
+        <!--JS-->
+        <script src="assets/js/properties.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/property-swiper.js"></script>
+        <script src="assets/js/mortgage-calc.js"></script>
+    </body>
 </html>
