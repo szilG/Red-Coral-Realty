@@ -16,4 +16,36 @@ function sendMail(contactForm) {
     });
     document.getElementById("myForm").reset();
     return false;
-  }
+}
+
+
+$(document).ready(function() {
+    //load location data
+    load_json_data('location');
+  
+    function load_json_data(id, parent_id) {
+        let item = ''; //defined a variable
+        //fetch data from json file
+        $.getJSON('ie.json', function(data) {
+  
+            item += '<option value="">Select ' + id + '</option>';
+            //fetch array of data one by one
+            $.each(data, function(key, value) {
+                if (id == 'location') {
+                    if (value.parent_id == '0') {
+                        item += '<option value="' + value.id + '">' + value.city + '</option>';
+                    }
+                } else {
+                    if (value.parent_id == parent_id) {
+                        item += '<option value="' + value.id + '">' + value.city + '</option>';
+                    }
+                }
+            });
+            $('#' + id).html(item);
+        });
+  
+    }
+});
+
+
+  
