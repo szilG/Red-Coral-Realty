@@ -1,597 +1,588 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Bootsrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
-     integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-     <!--Font Awesome-->
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
-     integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-    <!--SwiperJs-->
-    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
-    <!--Style-->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/request-valuation.css">
-    <title>Request Valuation | Red Coral Realty</title>
-    <!--EmailJs-->
-    <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-    <script type="text/javascript">
-    (function() {
-    emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
-    })();
-    </script>
-</head>
-<body>
-    <!--Start Header Section-->
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <div class="container">
-                <a class="navbar-brand" href="index.html"><span>Red Coral</span> Realty</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Buy</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="local-properties.html">Local Properties</a>
-                                <a class="dropdown-item" href="abroad-properies.html">Abroad Properties</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="mortgage.html">Mortgage</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            News</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item" href="research.html">Research</a>
-                                <a class="dropdown-item" href="buyAdvice.html">Advice for Buyers</a>
-                            </div>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Contact</a>
-                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                <a class="dropdown-item active" href="request-valuation.html">Request a Valuation<span class="sr-only">(current)</span></a>
-                                <a class="dropdown-item" href="contact.html">Customer Service</a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav> 
-    </header>
-    <!--End Header Section-->
-
-    <!--Start Back to top button-->
-    <button id="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i>  
-    </button>
-    <!--End Back to top button-->
-
-    <!--Satrt Hero Section--> 
-    <section class="hero-img"> 
-        <div id="container">
-            <div class="row align-items-center">
-                <div class="img-container">
-                    <img src="assets/img/req-valuation/request-valuation01jpg.jpg" class="img-fluid" alt="girl with laptop">
-                </div>
-                <div class="col-12 text-center image-caption">
-                    <h1>Request a Valuation</h1>
-                </div>
-            </div>
-        </div>   
-    </section>     
-    <!--Satrt Hero Section-->
-    
-    <!--Start Request Valuation Section-->
-    <section class="req-value-section">
-        <div class="request-container">
-            <div class="row">
-                <div class="col-lg-6 text-center order-2 order-lg-1">
-                    <div class="col-md-12 justify-content-center">
-                        <form id="myForm" onsubmit="return sendMail(this);" class="signup-form" >
-                            <div class="requet-content">
-                                <h2>Request a valuation</h2>
-                                <div class="radio-btns">
-                                    <input type="radio" id="sell" name="message4" value="sell">
-                                    <label for="sell">Sell</label>
-                                    <input type="radio" id="let" name="message4" value="let">
-                                    <label for="let">Let</label>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Request Valuation | Red Coral Realty</title>
+        <!--Bootsrap-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+        <!--Font Awesome-->
+        <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+        <!--SwiperJs-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+        <!--Style-->
+        <link rel="stylesheet" href="assets/css/style.css">
+        <link rel="stylesheet" href="assets/css/request-valuation.css">
+    </head>
+    <body>
+        <!--Start Header Section-->
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html"><span>Red Coral</span> Realty</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Buy</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="local-properties.html">Local Properties</a>
+                                    <a class="dropdown-item" href="abroad-properies.html">Properties Abroad</a>
                                 </div>
-                        
-                                <div class="form-row">
-                                    <div class="col-md-12 form-group text-left">
-                                        <label for="location">Location *</label>
-                                        <select name="message2" id="location" class="form-control" required>
-                                            <option value="">Select Location*</option>   
-                                        </select>
-                                        <label for="area">Area *</label>
-                                        <select name="message3" id="area" class="form-control" required>
-                                            <option value="">Select Area*</option>   
-                                        </select>
-                                        <label for="name">Full Name *</label>
-                                        <input type="text" class="form-control" id="name" name="name" required>
-                                        <label for="email">Email *</label>
-                                        <input type="email" class="form-control" id="email" name="email" required>
-                                        <label for="phone">Phone Number *</label>
-                                        <input type="text" class="form-control" id="phone" name="phone" required>
-                                        <label for="inputDay">Select Preferred Callback Time *</label>
-                                        <select id="inputDay" class="form-control" name="time"required>
-                                            <option>Select</option>
-                                            <option>9am - 1pm</option>
-                                            <option>1pm - 4pm</option>
-                                            <option>4pm - 9pm</option>
-                                            <option>Any time</option>
-                                        </select>
-                                          
-                                    </div>
-                                    <div class="btn">
-                                        <button type="submit" name="submit" class="submit-btn">Submit</button>
-                                    </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mortgage.html">Mortgage</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                News</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item" href="research.html">Research</a>
+                                    <a class="dropdown-item" href="buyAdvice.html">Advice for Buyers</a>
                                 </div>
-                            </div>
-                        </form>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Contact</a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                    <a class="dropdown-item active" href="request-valuation.html">Request a Valuation<span class="sr-only">(current)</span></a>
+                                    <a class="dropdown-item" href="contact.html">Customer Service</a>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="col-lg-6 order-1 order-lg-2 align-self-center justify-content-center">
-                    <div class="col-md-12 col-lg-9 text-center">
-                        <div class="form-header-h1 ">
-                            <h1>Thinking of selling or letting your property?</h1>
-                        </div>
-                        <div class="border-top border-danger mx-auto mt-md-5 mb-md-5"></div>
-                        <div class="form-header-p">
-                            <p>This is a free service and there is no obligation to engage our services, so if you need a valuation for
-                                either selling or renting your property we’re ready to help. You can book a valuation with any of our offices.
-                                Once we have your details we will give you a call at a suitable time to you.</p>
-                        </div>
+            </nav> 
+        </header>
+        <!--End Header Section-->
+
+        <!--Start Back to top button-->
+        <button id="back-to-top-btn" aria-label="Back to top"><i class="fas fa-arrow-up"></i>  
+        </button>
+        <!--End Back to top button-->
+
+        <!--Satrt Hero Section--> 
+        <section class="hero-img"> 
+            <div id="container">
+                <div class="row align-items-center">
+                    <div class="img-container">
+                        <img src="assets/img/req-valuation/request-valuation01jpg.jpg" class="img-fluid" alt="girl with laptop">
+                    </div>
+                    <div class="col-12 text-center text-lg-right image-caption move-from-left">
+                        <h1>Request a Valuation</h1>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-    <!--End Request Valuation Section-->
-    
-    <!--Start Info Section-->
-    <section class="features">
-        <div class="container">
-            <div class="features-content">
+            </div>   
+        </section>     
+        <!--Satrt Hero Section-->
+        
+        <!--Start Request Valuation Section-->
+        <section class="req-value-section">
+            <div class="request-container">
                 <div class="row">
-                    <div class="col-md-12 pt-5 features-box move-from-left">
-                        <h3 class="features-h4 text-center">Full Estate Agency service: <strong>€1599+VAT</strong></h3>
-                        <p class="features-text lead text-center">The days of paying an estate agent several thousand Euro to sell a property are gone. Our experienced,
-                            qualified estate agents will handle your property’s sale from start to finish. We will get you the best price for your property
-                            but our fee is just €1599+VAT, saving you thousands.</p>
-                    </div>  
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="info">
-        <div class="container white-bg">
-            <div class="row">
-                <div class="col-12">
-                    <h1>Selling Your Home - Market Appraisal</h1>
-                    <p>Before considering bringing a property to the market to either sell or with a view to earning a
-                        potential rental income, it is essential that you get a real feel for its market value – that’s where
-                        we come in. Our team of valuation experts have an in-depth knowledge of the property market in your
-                        area and will be happy to guide you with their expertise and local knowledge. Often referred to as a
-                        Market Appraisal our valuation will provide you with that all-important guide price on which to make
-                        an informed decision when it comes to selling your home.</p>
-                    <p class="lead">If you are thinking of selling, fill out the above form and your local office will be in touch.</p>
-                </div>
-                <div class="col-12">
-                    <h1>Banking, Legal And Revenue Valuations</h1>
-                    <p>There are times when you may need a valuation on a property for Banking, Legal or Revenue related reasons.
-                        Our dedicated Residential Valuations Team provides a professional and responsive service, using their
-                        detailed market knowledge and comprehensive property database for comparative purposes, providing valuations for
-                        clients primarily in the following key areas:</p>
-                    <ul>
-                        <li>Probate</li>
-                        <li>Family Law</li>
-                        <li>Expert Witness</li>
-                        <li>Red Book/ Blue Book Valuations for Banking and Mortgage purposes</li>
-                        <li>Revenue-related valuations</li>
-                        <li>Family Transfer</li>
-                        <li>Capital Gains Tax</li>
-                        <li>Capital Acquisition Tax</li>
-                        <li>Self-Administered Pension Funds</li>
-                        <li>HSE Fair Deal Scheme</li>
-                    </ul>
-                    <p class="lead">To avail of one of the above services please contact us at<a href="tel:+3530123456765"> +353 01 23456 765</a> or resivals@redcoralrealty.ie</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!--End Info Section-->
-    
-    <!--Start Team Section-->
-    <section class="team">
-        <div class="container my-3 py-3 text-center">
-            <div class="row mb-5 mt-5">
-                <div class="col">
-                    <h1>Meet our valuations team</h1>
-                    <p class="mt-3">For banking, legal and revenue valuations</p>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="card-wrapper">
-                        <div class="card-body">
-                            <div class="card-front">
-                                <div class="card align-items-center">
-                                    <img src="assets/img/req-valuation/profil-pic/profil-pic01.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="business-man">
-                                    <h2>Mark Lewis MRICS, MSCSI</h2>
-                                    <h3>Director</h3>
-                                    <h4>Red Coral Realty</h4>
-                                    <p><strong>Phone: </strong> +353 1 237 6411<br><strong>Email: </strong> mark.lewis@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <i class="fas fa-arrow-circle-right"></i>
-                                </div>
-                            </div>
+                    <div class="col-lg-6 text-center order-2 order-lg-1">
+                        <div class="col-md-12 justify-content-center">
+                            <form id="myForm" onsubmit="return sendMail(this);" class="signup-form" >
+                                <div class="requet-content">
+                                    <h2>Request a valuation</h2>
+                                    <div class="radio-btns">
+                                        <input type="radio" id="sell" name="message4" value="sell">
+                                        <label for="sell">Sell</label>
+                                        <input type="radio" id="let" name="message4" value="let">
+                                        <label for="let">Let</label>
+                                    </div>
                             
-                            <div class="card-back">
-                                <div class="card">
-                                    <h3>Mark Lewis MRICS, MSCSI</h3>
-                                    <p class="text-uppercase">Director</p>
-                                    <p><strong>Phone: </strong> +353 1 237 6411<br><strong>Mobil: </strong> +353 87 255 6677<br><strong>Email: </strong> mark.lewis@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <p class="lead">Mark has been part of the Red Coral team since 2011. A former director of The Group, he left in 2018 to open franchised offices in West Dublin.</p>
-                                    <p class="lead">He returned to the main group in February 2020 as a director in the valuations team and specialises in all types of residential valuations in the greater Dublin area</p>
-                                    
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="p-4">
-                                            <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
-                                                <span class="sr-only">Facebook</span>
-                                            </a>
+                                    <div class="form-row">
+                                        <div class="col-md-12 form-group text-left">
+                                            <label for="location">Location *</label>
+                                            <select name="message2" id="location" class="form-control" required>
+                                                <option value="">Select Location*</option>   
+                                            </select>
+                                            <label for="area">Area *</label>
+                                            <select name="message3" id="area" class="form-control" required>
+                                                <option value="">Select Area*</option>   
+                                            </select>
+                                            <label for="name">Full Name *</label>
+                                            <input type="text" class="form-control" id="name" name="name" required>
+                                            <label for="email">Email *</label>
+                                            <input type="email" class="form-control" id="email" name="email" required>
+                                            <label for="phone">Phone Number *</label>
+                                            <input type="text" class="form-control" id="phone" name="phone" required>
+                                            <label for="inputDay">Select Preferred Callback Time *</label>
+                                            <select id="inputDay" class="form-control" name="time"required>
+                                                <option>Select</option>
+                                                <option>9am - 1pm</option>
+                                                <option>1pm - 4pm</option>
+                                                <option>4pm - 9pm</option>
+                                                <option>Any time</option>
+                                            </select>    
                                         </div>
-                                        <div class="p-4">
-                                            <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
-                                                <span class="sr-only">Instagram</span>
-                                            </a>
+                                        <div class="btn">
+                                            <button type="submit" name="submit" class="submit-btn">Submit</button>
                                         </div>
-                                        <div class="p-4">
-                                            <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
-                                                <span class="sr-only">Twitter</span>
-                                            </a>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 order-1 order-lg-2 align-self-center justify-content-center">
+                        <div class="col-md-12 col-lg-9 text-center">
+                            <div class="form-header-h1 ">
+                                <h1>Thinking of selling or letting your property?</h1>
+                            </div>
+                            <div class="border-top border-danger mx-auto mt-md-5 mb-md-5"></div>
+                            <div class="form-header-p">
+                                <p>This is a free service and there is no obligation to engage our services, so if you need a valuation for
+                                    either selling or renting your property we’re ready to help. You can book a valuation with any of our offices.
+                                    Once we have your details we will give you a call at a suitable time to you.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Request Valuation Section-->
+        
+        <!--Start Info Section-->
+        <section class="features">
+            <div class="container">
+                <div class="features-content">
+                    <div class="row">
+                        <div class="col-md-12 pt-5 features-box move-from-left">
+                            <h3 class="features-h4 text-center">Full Estate Agency service: <strong>€1599+VAT</strong></h3>
+                            <p class="features-text lead text-center">The days of paying an estate agent several thousand Euro to sell a property are gone. Our experienced,
+                                qualified estate agents will handle your property’s sale from start to finish. We will get you the best price for your property
+                                but our fee is just €1599+VAT, saving you thousands.</p>
+                        </div>  
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="info">
+            <div class="container white-bg">
+                <div class="row">
+                    <div class="col-12">
+                        <h1>Selling Your Home - Market Appraisal</h1>
+                        <p>Before considering bringing a property to the market to either sell or with a view to earning a
+                            potential rental income, it is essential that you get a real feel for its market value – that’s where
+                            we come in. Our team of valuation experts have an in-depth knowledge of the property market in your
+                            area and will be happy to guide you with their expertise and local knowledge. Often referred to as a
+                            Market Appraisal our valuation will provide you with that all-important guide price on which to make
+                            an informed decision when it comes to selling your home.</p>
+                        <p class="lead">If you are thinking of selling, fill out the above form and your local office will be in touch.</p>
+                    </div>
+                    <div class="col-12">
+                        <h1>Banking, Legal And Revenue Valuations</h1>
+                        <p>There are times when you may need a valuation on a property for Banking, Legal or Revenue related reasons.
+                            Our dedicated Residential Valuations Team provides a professional and responsive service, using their
+                            detailed market knowledge and comprehensive property database for comparative purposes, providing valuations for
+                            clients primarily in the following key areas:</p>
+                        <ul>
+                            <li>Probate</li>
+                            <li>Family Law</li>
+                            <li>Expert Witness</li>
+                            <li>Red Book/ Blue Book Valuations for Banking and Mortgage purposes</li>
+                            <li>Revenue-related valuations</li>
+                            <li>Family Transfer</li>
+                            <li>Capital Gains Tax</li>
+                            <li>Capital Acquisition Tax</li>
+                            <li>Self-Administered Pension Funds</li>
+                            <li>HSE Fair Deal Scheme</li>
+                        </ul>
+                        <p class="lead">To avail of one of the above services please contact us at<a href="tel:+3530123456765"> +353 01 23456 765</a> or resivals@redcoralrealty.ie</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--End Info Section-->
+        
+        <!--Start Team Section-->
+        <section class="team">
+            <div class="container my-3 py-3 text-center">
+                <div class="row mb-5 mt-5">
+                    <div class="col">
+                        <h1>Meet our valuations team</h1>
+                        <p class="mt-3">For banking, legal and revenue valuations</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic01.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Mark Lewis">
+                                        <h2>Mark Lewis MRICS, MSCSI</h2>
+                                        <h3>Director</h3>
+                                        <h4>Red Coral Realty</h4>
+                                        <p><strong>Phone: </strong> +353 1 237 6411<br><strong>Email: </strong> mark.lewis@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Mark Lewis MRICS, MSCSI</h3>
+                                        <p class="text-uppercase">Director</p>
+                                        <p><strong>Phone: </strong> +353 1 237 6411<br><strong>Mobil: </strong> +353 87 255 6677<br><strong>Email: </strong> mark.lewis@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Mark has been part of the Red Coral team since 2011. A former director of The Group, he left in 2018 to open franchised offices in West Dublin.</p>
+                                        <p class="lead">He returned to the main group in February 2020 as a director in the valuations team and specialises in all types of residential valuations in the greater Dublin area</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic02.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Fiona Grant">
+                                        <h2>Fiona Grant SCSI</h2>
+                                        <h3>Head of Commercial Valuations</h3>
+                                        <h4>Red Coral Realty</h4>
+                                        <p><strong>Phone: </strong> +353 1 237 6422<br><strong>Email: </strong> fiona.grant@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Fiona Grant SCSI</h3>
+                                        <p class="text-uppercase">Head of Commercial Valuations</p>
+                                        <p><strong>Phone: </strong> +353 1 237 6422<br><strong>Mobil: </strong> +353 86 236 8739<br><strong>Email: </strong> fiona.grant@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Fiona has considerable experience in the commercial property market and joined Red Coral in January 2021 as Head of Commercial Valuations. Her experience, relationship
+                                            development skills and dedication to ensuring best in class service has resulted in an exceptional client list.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-2 mt-md-0">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic03.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="David Cowhey">
+                                        <h2>David Cowhey Assoc SCSI</h2>
+                                        <h3>Portfolio Team Manager</h3>
+                                        <h4>Red Coral Realty</h4>
+                                        <p><strong>Phone: </strong> +353 1 237 6433<br><strong>Email: </strong> david.cowhey@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>David Cowhey Assoc SCSI</h3>
+                                        <p class="text-uppercase">Portfolio Team Manager</p>
+                                        <p><strong>Phone: </strong> +353 1 237 6433<br><strong>Mobil: </strong> +353 85 219 8429<br><strong>Email: </strong> david.cowhey@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">David currently works on the running of large valuation projects with a number of corporations, with portfolios of large volumes of residential properties.</p>
+                                        <p class="lead">David joined Red Coral in 2017 and has combined his legal knowledge with his residential property background which enables him to have a great understanding of property.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>    
+                            </div>
+                        </div>
+                    </div>
+                
+                
+                    <div class="col-lg-4 col-md-6 mt-lg-5 pt-lg-5">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic04.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Clare O'Grady">
+                                        <h2>Clare O'Grady Assoc SCSI</h2>
+                                        <h3>Associate Director</h3>
+                                        <h4>Red Coral Realty</h4>
+                                        <p><strong>Phone: </strong> +353 1 237 6444<br><strong>Email: </strong> clare.ogrady@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Clare O'Grady Assoc SCSI</h3>
+                                        <p class="text-uppercase">Associate Director</p>
+                                        <p><strong>Phone: </strong> +353 1 237 6444<br><strong>Mobil: </strong> +353 87 987 1234<br><strong>Email: </strong> clare.ogrady@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Clare joined Red Coral in 2004 and has combined her banking background with her extensive property knowledge. Clare brought with her a wealth of experience in client management from her previous role with Goodbody Stockbrokers as a private
+                                            clients portfolio manager and possesses a high level of integrity, flexibility and excellent interpersonal skills.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 mt-lg-5 pt-lg-5">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic06.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Michéal O'Looney">
+                                        <h2>Michéal O'Looney MIPAV</h2>
+                                        <h3>Residential Valuer</h3>
+                                        <h4>Red Coral Realty</h4>
+                                        <p><strong>Phone: </strong> +353 1 237 6455<br><strong>Email: </strong> m.olooney@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Michéal O'Looney MIPAV</h3>
+                                        <p class="text-uppercase">Residential Valuer</p>
+                                        <p><strong>Phone: </strong> +353 1 237 6455<br><strong>Mobil: </strong> +353 83 567 4532<br><strong>Email: </strong> michael.olooney@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">Michéal graduated from Limerick Institute of Technology with a Degree in Property Valuation and Management in 2014. He joined Red Coral in July 2015 and built a
+                                            reputation as an excellent communicator with strong sales skills in their Clonakilty & Skibbereen branches. With over five years’ 
+                                            experience he developed an excellent knowledge of the Cork market.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 mt-5 mt-md-0 mt-lg-5 pt-lg-5">
+                        <div class="card-wrapper">
+                            <div class="card-body">
+                                <div class="card-front">
+                                    <div class="card align-items-center">
+                                        <img src="assets/img/req-valuation/profil-pic/profil-pic05.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="Harriet Delany">
+                                        <h2>Harriet Delany Assoc SCSI</h2>
+                                        <h3>Residential Valuer</h3>
+                                        <h4>Red Coral Realty</h4>
+                                        <p><strong>Phone: </strong> +353 1 237 6466<br><strong>Email: </strong> harriet.delany@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <i class="fas fa-arrow-circle-right"></i>
+                                    </div>
+                                </div>
+
+                                <div class="card-back">
+                                    <div class="card">
+                                        <h3>Harriet Delany Assoc SCSI</h3>
+                                        <p class="text-uppercase">Residential Valuer</p>
+                                        <p><strong>Phone: </strong> +353 1 237 6466<br><strong>Mobil: </strong> +353 86 645 7654<br><strong>Email: </strong> harriet.delany@redcoral.ie</p>
+                                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                                        <p class="lead">She successfully led the department until 2018 when she then took on the challenge of managing the Savills Central Dublin branch covering sales in Dublin 2, 4, 6, 6W, 14 and 16.</p>
+                                        <p class="lead">She joined the Red Coral team in January 2021 and provides formal valuations for financial institutions and lenders.</p>
+                                        
+                                        <div class="d-flex flex-row justify-content-center">
+                                            <div class="p-4">
+                                                <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
+                                                    <span class="sr-only">Facebook</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
+                                                    <span class="sr-only">Instagram</span>
+                                                </a>
+                                            </div>
+                                            <div class="p-4">
+                                                <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
+                                                    <span class="sr-only">Twitter</span>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>  
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!--End Team Section-->
+
+        <!-- Start Three Column Section -->
+        <section class="three-coloumn-sec">
+            <div class="container p-0 pt-lg-5">     
+                <div class="row what-we-do pt-lg-5 pb-lg-5 text-center">
+                    <div class="col-md-12 col-lg-4">
+                        <a href="buyAdvice.html">
+                            <img src="assets/img/index/advice01.jpg" class="img-fluid pt-3" alt="women in business" >
+                            <h3 class="my-4 text-center">ADVICE FOR BUYERS</h3>
+                            <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                            <p>Buying property is a complicated process. With over 30 years’ experience working with buyers all
+                                over Ireland, we’ve researched and developed a selection of useful guides and resources to provide
+                                you with the insight you need.
+                            </p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-4">
+                        <a href="mortgage.html">
+                            <img src="assets/img/index/mortgages01.jpg" class="img-fluid pt-3" alt="mortgages picture" >
+                            <h3 class="my-4 text-center">MORTGAGES</h3>
+                            <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                            <p>From getting mortgage-ready to preparing and submitting your full application, our Mortgages division
+                                have the insight and expertise you need to help secure you the best possible outcome.
+                            </p>
+                        </a>
+                    </div>
+                    
+                    <div class="col-md-12 col-lg-4">
+                        <a href="research.html">
+                            <img src="assets/img/index/research01.jpg" class="img-fluid pt-3" alt="monitor screen picture" >
+                            <h3 class="my-4 text-center">RESEARCH</h3>
+                            <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
+                            <p>Applying in-depth research methodologies, we regularly publish market updates, trends, forecasts
+                                and more helping you make informed property decisions backed up by hard facts and information.
+                            </p>
+                        </a>
                     </div>  
                 </div>
+            </div>
+        </section>
+        <!-- End Three Column Section -->
 
-                <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
-                    <div class="card-wrapper">
-                        <div class="card-body">
-                            <div class="card-front">
-                                <div class="card align-items-center">
-                                    <img src="assets/img/req-valuation/profil-pic/profil-pic02.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="business-man">
-                                    <h2>Fiona Grant SCSI</h2>
-                                    <h3>Head of Commercial Valuations</h3>
-                                    <h4>Red Coral Realty</h4>
-                                    <p><strong>Phone: </strong> +353 1 237 6422<br><strong>Email: </strong> fiona.grant@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <i class="fas fa-arrow-circle-right"></i>
-                                </div>
-                            </div>
-
-                            <div class="card-back">
-                                <div class="card">
-                                    <h3>Fiona Grant SCSI</h3>
-                                    <p class="text-uppercase">Head of Commercial Valuations</p>
-                                    <p><strong>Phone: </strong> +353 1 237 6422<br><strong>Mobil: </strong> +353 86 236 8739<br><strong>Email: </strong> fiona.grant@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <p class="lead">Fiona has considerable experience in the commercial property market and joined Red Coral in January 2021 as Head of Commercial Valuations. Her experience, relationship
-                                        development skills and dedication to ensuring best in class service has resulted in an exceptional client list.</p>
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="p-4">
-                                            <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
-                                                <span class="sr-only">Facebook</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
-                                                <span class="sr-only">Instagram</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
-                                                <span class="sr-only">Twitter</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+        <!--Start Footer Section-->
+        <div class="footer-widget-green-border mt-5">
+            <div class="footer-widget-green-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 mb-lg-4 mb-xl-0  text-center">
+                            <p>We are market research experts who work with clients to create high quality, data driven
+                                and unrivaled property market research.</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-lg-4 col-md-6 mt-2 mt-md-0">
-                    <div class="card-wrapper">
-                        <div class="card-body">
-                            <div class="card-front">
-                                <div class="card align-items-center">
-                                    <img src="assets/img/req-valuation/profil-pic/profil-pic03.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="business-man">
-                                    <h2>David Cowhey Assoc SCSI</h2>
-                                    <h3>Portfolio Team Manager</h3>
-                                    <h4>Red Coral Realty</h4>
-                                    <p><strong>Phone: </strong> +353 1 237 6433<br><strong>Email: </strong> david.cowhey@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <i class="fas fa-arrow-circle-right"></i>
-                                </div>
-                            </div>
-                            <div class="card-back">
-                                <div class="card">
-                                    <h3>David Cowhey Assoc SCSI</h3>
-                                    <p class="text-uppercase">Portfolio Team Manager</p>
-                                    <p><strong>Phone: </strong> +353 1 237 6433<br><strong>Mobil: </strong> +353 85 219 8429<br><strong>Email: </strong> david.cowhey@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <p class="lead">David currently works on the running of large valuation projects with a number of corporations, with portfolios of large volumes of residential properties.</p>
-                                    <p class="lead">David joined Red Coral in 2017 and has combined his legal knowledge with his residential property background which enables him to have a great understanding of property.</p>
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="p-4">
-                                            <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
-                                                <span class="sr-only">Facebook</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
-                                                <span class="sr-only">Instagram</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
-                                                <span class="sr-only">Twitter</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>    
-                        </div>
-                    </div>
-                </div>
-            
-            
-                <div class="col-lg-4 col-md-6 mt-lg-5 pt-lg-5">
-                    <div class="card-wrapper">
-                        <div class="card-body">
-                            <div class="card-front">
-                                <div class="card align-items-center">
-                                    <img src="assets/img/req-valuation/profil-pic/profil-pic04.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="business-man">
-                                    <h2>Clare O'Grady Assoc SCSI</h2>
-                                    <h3>Associate Director</h3>
-                                    <h4>Red Coral Realty</h4>
-                                    <p><strong>Phone: </strong> +353 1 237 6444<br><strong>Email: </strong> clare.ogrady@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <i class="fas fa-arrow-circle-right"></i>
-                                </div>
-                            </div>
-
-                            <div class="card-back">
-                                <div class="card">
-                                    <h3>Clare O'Grady Assoc SCSI</h3>
-                                    <p class="text-uppercase">Associate Director</p>
-                                    <p><strong>Phone: </strong> +353 1 237 6444<br><strong>Mobil: </strong> +353 87 987 1234<br><strong>Email: </strong> clare.ogrady@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <p class="lead">Clare joined Red Coral in 2004 and has combined her banking background with her extensive property knowledge. Clare brought with her a wealth of experience in client management from her previous role with Goodbody Stockbrokers as a private
-                                        clients portfolio manager and possesses a high level of integrity, flexibility and excellent interpersonal skills.</p>
-                                    
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="p-4">
-                                            <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
-                                                <span class="sr-only">Facebook</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
-                                                <span class="sr-only">Instagram</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
-                                                <span class="sr-only">Twitter</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mt-5 mt-md-0 mt-lg-5 pt-lg-5">
-                    <div class="card-wrapper">
-                        <div class="card-body">
-                            <div class="card-front">
-                                <div class="card align-items-center">
-                                    <img src="assets/img/req-valuation/profil-pic/profil-pic06.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="business-man">
-                                    <h2>Michéal O'Looney MIPAV</h2>
-                                    <h3>Residential Valuer</h3>
-                                    <h4>Red Coral Realty</h4>
-                                    <p><strong>Phone: </strong> +353 1 237 6455<br><strong>Email: </strong> m.olooney@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <i class="fas fa-arrow-circle-right"></i>
-                                </div>
-                            </div>
-
-                            <div class="card-back">
-                                <div class="card">
-                                    <h3>Michéal O'Looney MIPAV</h3>
-                                    <p class="text-uppercase">Residential Valuer</p>
-                                    <p><strong>Phone: </strong> +353 1 237 6455<br><strong>Mobil: </strong> +353 83 567 4532<br><strong>Email: </strong> michael.olooney@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <p class="lead">Michéal graduated from Limerick Institute of Technology with a Degree in Property Valuation and Management in 2014. He joined Red Coral in July 2015 and built a
-                                        reputation as an excellent communicator with strong sales skills in their Clonakilty & Skibbereen branches. With over five years’ 
-                                        experience he developed an excellent knowledge of the Cork market.</p>
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="p-4">
-                                            <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
-                                                <span class="sr-only">Facebook</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
-                                                <span class="sr-only">Instagram</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
-                                                <span class="sr-only">Twitter</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-lg-4 col-md-6 mt-5 mt-md-0 mt-lg-5 pt-lg-5">
-                    <div class="card-wrapper">
-                        <div class="card-body">
-                            <div class="card-front">
-                                <div class="card align-items-center">
-                                    <img src="assets/img/req-valuation/profil-pic/profil-pic05.jpg" class="img-fluid rounded-circle w-50 mb-3" alt="business-man">
-                                    <h2>Harriet Delany Assoc SCSI</h2>
-                                    <h3>Residential Valuer</h3>
-                                    <h4>Red Coral Realty</h4>
-                                    <p><strong>Phone: </strong> +353 1 237 6466<br><strong>Email: </strong> harriet.delany@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <i class="fas fa-arrow-circle-right"></i>
-                                </div>
-                            </div>
-
-                            <div class="card-back">
-                                <div class="card">
-                                    <h3>Harriet Delany Assoc SCSI</h3>
-                                    <p class="text-uppercase">Residential Valuer</p>
-                                    <p><strong>Phone: </strong> +353 1 237 6466<br><strong>Mobil: </strong> +353 86 645 7654<br><strong>Email: </strong> harriet.delany@redcoral.ie</p>
-                                    <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                                    <p class="lead">She successfully led the department until 2018 when she then took on the challenge of managing the Savills Central Dublin branch covering sales in Dublin 2, 4, 6, 6W, 14 and 16.</p>
-                                    <p class="lead">She joined the Red Coral team in January 2021 and provides formal valuations for financial institutions and lenders.</p>
-                                    <div class="d-flex flex-row justify-content-center">
-                                        <div class="p-4">
-                                            <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
-                                                <span class="sr-only">Facebook</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.instagram.com" target="_blank" rel="noopener"><i class="fab fa-instagram" aria-hidden="true"></i>
-                                                <span class="sr-only">Instagram</span>
-                                            </a>
-                                        </div>
-                                        <div class="p-4">
-                                            <a href="http://www.twitter.com" target="_blank" rel="noopener"><i class="fab fa-twitter" aria-hidden="true"></i>
-                                                <span class="sr-only">Twitter</span>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>  
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
-    </section>
-    <!--End Team Section-->
-
-    <!-- Start Three Column Section -->
-    <section class="three-coloumn-sec">
-        <div class="container p-0 pt-lg-5">     
-            <div class="row what-we-do pt-lg-5 pb-lg-5 text-center">
-                <div class="col-md-12 col-lg-4">
-                    <a href="buyAdvice.html">
-                        <img src="assets/img/index/advice01.jpg" alt="women in business" class="img-fluid pt-3">
-                        <h3 class="my-4 text-center">ADVICE FOR BUYERS</h3>
-                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                        <p>Buying property is a complicated process. With over 30 years’ experience working with buyers all
-                            over Ireland, we’ve researched and developed a selection of useful guides and resources to provide
-                            you with the insight you need.
-                        </p>
-                    </a>
-                </div>
-                
-                <div class="col-md-12 col-lg-4">
-                    <a href="mortgage.html">
-                        <img src="assets/img/index/mortgages01.jpg" alt="mortgages picture" class="img-fluid pt-3">
-                        <h3 class="my-4 text-center">MORTGAGES</h3>
-                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                        <p>From getting mortgage-ready to preparing and submitting your full application, our Mortgages division
-                            have the insight and expertise you need to help secure you the best possible outcome.
-                        </p>
-                    </a>
-                </div>
-                
-                <div class="col-md-12 col-lg-4">
-                    <a href="research.html">
-                        <img src="assets/img/index/research01.jpg" alt="monitor screen picture" class="img-fluid pt-3">
-                        <h3 class="my-4 text-center">RESEARCH</h3>
-                        <div class="border-top border-danger w-25 mx-auto mt-md-3 mb-md-3"></div>
-                        <p>Applying in-depth research methodologies, we regularly publish market updates, trends, forecasts
-                            and more helping you make informed property decisions backed up by hard facts and information.
-                        </p>
-                    </a>
-                </div>  
-            </div>
-        </div>
-    </section>
-    <!-- End Three Column Section -->
-
-    <!--Start Footer Section-->
-    <footer class="footer-border">
-        <div class="footer">
+        <footer class="footer">
             <div class="container">
                 <div class="row">
-                    <div class="col-lg-3 mb-lg-4 mb-xl-0 footer-widget d-none d-lg-block">
-                        <h4>About Us</h4>
-                        <hr>
-                        <p>We are market research experts who work with clients to create high quality, data driven
-                            and unrivaled property market research.</p>
-                        <div class="footer-logo">
-                            <h3><span>Red Coral</span> Realty</h3>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
+                    <div class="col-lg-6 text-center">
                         <h4>Contact Info</h4>
-                        <hr>
                         <div class="footer-address">
                             <p>176 Pembroke Road, Ballsbridge, Dublin 4, D04 EN80</p>
                             <span>Phone: +353 01 23 456 765</span>
                             <span>Email: info@redcoralrealty.com</span>
-                        </div>
+                        </div>   
                     </div>
-                    <div class="col-lg-3 col-sm-12 col-md-6 mb-lg-4 mb-xl-0 footer-widget">
-                        <h4 class="d-none d-md-block">Quick Links</h4>
-                        <hr>
-                        <ul>
+                 
+                    <div class="col-lg-6 text-center mt-5 mt-lg-0">
+                        <h4>Quick Links</h4>
+                        <ul class="pl-0">
                             <li><a href="index.html">Home</a></li>
-                            <li><a href="local-properties.html">Local Properties</a></li>
-                            <li><a href="mortgage.html">Mortgages</a></li>                           
+                            <li><a href="local-properties.html">Local Properies</a></li>
+                            <li><a href="abroad-properies.html">Properties Abroad</a></li>
+                            <li><a href="mortgage.html">Mortgages</a></li>
                             <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
-                </div>
-                <div class="border-top border-white w-100 mx-auto mt-5"></div>
-                <div class="row">
-                    <div class="col-lg-8 col-md-12 footer-bottom align-items-center">
-                        <p class="footer-text m-0">
-                            Copyright&copy;<script>document.write(new Date().getFullYear());</script>
-                            All rights Reserved Red Coral Realty
-                        </p>
-                    </div>
-                    <div class="col-lg-4 col-md-12 text-center text-lg-right social-media">
+
+                    <div class="col-md-12 mt-3 text-center social-media">
                         <a href="http://www.facebook.com" target="_blank" rel="noopener"><i class="fab fa-facebook" aria-hidden="true"></i>
                             <span class="sr-only">Facebook</span>
                         </a>
@@ -606,24 +597,37 @@
                         </a>
                     </div>
                 </div>
-            </div>
-        </div>
-    </footer>
-    <!--Start Footer Section-->
+
+                <div class="border-top border-dark w-100 mx-auto"></div>
+                <div class="row">
+                    <div class="col-lg-12 footer-bottom text-center">
+                        <p class="footer-text m-0">
+                            Copyright&copy;<script>document.write(new Date().getFullYear());</script>
+                            All rights Reserved Red Coral Realty
+                        </p>
+                    </div>   
+                </div>
+            </div> 
+        </footer>
+        <!--Start Footer Section-->
 
 
-    <!--Start Scripts-->
-    <!--Bootstarp-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
-    <!--ScrollReveal Js https://github.com/jlmakes/scrollreveal-->
-    <script src="https://unpkg.com/scrollreveal"></script>
-    <!--SwiperJs-->
-    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-    <!--JS-->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/request-loc-form.js"></script>
-    <script src="assets/js/scroll-on-move.js"></script>
-</body>
+        <!--Start Scripts-->
+        <!--Bootstarp-->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+        <!--ScrollReveal Js https://github.com/jlmakes/scrollreveal-->
+        <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
+        <!--EmailJs-->
+        <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script type="text/javascript">
+        (function() {
+        emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
+        })();
+        </script>
+        <!--JS-->
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/request-loc-form.js"></script>
+    </body>
 </html>
