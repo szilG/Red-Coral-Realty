@@ -11,12 +11,7 @@ function calcLoan() {
     let payment = ((amount / (years * 12)) + interest).toFixed(2);
     payment = payment.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","); //Formating -add comma after every 3 digits
   
-    document.getElementById("payment").innerHTML = "MONTHLY REPAYMENTS = €" + payment;
-    // if () {
-    //   payment.classList.add("payment_box");
-    // } else {
-    //   payment.classList.remove("payment_box");
-    // }
+    document.getElementById("payment").innerHTML = "MONTHLY REPAYMENTS  €" + payment;
   }
 
 //======================End Mortgage Calculator==============================//
@@ -37,6 +32,7 @@ function sendMail(contactForm) {
       alert('Oops... ' + JSON.stringify(error));
       console.log("Failed", error);
   });
+  //clear imput field after sending
   document.getElementById("myForm").reset();
   return false;
 }
