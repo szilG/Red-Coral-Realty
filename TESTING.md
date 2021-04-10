@@ -4,7 +4,34 @@
 
 ## Testing 
 
-#### Validation Testing
+### Client stories testing
+
+As a potential customer, I want to easily navigate throughout the site and find what I need.
+
+* As every page has a navigation bar on the top and bottom of the page, the customer can easily find and navigate through the site.
+
+<img src="assets/img/TESTING.md-img/12.png" width="500" alt="image">
+<img src="assets/img/TESTING.md-img/17.png" width="500" alt="image">
+
+* As every page has a company logo image that when clicked takes the customer back to the Home page.
+
+<img src="assets/img/TESTING.md-img/13.png" width="500" alt="image">
+
+* As every page has a back to top button. When the customer scrool down on the page that button appears and with the button clicking they can easily go back to the top of the page.
+
+<img src="assets/img/TESTING.md-img/14.png" width="500" alt="image">
+
+* The home page has many call-to-action buttons which take the user to the specific page.
+  - Right away in the hero section they can book a Valuation to their property.
+    <img src="assets/img/TESTING.md-img/15.png" width="500" alt="image">
+  - Further along there are the read more buttons wich takes the user to check the desired property.
+    <img src="assets/img/TESTING.md-img/16.png" width="500" alt="image">
+  - They can book appointment for a valuation every section on the page.
+    <img src="assets/img/TESTING.md-img/18.png" width="500" alt="image">
+    <img src="assets/img/TESTING.md-img/19.png" width="500" alt="image">
+    <img src="assets/img/TESTING.md-img/20.png" width="500" alt="image">
+
+### Validation Testing
 * [W3C CSS Validation](https://jigsaw.w3.org/css-validator/)
 * [W3C Markup Validation](https://validator.w3.org/) 
 
