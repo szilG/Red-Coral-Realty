@@ -10,6 +10,8 @@
 
 To solve W3C Markup Validation problem:
 
+Home page:
+
 1.
 <img src="assets/img/TESTING.md-img/04.png" width="500" alt="image">
 
@@ -32,3 +34,31 @@ That problem was on Home page Footer widget Section. To solve this problem I sim
 
 That problem was on Home page Mortgage Calculator Section. To solve this problem I used <div> element instead of <h2>tag.
 I found the solution [here:](https://stackoverflow.com/questions/23739224/empty-heading-warning-on-html5-validation#:~:text=The%20%22empty%20heading%22%20warning%20means,with%20which%20they%20are%20associated.)
+
+Contact page:
+
+1.
+<img src="assets/img/TESTING.md-img/08.png" width="500" alt="image">
+
+That problem was on Every page in the Header Section. To solve this problem I renamed the ID of navbarDropdownMenuLink.
+
+2.
+<img src="assets/img/TESTING.md-img/09.png" width="500" alt="image">
+
+To solve this problem I gave space betweed the attributes and delete the type attribute.
+
+Mortgages page:
+
+1.
+<img src="assets/img/TESTING.md-img/10.png" width="500" alt="image">
+
+To solve this problem I gave empty value attribute to the first <option> element.
+
+Request Valuation page:
+
+1.
+<img src="assets/img/TESTING.md-img/11.png" width="500" alt="image">
+
+To solve this problem I gave empty value attribute to the first <option> element.
+Put space between the attributes.
+
