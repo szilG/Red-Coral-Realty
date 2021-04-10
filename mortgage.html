@@ -41,17 +41,17 @@
                                 <a class="nav-link active" href="mortgage.html">Mortgage<span class="sr-only">(current)</span></a>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSecondMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 News</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownSecondMenuLink">
                                     <a class="dropdown-item" href="research.html">Research</a>
                                     <a class="dropdown-item" href="buyAdvice.html">Advice for Buyers</a>
                                 </div>
                             </li>
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownThirdMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 Contact</a>
-                                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdownThirdMenuLink">
                                     <a class="dropdown-item" href="request-valuation.html">Request a Valuation</a>
                                     <a class="dropdown-item" href="contact.html">Customer Service</a>
                                 </div>
@@ -123,7 +123,7 @@
                             </div>
                             <div class="form-group">
                                 <select id="inputOption" name="time" class="form-control" required>
-                                    <option selected>Select Product</option>
+                                    <option selected value="">Select Product</option>
                                     <option>Mortgages</option>
                                     <option>Mortgage Protection/Life Cover</option>
                                     <option>Home Insurance</option>
@@ -171,11 +171,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-5 col-md-12 mortgage-container move-from-left">
-                        <h1>Calculate your mortgage</h1>
+                        <h2>Calculate your mortgage</h2>
                         <p>LOAN AMOUNT € <input type="number" id="amount" min="1" max="2000000" onchange="calcLoan()"></p>
                         <p>INTEREST RATE %<input type="number" id="iterest_rate" min="0" max="100" value="2.7" step=".1" onchange="calcLoan()"></p>
                         <p class="mb-5 pb-4">LOAN TERM (YEARS) <input type="number" id="years" min="1" max="35" value="35" step="1" onchange="calcLoan()"></p>
-                        <h2 id="payment" class="payment text-center mt-5"></h2>   
+                        <div id="payment" class="payment text-center mt-5"></div>   
                     </div>
                     <div class="col-lg-7 mortgage-text-container move-from-right">
                         <div class="col-lg-10 col-md-12 ml-0 ml-lg-5 pt-5 pb-5 text-center">
@@ -260,10 +260,10 @@
                             </a>
                         </div>
                         <div class="col-md-6 col-lg-3 mt-3 text-center">
-                            <a href="contact.html"><button type="button" class="footer-widget-btn">Ask a Question</button></a>
+                            <a href="contact.html" class="btn">Ask a Question</a>
                         </div>
                         <div class="col-md-6 col-lg-3 mt-3 text-center">
-                            <a href="request-valuation.html"><button type="button" class="footer-widget-btn">Request Appraisal</button></a>
+                            <a href="request-valuation.html" class="btn">Request Appraisal</a>
                         </div>
                     </div>
                 </div>
@@ -425,8 +425,8 @@
         <!--ScrollReveal Js https://github.com/jlmakes/scrollreveal-->
         <script src="https://unpkg.com/scrollreveal@4.0.9/dist/scrollreveal.js"></script>
         <!--EmailJs-->
-        <script type="text/javascript"src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
-        <script type="text/javascript">
+        <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+        <script>
         (function() {
         emailjs.init("user_kSnXIIYaQxWWlMEQecatt");
         })();
