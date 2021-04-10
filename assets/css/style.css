@@ -105,15 +105,6 @@ html {
     color: var(--second-color);
 }
 
-
-/*
-.dropdown-menu {
-    position: relative;
-    box-shadow: 0px 4px 10px 1px rgba(0,0,0,.2);
-    background: red;
-    color: #fff !important;
-} */
-
 /*=================================Start Back to top button===========================*/
 #back-to-top-btn {
     display: none;
@@ -140,12 +131,8 @@ html {
 }
 
 
-
-
-
-
 /*==================================Start Hero Section=================================*/
-.carousel-item h1 {
+.carousel-item h2 {
     font-family: 'Anton', sans-serif;
     font-size: 3.5rem;
 }
@@ -179,7 +166,6 @@ html {
 }
 
 .text-lists ul {
-    padding-left: 5rem;
     list-style-type: none;
 }
 
@@ -191,13 +177,14 @@ html {
     margin-bottom: 1rem;
 }
 
-.text-lists i {
+.text-lists li i {
     color: var(--second-color);
     font-size: 20px;
     float: left;
     display: flex;
     justify-content: center;
     align-items: center;
+    padding-right: 5px;
 }
 
 
@@ -207,10 +194,11 @@ html {
     margin-top: 100px;
 }
 
-.local-property-card-section h1 {
+.local-property-card-section h2 {
     color: var(--main-color);
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     padding-left: 50px;
+    font-size: 40px;
 }
 
 .local-property-card-section p {
@@ -298,7 +286,7 @@ html {
     border-radius: 0px 30px 0px 30px;  
 }
 
-.mortgage-container h1 {
+.mortgage-container h2 {
     padding-bottom: 50px;
     font-size: 1.8rem;
     text-align: center;
@@ -330,8 +318,10 @@ html {
 
 .payment {
     background-color: #fff;
+    color: var(--text-color);
     margin-bottom: 20px;
     border-radius: 30px 0 30px 0;
+    font-size: 20px;
 }
 
 
@@ -339,17 +329,25 @@ html {
 #resent-property-section {
     width: 100%;
     padding: 50px 0;
-    /* background-color: #eeeeee; */
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: var(--main-color);
     margin-top: 100px;
 }
 
+#resent-property-section h1 {
+    font-size: 25px;
+}
+
+#resent-property-section h2 {
+    font-size: 40px;
+}
+
 #resent-property-section .text-right a {
     color: var(--main-color);
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500;
     transition: 1s ease;
+    padding-right: 30px;
 }
 
 #resent-property-section .text-right a:hover {
@@ -377,6 +375,10 @@ html {
 
 #resent-propery-slider .swiper-container .swiper-slide .property-list p {
     font-weight: 500;
+}
+
+#resent-propery-slider .swiper-container .swiper-slide .property-list .text-right p {
+    font-size: 30px;
 }
 
 #resent-propery-slider .swiper-container .swiper-slide .property-list .image {
@@ -408,7 +410,6 @@ html {
     width: 100%;
     height: auto;
     margin-top: 100px;
-    /* background: #343239; */
     background: url("../img/index//blue-bg.jpg");
     box-shadow: 2px 2px 12px rgba(0,0,0,.8);
     position: relative;
@@ -526,7 +527,7 @@ html {
             transform: scale(1.2);
 }
 
-.footer-widget-btn {
+.footer-widget .footer-widget-btn {
     border: 1px solid var(--main-color);
     box-shadow: none;
     border-radius: 30px 0 30px 0;
@@ -534,19 +535,18 @@ html {
     padding: 10px 60px;
     font-size: 20px;
     cursor: pointer;
-    margin: 10px;
     color: var(--main-color);
     transition: .8s;
     position: relative;
     overflow: hidden;
     z-index: 1;
 }
-.footer-widget-btn:hover,
-.footer-widget-btn:focus {
+.footer-widget .footer-widget-btn:hover,
+.footer-widget .footer-widget-btn:focus {
     color: #fff;
 }
 
-.footer-widget-btn::before {
+.footer-widget .footer-widget-btn::before {
     content: "";
     position: absolute;
     left: 0;
@@ -559,7 +559,7 @@ html {
     border-radius: 0 0 50% 50%;
 }
 
-.footer-widget-btn:hover:before {
+.footer-widget .footer-widget-btn:hover:before {
     height: 180%;
 }
 
@@ -575,8 +575,9 @@ html {
 }
 
 /*================================Start Testimonials Section====================*/
-.testimonials-header {
+.testimonials-header h2 {
     color: var(--text-color);
+    font-size: 35px;
 }
 
 .testimonials-card-body span {
@@ -685,9 +686,8 @@ html {
         font-size: 20px;
         padding: 0 20px;
     }
-    .footer-widget-btn {
-        padding: 10px 30px;
-        font-size: 18px;
+    .footer-widget .footer-widget-btn {
+        padding: 10px 20px;
     }
 }
 
