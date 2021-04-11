@@ -144,8 +144,212 @@ As an interested customer, I want to see how follow them on social media.
 <img src="assets/img/TESTING.md-img/20.png" width="500" alt="image">
 
 
+### Testing functionality of every page
+
+**Home page:**
+
+Navigation bar:
+
+   * I checked the navigation's responsiveness by changing the screen size from desktop to tablet, to phone. Burger Icon dropdown menu in the correct place. Works as expected.
+   * I clicked on each navigation menu item and confirmed that it links to the correct page.
+
+Image Carousel:
+
+   * I checked the image carousel by changing the screen size from desktop to tablet, to phone. Image carousel works as expected.
+
+Content:
+
+   * I checked the text and image by changing the screen size from desktop to tablet, to phone.
+   Works as expected and looks good on all device widths.
+
+Call to action buttons:
+
+   * I checked the responsiveness by changing the screen size from desktop to tablet, to phone.
+   * I hovered over each button and checked their color change.
+   * I clicked on each button to check it leads to a correct page.
+
+Back to top button:
+
+   * I clicked on it and it goes back to the top of the page. Works as expected.
+
+Footer:
+
+   * I checked the footer by changing the screen size from desktop to tablet, to phone. Works as it expected.
+   * I clicked on each navigation link to confirm it takes the user to the chosen page.
+   * I hovered over the links, their color changed.
+   * All of the social icons connected.
 
 
+**Local Properties page:**
+
+Navigation bar:
+
+   * Repeat validation steps done for Navbar on the Home page.
+   * All navigation links are connected.
+
+Content:
+
+   * I checked the text and images by changing the screen size from desktop to tablet, to phone.
+   * All property links are connected works as it expected.
+
+Footer:
+
+   * Repeat validation steps done for Footer on the Home page.
+
+Back to top button:
+
+   * I clicked on it and it goes back to the top of the page. Works as expected.
+
+**Properties Abroad page:**
+
+Navigation bar:
+
+   * Repeat validation steps done for Navbar on the Home page.
+   * All navigation links are connected.
+
+Content:
+
+   * I checked the text and images by changing the screen size from desktop to tablet, to phone.
+   * All property links are connected works as it expected.
+
+Footer:
+
+   * Repeat validation steps done for Footer on the Home page.
+
+Back to top button:
+
+   * I clicked on it and it goes back to the top of the page. Works as expected.
+
+**Mortgage page:**
+
+Navigation bar:
+
+   * Repeat validation steps done for Navbar on the Home page.
+   * All navigation links are connected.
+
+Contact Forms:
+
+   I checked mortgage page all contact form.
+   * I submitted the form with the Name field left empty and received an error message to fill out the required field.
+   * I submitted the form with both an invalid email address and later an empty email address field and noticed that an error message to fill out the required field popped up.
+   * I submitted the form with the Phone number field left empty and received an error message to fill out the required field.
+   * I submitted the form with the Select Product field left empty and received an error message to fill out the required field.
+   * I submitted the form with every field filled in correctly and received a "Your mail was send" message.
+<img src="assets/img/TESTING.md-img/33.png" width="500" alt="image">
+
+Content:
+
+   * I checked the text and images by changing the screen size from desktop to tablet, to phone.
+   * All property links are connected works as it expected.
+
+Footer:
+
+   * Repeat validation steps done for Footer on the Home page.
+
+Back to top button:
+
+   * I clicked on it and it goes back to the top of the page. Works as expected.
+
+**Research page:**
+
+Navigation bar:
+
+   * Repeat validation steps done for Navbar on the Home page.
+   * All navigation links are connected.
+
+Content:
+
+   * I checked the text and images by changing the screen size from desktop to tablet, to phone.
+
+Footer:
+
+   * Repeat validation steps done for Footer on the Home page.
+
+Back to top button:
+
+   * I clicked on it and it goes back to the top of the page. Works as it expected.
+
+**Advice for Buyers page:**
+
+Navigation bar:
+
+   * Repeat validation steps done for Navbar on the Home page.
+   * All navigation links are connected.
+
+Content:
+
+   * I checked the text and images by changing the screen size from desktop to tablet, to phone.
+
+Footer:
+
+   * Repeat validation steps done for Footer on the Home page.
+
+Back to top button:
+
+   * I clicked on it and it goes back to the top of the page. Works as expected.
+
+**Request Valuation page:**
+
+Navigation bar:
+
+   * Repeat validation steps done for Navbar on the Home page.
+   * All navigation links are connected.
+
+Contact Form:
+
+   * I checked the Radio buttons works as it expected.
+   * I checked the contact form's responsiveness by changing the screen size from desktop to tablet, to phone.
+   * I submitted the empty form and an error message popped up about filling in the required fields.
+   * I submitted the form with the Location field left empty and received an error message to fill out the required field.
+   * I submitted the form with the Area field left empty and received an error message to fill out the required field.
+   * I submitted the form with the Name field left empty and received an error message to fill out the required field.
+   * I submitted the form with both an invalid email address and later an empty email address field and noticed that an error message to fill out the required field popped up.
+   * I submitted the form with the Phone number field left empty and received an error message to fill out the required field.
+   * I submitted the form with the Select Preferred Callback Time field left empty and received an error message to fill out the required field.
+   * I submitted the form with every field filled in correctly and received a "Your mail was send" message.
+<img src="assets/img/TESTING.md-img/33.png" width="500" alt="image">
+
+Content:
+
+   * I checked the text and images by changing the screen size from desktop to tablet, to phone.
+   
+Footer:
+
+   * Repeat validation steps done for Footer on the Home page.
+
+Back to top button:
+
+   * I clicked on it and it goes back to the top of the page. Works as expected.
+
+**Customer Sevice/Contact page:**
+
+Navigation bar:
+
+   * Repeat validation steps done for Navbar on the Home page.
+   * All navigation links are connected.
+
+Content:
+
+   * I checked the text and images by changing the screen size from desktop to tablet, to phone.
+   * All of the page links are connected.
+
+Contact Form:
+
+   * I checked the contact form's responsiveness by changing the screen size from desktop to tablet, to phone.
+   * I submitted the empty form and an error message popped up about filling in the required fields.
+   * I submitted the form with the Name field left empty and received an error message to fill out the required field.
+   * I submitted the form with both an invalid email address and later an empty email address field and noticed that an error message to fill out the required field popped up.
+   * Your Location field isn't required. The form can be submited without fill it!
+   * I submitted the form with every field filled in correctly and received a "Your mail was send" message.
+<img src="assets/img/TESTING.md-img/33.png" width="500" alt="image">
+
+Footer:
+
+   * Repeat validation steps done for Footer on the Home page.
+
+Back to top button:
+
+   * I clicked on it and it goes back to the top of the page. Works as expected.
 
 
 ### Validation Testing
