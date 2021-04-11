@@ -3,6 +3,9 @@
 This is an imaginary website for a real estate company!
 Wich can provide a wide range of properties and services.
 
+The website features slideshows, testimonials, a page with all of the offers, and a contact page.
+The main goal of the website is to guide possible clients to making contact with the agency through the contact page.
+
 
 ## UX
 
@@ -11,18 +14,21 @@ Wich can provide a wide range of properties and services.
  * Everyone on this planet who wants to sell, buy, let or rent.
 
 **Client stories**
- * Find the best price to the property even selling or buying.
- * Get best price from the agency pricing.
- * Get wide range of services.
- * Easy navigate to contact/book page.
- * Calculate mortgage repayment.
- * Find advice for buying and how to apply mortgages.
- * See they research team.
+ * As a potential customer, I want to easily navigate throughout the site and find what I need.
+ * As a potential customer, I want to easily find the best price to the property even selling or buying.
+ * As a potential customer, If want to sell my property I want to know their charges and fees.
+ * As a possible customer, I want to know what former clients thought of their works.
+ * As an interested customer, I want to see wide range of services.
+ * As an interested customer, I want to easy navigate to contact/book page.
+ * As an interested customer, I want to calculate mortgage repayment and to know how to apply mortgages.
+ * As an interested customer, I want to find advice for buying.
+ * As an interested customer, I want to see their research of the market and their research team.
+ * As an interested customer, I want to see how follow them on social media.
  
 
 **Wireframe mockups:** 
 
-Wireframe information can be found in the separate [Wireframe pdf file.]()
+Wireframe information can be found in the separate [Wireframe pdf file.](https://github.com/szilG/Red-Coral-Realty/tree/main/wireframe)
 
 
 
@@ -124,9 +130,10 @@ If you have any trouble cloning the repository further information can be found 
   - [DeZeen](https://www.dezeen.com/)
 
 #### Code
-* Screenshot images in the deployment section was taken from [gitpod browser-extension](https://www.gitpod.io/static/b2f7a9dd0909631d5530b3eb59cc6d31/a370b/browser-extension-lense.png)
-[github settings button](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubsettings.png)
-[github pages](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/githubpagesscreenshot.png)
+* Screenshot images in the deployment section was taken from 
+  - [gitpod browser-extension](https://www.gitpod.io/static/b2f7a9dd0909631d5530b3eb59cc6d31/a370b/browser-extension-lense.png)
+  - [github settings button](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubsettings.png)
+  - [github pages](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/githubpagesscreenshot.png)
 
 
 #### Acknowledgements
