@@ -1,4 +1,4 @@
-//======================Start Mortgage Calculator==============================//
+//======================Start Mortgage Calculator Credit to Adam Khoury https://www.youtube.com/watch?v=vkBiEuZSq9s ==============================//
 function calcLoan() {
     //Make variables
     let amount = document.getElementById("amount").value;
@@ -16,7 +16,7 @@ function calcLoan() {
 
 //======================End Mortgage Calculator==============================//
 
-// EmailJs
+// EmailJs https://www.emailjs.com/
 function sendMail(contactForm) {
   emailjs.send("service_jjtjd9i", "template_fqa1rfl", {
       name: contactForm.name.value,

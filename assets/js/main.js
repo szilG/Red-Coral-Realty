@@ -23,7 +23,7 @@ function BackToTop(){
 
 //=====================End Back to Top button============================//
 
-//=============Start ScrollReveal --Scroll on move-- ======//
+//=============Start ScrollReveal --Scroll on move-- Credit to Julian Lloyd https://github.com/jlmakes/scrollreveal======//
 window.sr = ScrollReveal();
 sr.reveal(".navbar" , {
   duration: 2000,

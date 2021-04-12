@@ -38,7 +38,7 @@ $(document).ready(function() {
   });
   //===============End Request Location Form=========================//
 
-// EmailJs
+// EmailJs Credit  https://www.emailjs.com/
 function sendMail(contactForm) {
     emailjs.send("service_jjtjd9i", "template_fqa1rfl", {
         name: contactForm.name.value,

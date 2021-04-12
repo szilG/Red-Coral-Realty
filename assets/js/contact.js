@@ -1,4 +1,4 @@
-// EmailJs
+// EmailJs  Credit  https://www.emailjs.com/
 function sendMail(contactForm) {
     emailjs.send("service_jjtjd9i", "template_fqa1rfl", {
         name: contactForm.name.value,
@@ -18,7 +18,7 @@ function sendMail(contactForm) {
     return false;
 }
 
-
+//===============Start Request Location Form Credit to Webslesson https://www.youtube.com/watch?v=1ebJyK6tocI =========================//
 $(document).ready(function() {
     //load location data
     load_json_data('location');
@@ -43,7 +43,6 @@ $(document).ready(function() {
             });
             $('#' + id).html(item);
         });
-  
     }
 });
 

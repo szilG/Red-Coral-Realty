@@ -1,4 +1,4 @@
-//===========Start To initialize Swiper in JS================//
+//===========Start To initialize Swiper in credit to Vladimir Kharlampidi https://github.com/nolimits4web/Swiper/blob/master/demos/150-freemode.html ================//
 
 const swiper = new Swiper('.swiper-container', {
     navigation: {

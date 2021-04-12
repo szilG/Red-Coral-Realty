@@ -1,3 +1,4 @@
+//Swiper - Credit to Vladimir Kharlampidi https://github.com/nolimits4web/Swiper/blob/master/demos/150-freemode.html
 const swiper = new Swiper('.swiper-container', {
     // Optional parameters
     loop: true,
@@ -24,7 +25,7 @@ const swiper = new Swiper('.swiper-container', {
   });
 
 
-// EmailJs
+// EmailJs Credit  https://www.emailjs.com/
 function sendMail(contactForm) {
   emailjs.send("service_jjtjd9i", "template_fqa1rfl", {
       name: contactForm.name.value,

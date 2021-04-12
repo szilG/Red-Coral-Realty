@@ -373,6 +373,8 @@ function generatePropertyHTMLFromDetails(propertyDetails) {
 
 
 function showPropertyDetails() {
+    //https://developer.mozilla.org/en-US/docs/Web/API/URLSearchParams
+    //https://stackoverflow.com/questions/901115/how-can-i-get-query-string-values-in-javascript
     const urlParams = new URLSearchParams(window.location.search);
     const propertyId = urlParams.get('property_id');
     //Find the id in local_properties
@@ -380,7 +382,7 @@ function showPropertyDetails() {
     const propertyHTML = generatePropertyHTMLFromDetails(propertyDetails);
     //query the div
     const headerHTML=document.querySelector('.prop-details-container');
-    //use insertAdjacentHTML
+    //use insertAdjacentHTML  https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
     headerHTML.insertAdjacentHTML("afterbegin", propertyHTML);
     
 };
