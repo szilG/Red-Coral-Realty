@@ -1,4 +1,4 @@
-//===============Start Request Location Form=========================//
+//===============Start Request Location Form  Credit to Webslesson https://www.youtube.com/watch?v=1ebJyK6tocI =========================//
 $(document).ready(function() {
     //load location data
     load_json_data('location');
