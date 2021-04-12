@@ -110,7 +110,7 @@
 }
 
 .section-header h4 {
-    color: var(text-color);
+    color: var(--text-color);
     font-size: 25px;
 }
 
