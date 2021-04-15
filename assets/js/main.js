@@ -21,6 +21,7 @@ function BackToTop(){
   window.scroll(0, 0);
 }
 
+
 //=====================End Back to Top button============================//
 
 //=============Start ScrollReveal --Scroll on move-- Credit to Julian Lloyd https://github.com/jlmakes/scrollreveal======//
@@ -32,7 +33,7 @@ sr.reveal(".navbar" , {
 sr.reveal(".move-from-left" , {
   duration: 2000,
   origin: "left",
-  distance: "500px",
+  distance: "200px",
   viewFactor: 0.2
 });
 sr.reveal(".move-from-right" , {
