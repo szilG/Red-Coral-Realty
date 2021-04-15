@@ -19,6 +19,7 @@ body {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 /*================Start Header Section======================*/
@@ -193,8 +194,8 @@ html {
 
 /*===================================Start Resent Local Property Section======================*/
 .local-property-card-section {
-    width: 100%;
     margin-top: 100px;
+    width: 100%;
 }
 
 .local-property-card-section h2 {
@@ -210,12 +211,12 @@ html {
     padding-left: 50px;
 }
 
-.local-property-card-section .content {
+/* .local-property-card-section .content {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-}
+} */
 
 .local-property-card-section .content .box {
     flex: 1;
@@ -732,6 +733,9 @@ html {
     .footer ul li {
         padding: 10px 0;
     }
+    .three-col-header h2 {
+        font-size: 30px;
+    }
     
 }
 
@@ -741,5 +745,8 @@ html {
     }
     .local-property-card-section .text-right a {
         padding-bottom: 20px;
+    }
+    .three-col-header h2 {
+        font-size: 25px;
     }
 }
