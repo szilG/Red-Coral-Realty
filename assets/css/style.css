@@ -56,6 +56,7 @@ html {
 .hero-btn-text {
     font-size: 25px;
     margin-top: 20px;
+    padding-left: 10px;
 }
 
 .btn {
@@ -73,7 +74,6 @@ html {
     overflow: hidden;
     z-index: 1;
 }
-
 
 .btn:hover,
 .btn:focus {
@@ -187,6 +187,9 @@ html {
     padding-right: 5px;
 }
 
+.text-container span {
+    font-size: 40px;
+}
 
 /*===================================Start Resent Local Property Section======================*/
 .local-property-card-section {
@@ -477,6 +480,10 @@ html {
 
 
 /*======================================Start Three Column Section=======================*/
+.three-col-header h2 {
+    font-size: 40px;
+}
+
 .what-we-do a {
     text-decoration: none;
     color: var(--text-color);
