@@ -1,7 +1,14 @@
-# Red Coral Realty
+<img src="assets/img/TESTING.md-img/13.png" width="500" alt="image">
+
+# [Red Coral Realty](https://szilg.github.io/Red-Coral-Realty/)
 
 This is an imaginary website for a real estate company!
 Wich can provide a wide range of properties and services.
+
+<img src="assets/img/TESTING.md-img/mockup.png" width="500" alt="image">
+
+[Mockup vector created by rawpixel.com](https://www.freepik.com/vectors/background)
+
 
 The website features slideshows, testimonials, a page with all of the offers, and a contact page.
 The main goal of the website is to guide possible clients to making contact with the agency through the contact page.
@@ -193,7 +200,7 @@ If you have any trouble cloning the repository further information can be found 
 * JS code for the Mortgage calculator was originally taken from [Adam Khoury](https://www.youtube.com/watch?v=vkBiEuZSq9s) and modified for the project's needs.
 * The project use [EmailJs]( https://www.emailjs.com/)
 * JS code for the Animation on Scroll was originally taken from [Julian Lloyd](https://github.com/jlmakes/scrollreveal) and modified for the project's needs.
-* JS code for Swiper slideshow was originally taken from [SwiperJS](https://swiperjs.com/demos#space-between) credit goes (Vladimir Kharlampidi)[https://github.com/nolimits4web/Swiper/blob/master/demos/150-freemode.html] and modified for the project's needs.
+* JS code for Swiper slideshow was originally taken from [SwiperJS](https://swiperjs.com/demos#space-between) credit goes [Vladimir Kharlampidi](https://github.com/nolimits4web/Swiper/blob/master/demos/150-freemode.html) and modified for the project's needs.
 * JS code for the Dynamic Dependent Dropdown List was originally taken from [Webslesson](https://www.youtube.com/watch?v=1ebJyK6tocI) and modified for the project's needs.
 
 #### Acknowledgements
