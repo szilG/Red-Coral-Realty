@@ -6,6 +6,10 @@ Wich can provide a wide range of properties and services.
 The website features slideshows, testimonials, a page with all of the offers, and a contact page.
 The main goal of the website is to guide possible clients to making contact with the agency through the contact page.
 
+The business goals of the website are:
+Get the Best Price for Your Property in the Shortest Time for the Lowest Fee.
+Pay a Fixed Fee & Keep Your Equity.
+
 
 ## UX
 
@@ -30,7 +34,59 @@ The main goal of the website is to guide possible clients to making contact with
 
 Wireframe information can be found in the separate [Wireframe pdf file.](https://github.com/szilG/Red-Coral-Realty/tree/main/wireframe)
 
+## Features
 
+Each page has a responsive navigation bar with a Company Logo.
+Each page has a footer with copyright information company address, phone number, social links and links to navigate to another page.
+
+Home page features:
+
+The home page has an image carousel with a carousel text at the top.
+Information for the agency's services with a call to action buttons.
+A little info about the agency properties with a "Read More" call to action buttons.
+There is a Mortgage calculator where the customers can calculate their mortgage repayments with a "Request" button.
+There is a call to action button that takes the user to the Contact page.
+
+Local Properties page features:
+
+The page has a little information about the properties with a "View Property" call to action buttons.
+The page has a Overview of the Home Buying Process section with clickable call to action buttons.
+
+Properties Abroad page features:
+
+The page has a little information about the properties with a "View Property" call to action buttons.
+The page has a Overview of the Home Buying Process section with clickable call to action buttons.
+
+Mortgage page features:
+
+In the top section of the page has information and a "Contact us" call to action button.
+There is a Mortgage calculator where the customers can calculate their mortgage repayments.
+There are four section with advice and tips for the costumers and a "Contact us" call to action buttons.
+
+Research page features:
+
+Information about the market research and the company research Team.
+
+Advice for buyers page features:
+
+Informations, advices and tips for the buyers.
+
+Request Valuation page features:
+
+Information and tips about selling a property. A contact form and an information about the agency Valuation Team.
+
+Contact page features:
+
+Information and a contact/feedback form.
+
+
+### Existing Features
+
+* Every page has **Header Logo** - Clicking the logo returns users to the home page.
+* Every page has a **Footer** - The navigation links, information about the company address, social icons. 
+* Every page has **Footer Copyright Info** - Business copyright.
+* Every page has a **Call to Action Button** -  Allows users to contact the agency.
+* Every page has a **Back to top Button** -  Clicking the button takes the user back to the top.
 
 
 ## Technologies Used
@@ -134,7 +190,11 @@ If you have any trouble cloning the repository further information can be found 
   - [gitpod browser-extension](https://www.gitpod.io/static/b2f7a9dd0909631d5530b3eb59cc6d31/a370b/browser-extension-lense.png)
   - [github settings button](https://content.codecademy.com/courses/freelance-1/unit-3/git%20setup/githubsettings.png)
   - [github pages](https://s3.us-west-1.wasabisys.com/idbwmedia.com/images/api/githubpagesscreenshot.png)
-
+* JS code for the Mortgage calculator was originally taken from [Adam Khoury](https://www.youtube.com/watch?v=vkBiEuZSq9s) and modified for the project's needs.
+* The project use [EmailJs]( https://www.emailjs.com/)
+* JS code for the Animation on Scroll was originally taken from [Julian Lloyd](https://github.com/jlmakes/scrollreveal) and modified for the project's needs.
+* JS code for Swiper slideshow was originally taken from [SwiperJS](https://swiperjs.com/demos#space-between) credit goes (Vladimir Kharlampidi)[https://github.com/nolimits4web/Swiper/blob/master/demos/150-freemode.html] and modified for the project's needs.
+* JS code for the Dynamic Dependent Dropdown List was originally taken from [Webslesson](https://www.youtube.com/watch?v=1ebJyK6tocI) and modified for the project's needs.
 
 #### Acknowledgements
 * Many Thanks to my mentor Akshat Garg 
