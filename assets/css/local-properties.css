@@ -2,8 +2,8 @@
 .local-property-card-section {
     margin-top: 50px;
     overflow-x: hidden;
-    
 }
+
 .local-property-card-section .content .box1 {
     flex: 1;
     min-width: 300px;
@@ -52,8 +52,6 @@
     font-size: 16px;
     color: var(--second-color); 
 }
-
-
 
 
 

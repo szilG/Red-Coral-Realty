@@ -15,7 +15,6 @@
     font-size: 18px;
 }
 
-
 .property-action-bar a:hover {
     font-size: 25px;
 }
@@ -106,7 +105,6 @@
 .property-section .swiper-container {
     width: 100%;
     height: 100%;
-
 }
 
 .section-header h4 {
@@ -158,8 +156,8 @@
 .property-text-section p {
     font-size: 18px;
     color: var(--text-color);
-
 }
+
 .property-text-section .lead {
     padding: 8px 0;
 }

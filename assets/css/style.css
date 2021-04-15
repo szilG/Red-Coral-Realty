@@ -6,7 +6,6 @@
     --second-color: crimson;
     --bg-color: #eee;
     --dark-color: #236778;
-
 }
 
 body {
@@ -133,7 +132,7 @@ html {
 
 
 /*==================================Start Hero Section=================================*/
-.carousel-item h2 {
+.carousel-caption h2 {
     font-family: 'Anton', sans-serif;
     font-size: 3.5rem;
 }
@@ -210,13 +209,6 @@ html {
     line-height: 1.4;
     padding-left: 50px;
 }
-
-/* .local-property-card-section .content {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-} */
 
 .local-property-card-section .content .box {
     flex: 1;
@@ -418,6 +410,7 @@ html {
     box-shadow: 2px 2px 12px rgba(0,0,0,.8);
     position: relative;
 }
+
 .features-content {
     align-items: center;
     justify-content: center;
@@ -679,7 +672,7 @@ html {
 }
 
 @media screen and (max-width: 1200px) {
-    .carousel-caption h1 {
+    .carousel-caption h2 {
         font-size: 2.8rem;
         letter-spacing: .1rem;
     }
@@ -700,7 +693,7 @@ html {
 }
 
 @media screen and (max-width: 991px){
-    .carousel-caption h1 {
+    .carousel-caption h2 {
         font-size: 2rem;
     }
     .carousel-caption p {
