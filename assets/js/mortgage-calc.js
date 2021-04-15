@@ -1,9 +1,10 @@
 //======================Start Mortgage Calculator Credit to Adam Khoury https://www.youtube.com/watch?v=vkBiEuZSq9s ==============================//
 function calcLoan() {
     //Make variables
-    let amount = document.getElementById("amount").value;
-    let iterest_rate = document.getElementById("iterest_rate").value;
-    let years = document.getElementById("years").value;
+    //use parseFloat() returns a floating point number.
+    let amount = parseFloat(document.getElementById("amount").value);
+    let iterest_rate = parseFloat(document.getElementById("iterest_rate").value);
+    let years = parseFloat(document.getElementById("years").value);
   
     //Calculate interest
     let interest = (amount * (iterest_rate * .01)) / years //create numeric percentige
