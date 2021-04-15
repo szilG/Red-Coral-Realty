@@ -86,10 +86,6 @@
     justify-content: center;
 }
 
-.modal-header h5, p {
-    /* color: var(--text-color); */
-}
-
 .modal-header .close {
     position: absolute;
     right: 20px;
