@@ -39,7 +39,7 @@ Wireframe information can be found in the separate [Wireframe pdf file.](https:/
 Each page has a responsive navigation bar with a Company Logo.
 Each page has a footer with copyright information company address, phone number, social links and links to navigate to another page.
 
-Home page features:
+**Home page features:**
 
 The home page has an image carousel with a carousel text at the top.
 Information for the agency's services with a call to action buttons.
@@ -47,35 +47,35 @@ A little info about the agency properties with a "Read More" call to action butt
 There is a Mortgage calculator where the customers can calculate their mortgage repayments with a "Request" button.
 There is a call to action button that takes the user to the Contact page.
 
-Local Properties page features:
+**Local Properties page features:**
 
 The page has a little information about the properties with a "View Property" call to action buttons.
 The page has a Overview of the Home Buying Process section with clickable call to action buttons.
 
-Properties Abroad page features:
+**Properties Abroad page features:**
 
 The page has a little information about the properties with a "View Property" call to action buttons.
 The page has a Overview of the Home Buying Process section with clickable call to action buttons.
 
-Mortgage page features:
+**Mortgage page features:**
 
 In the top section of the page has information and a "Contact us" call to action button.
 There is a Mortgage calculator where the customers can calculate their mortgage repayments.
 There are four section with advice and tips for the costumers and a "Contact us" call to action buttons.
 
-Research page features:
+**Research page features:**
 
 Information about the market research and the company research Team.
 
-Advice for buyers page features:
+**Advice for buyers page features:**
 
 Informations, advices and tips for the buyers.
 
-Request Valuation page features:
+**Request Valuation page features:**
 
 Information and tips about selling a property. A contact form and an information about the agency Valuation Team.
 
-Contact page features:
+**Contact page features:**
 
 Information and a contact/feedback form.
 
@@ -197,7 +197,7 @@ If you have any trouble cloning the repository further information can be found 
 * JS code for the Dynamic Dependent Dropdown List was originally taken from [Webslesson](https://www.youtube.com/watch?v=1ebJyK6tocI) and modified for the project's needs.
 
 #### Acknowledgements
-* Many Thanks to my mentor Akshat Garg 
+* Many Thanks to my mentor Akshat Garg who was brilliant and gave me lots of help with how to generate property details with javascript and helped me throughout this project.
 
 
 ##### Disclaimer
