@@ -413,3 +413,20 @@ Put space between the attributes.
 
 CSS Validation went through without any problem.
 
+
+### Further testing:
+I asked friends and family to look at the site on their devices and report any issues they find.
+
+They reported some minor spacing propoblem on mobil size I solve this to adding margins and paddings
+
+In final testing some issue occured:
+
+<img src="assets/img/TESTING.md-img/34.png" width="500" alt="image">
+
+That issue is on the pages when the page use this Swiper bundle.
+Spoke with my mentor Akshat Garg he told me the problem is not in my code, this is the problem on their end.
+
+<img src="assets/img/TESTING.md-img/35.png" width="500" alt="image">
+
+That problem was on Home, Local properties and Properties Abroad pages. Those page doesn't needed the proprties.js file.
+To solve this problem I delete the properties.js script file of those page. 
