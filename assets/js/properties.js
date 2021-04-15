@@ -306,6 +306,7 @@ function generatePropertyHTMLFromDetails(propertyDetails) {
                             </div>
                         </div>`;
     });
+
     const headerHTML = `<section class="property-section">
         <div class="container-fluid p-0">
             <div class="property-slider">
@@ -384,7 +385,6 @@ function showPropertyDetails() {
     const headerHTML=document.querySelector('.prop-details-container');
     //use insertAdjacentHTML  https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
     headerHTML.insertAdjacentHTML("afterbegin", propertyHTML);
-    
 };
 
 showPropertyDetails();     
