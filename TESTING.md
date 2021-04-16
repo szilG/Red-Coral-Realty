@@ -17,16 +17,16 @@ As a potential customer, I want to easily navigate throughout the site and find 
 
 <img src="assets/img/TESTING.md-img/13.png" width="500" alt="image">
 
-* As every page has a back to top button. When the customer scrool down on the page that button appears and with the button clicking they can easily go back to the top of the page.
+* As every page has a back to top button. When the customer scrools down on the page that button appears and when clicking the button they can easily go back to the top of the page.
 
 <img src="assets/img/TESTING.md-img/14.png" width="500" alt="image">
 
 * The home page has many call-to-action buttons which take the user to the specific page.
   - Right away in the hero section they can book a Valuation to their property.
     <img src="assets/img/TESTING.md-img/15.png" width="500" alt="image">
-  - Further along there are the read more buttons which takes the user to check the desired property.
+  - Further along there are read more buttons which takes the user to the desired property.
     <img src="assets/img/TESTING.md-img/16.png" width="500" alt="image">
-  - They can book appointment for a valuation every section on the page.
+  - They can book an appointment for a valuation on every section of the page.
     <img src="assets/img/TESTING.md-img/18.png" width="500" alt="image">
     <img src="assets/img/TESTING.md-img/19.png" width="500" alt="image">
     <img src="assets/img/TESTING.md-img/20.png" width="500" alt="image">
@@ -41,7 +41,7 @@ As a potential customer, I want to easily find the best price to the property ev
 
 * On the Home page there are two section with properies: local properties and the overseas properties.
 Each one is clickable and takes the customer to the selected property page.
-* There are a clickable -All Properties- button which takes the user to the properties page and they can look over all of the properties.
+* There are clickable -Properties- buttons which take the user to the properties page and they can look over all of the properties.
 
 <img src="assets/img/TESTING.md-img/22.png" width="500" alt="image">
 <img src="assets/img/TESTING.md-img/23.png" width="500" alt="image">
@@ -49,7 +49,7 @@ Each one is clickable and takes the customer to the selected property page.
 
 As a potential customer, If want to sell my property I want to know their charges and fees.
 
-* On top of the Home page there is section which tell the user the agency prices, what they offer and the clickable button to the booking valuation page.
+* On top of the Home page there is section which tell the user the agency prices, what they offer and a clickable button to the booking valuation page.
 
 <img src="assets/img/TESTING.md-img/24.png" width="500" alt="image">
 
@@ -68,11 +68,11 @@ Or they can click on the Request button next to the calculator and it will take 
 
 <img src="assets/img/TESTING.md-img/26.png" width="500" alt="image">
 
-* There is a middle section when the customers can reed further services.
+* There is a middle section where the customers can read information on further services.
 
 <img src="assets/img/TESTING.md-img/27.png" width="500" alt="image">
 
-* On the Home page there are three clickable section which takes the users to the pages. They can find advice for buying, advice how to apply for mortgage and the user can be familier with the company market research and their research team.
+* On the Home page there are three clickable sections which take the user to the pages. They can find advice for buying, advice on how to apply for mortgage and the user can become familier with the company market research and their research team.
 
 <img src="assets/img/TESTING.md-img/28.png" width="500" alt="image">
 
@@ -80,12 +80,12 @@ Or they can click on the Request button next to the calculator and it will take 
 As an interested customer, I want to easy navigate to contact/book page.
 
 Every page offers opportunity to contact with the agency. Several call to action buttons on the pages.
-* On the Home page in the top and bottom navigation menu has a contact button. The user easily can navigate to the contact page.
+* The Home page on the top and bottom navigation menu has a contact button. The user easily can navigate to the contact page.
 
 <img src="assets/img/TESTING.md-img/29.png" width="500" alt="image">
 <img src="assets/img/TESTING.md-img/17.png" width="500" alt="image">
 
-* On the Home page there are call to action button which takes the user to a valuation page. Where they can easily contact with the agency.
+* On the Home page there are call to action buttons which take the user to a valuation page. Where they can easily get in contact with the agency.
 
 <img src="assets/img/TESTING.md-img/30.png" width="500" alt="image">
 <img src="assets/img/TESTING.md-img/31.png" width="500" alt="image">
@@ -101,45 +101,45 @@ As an interested customer, I want to I want to calculate mortgage repayment and 
 
 <img src="assets/img/TESTING.md-img/26.png" width="500" alt="image">
 
-* In the top and bottom navigation menu has a clickable mortgages button which takes to the user to the mortgage page. Where they find tips, advices how to get mortgage and the page also contains mortgage calculator.
+* On the top and bottom of the navigation menu there is a clickable mortgage button which takes the user to the mortgage page. Where they find tips, advices on how to apply to get mortgage and the page also contains a mortgage calculator.
 
 <img src="assets/img/TESTING.md-img/12.png" width="500" alt="image">
 <img src="assets/img/TESTING.md-img/17.png" width="500" alt="image">
 
-* On the bottom of every page has a clickable mortgage section which takes the user to the mortgage page.
+* On the bottom of every page there is clickable mortgage section which takes the user to the mortgage page.
 
 <img src="assets/img/TESTING.md-img/28.png" width="500" alt="image">
 
 
 As an interested customer, I want to find advice for buying.
 
-* In the navigation menu has a clickable button to the advice to buyers page.
+* In the navigation menu there is a clickable button to the advice for buyers page.
 
 <img src="assets/img/TESTING.md-img/32.png" width="500" alt="image">
 
-* On the Home page there is clickable section which takes the users to the Advice page. They can find advice and usefull tips for buying.
+* On the Home page there is a clickable section which takes the user to the Advice page. There they can find advice and usefull tips for buying.
 
 <img src="assets/img/TESTING.md-img/28.png" width="500" alt="image">
 
 
 As an interested customer, I want to see their research of the market and their research team.
 
-* In the navigation menu has a clickable button to the research page.
+* In the navigation menu there is a clickable button to the research page.
 
 <img src="assets/img/TESTING.md-img/32.png" width="500" alt="image">
 
-* On the Home page there is clickable section which takes the users to the Research page. The users can reed about their research and meet the research team.
+* On the Home page there is a clickable section which takes the user to the Research page. There the users can read about their research and meet the research team.
 
 <img src="assets/img/TESTING.md-img/28.png" width="500" alt="image">
 
 
 As an interested customer, I want to see how follow them on social media.
 
-* In the bottom of the navigation menu contains clickable social icons which takes the user to the desired social page.
+* The bottom of the navigation menu contains a clickable social icons which takes the user to the desired social page.
 
 <img src="assets/img/TESTING.md-img/17.png" width="500" alt="image">
 
-* On the home page they can find more opportunity to contact with the agency social pages.
+* On the home page they can find more opportunities to get in contact with the agency social pages.
 
 <img src="assets/img/TESTING.md-img/20.png" width="500" alt="image">
 
@@ -417,16 +417,25 @@ CSS Validation went through without any problem.
 ### Further testing:
 I asked friends and family to look at the site on their devices and report any issues they find.
 
-They reported some minor spacing propoblem on mobil size I solve this to adding margins and paddings
+They reported some minor spacing problems on mobile sizes, I solved this by adding margins and paddings
 
-In final testing some issue occured:
+In final testing some issues occured:
 
 <img src="assets/img/TESTING.md-img/34.png" width="500" alt="image">
 
-That issue is on the pages when the page use this Swiper bundle.
-Spoke with my mentor Akshat Garg he told me the problem is not in my code, this is the problem on their end.
+The first issue occurs on the pages that use the Swiper bundle.
+I spoke with my mentor Akshat Garg and he told me that the problem was not in my code, this is a problem on their end.
 
 <img src="assets/img/TESTING.md-img/35.png" width="500" alt="image">
 
-That problem was on Home, Local properties and Properties Abroad pages. Those page doesn't needed the proprties.js file.
-To solve this problem I delete the properties.js script file of those page. 
+The second problem was on the Home, Local properties and Properties Abroad pages. Those page didn't need the proprties.js file.
+To solve this problem I deleted the properties.js script file of those page. 
+
+<img src="assets/img/TESTING.md-img/36.png" width="500" alt="image">
+
+The third problem was unnecessary semicolon to fix i deleted it.
+
+<img src="assets/img/TESTING.md-img/37.png" width="500" alt="image">
+
+The fourth problem was on mortgage calculator. -- A leading decimal point can be confused with a dot: ".1". 
+I found the solution [here](https://stackoverflow.com/questions/12649748/jslint-error-a-leading-decimal-point-can-be-confused-with-a-dot)
