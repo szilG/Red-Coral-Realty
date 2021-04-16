@@ -368,7 +368,7 @@ function generatePropertyHTMLFromDetails(propertyDetails) {
     return headerHTML;
 //use map function to return a use-able list value
 //create forEach loop to loop through images
-};
+}
 
 
 
@@ -385,11 +385,11 @@ function showPropertyDetails() {
     const headerHTML=document.querySelector('.prop-details-container');
     //use insertAdjacentHTML  https://developer.mozilla.org/en-US/docs/Web/API/Element/insertAdjacentHTML
     headerHTML.insertAdjacentHTML("afterbegin", propertyHTML);
-};
+}
 
 showPropertyDetails();     
 
 //create go back function https://www.w3schools.com/jsref/met_his_back.asp 
 function goBack() {
     window.history.back();
-  }
+}

@@ -10,7 +10,7 @@ function scrollFunction() {
   
   else { // Hide backToTopButton
       backToTopButton.style.display = "none";
-    };
+    }
     
 }
 
