@@ -106,7 +106,7 @@
     transform: rotateY(0deg);
     z-index: 2;
     color: var(--text-color);
-    height: 650px;
+    height: 680px;
     background: var(--bg-color);
 }
 
@@ -117,7 +117,7 @@
     background: var(--bg-color);
     transform: rotateY(-180deg);
     color: var(--text-color);
-    height: 650px;
+    height: 680px;
 }
 
 .card-front,
