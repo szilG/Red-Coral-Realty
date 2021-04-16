@@ -3,7 +3,7 @@
 # [Red Coral Realty](https://szilg.github.io/Red-Coral-Realty/)
 
 This is an imaginary website for a real estate company!
-Wich can provide a wide range of properties and services.
+Which can provide a wide range of properties and services.
 
 <img src="assets/img/TESTING.md-img/mockup.png" width="500" alt="image">
 
@@ -14,8 +14,10 @@ The website features slideshows, testimonials, a page with all of the offers, an
 The main goal of the website is to guide possible clients to making contact with the agency through the contact page.
 
 The business goals of the website are:
-Get the Best Price for Your Property in the Shortest Time for the Lowest Fee.
-Pay a Fixed Fee & Keep Your Equity.
+
+* Get the Best Price for Your Property in the Shortest Time for the Lowest Fee.
+* Pay a Fixed Fee & Keep Your Equity.
+* Increase client base
 
 
 ## UX
@@ -26,7 +28,7 @@ Pay a Fixed Fee & Keep Your Equity.
 
 **Client stories**
  * As a potential customer, I want to easily navigate throughout the site and find what I need.
- * As a potential customer, I want to easily find the best price to the property even selling or buying.
+ * As a potential customer, I want to easily find the best price for the property, selling or buying.
  * As a potential customer, If want to sell my property I want to know their charges and fees.
  * As a possible customer, I want to know what former clients thought of their works.
  * As an interested customer, I want to see wide range of services.
@@ -34,7 +36,7 @@ Pay a Fixed Fee & Keep Your Equity.
  * As an interested customer, I want to calculate mortgage repayment and to know how to apply mortgages.
  * As an interested customer, I want to find advice for buying.
  * As an interested customer, I want to see their research of the market and their research team.
- * As an interested customer, I want to see how follow them on social media.
+ * As an interested customer, I want to see how to follow them on social media.
  
 
 **Wireframe mockups:** 
@@ -80,7 +82,7 @@ Informations, advices and tips for the buyers.
 
 **Request Valuation page features:**
 
-Information and tips about selling a property. A contact form and an information about the agency Valuation Team.
+Information and tips about selling a property. A contact form and an information about the agency's Valuation Team.
 
 **Contact page features:**
 
